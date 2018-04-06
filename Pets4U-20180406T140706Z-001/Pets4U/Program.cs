@@ -16,7 +16,7 @@ namespace Pets4U
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Mainform());asd
+            Application.Run(new Mainform());
         }
     }
 }
