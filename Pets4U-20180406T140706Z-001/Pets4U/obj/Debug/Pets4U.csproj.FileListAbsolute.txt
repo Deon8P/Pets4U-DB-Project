@@ -45,3 +45,6 @@ C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-0
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.csproj.CoreCompileInputs.cache
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.exe
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.pdb
+C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\bin\Debug\Pets4U.exe.config
+C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.exe
+C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.pdb
