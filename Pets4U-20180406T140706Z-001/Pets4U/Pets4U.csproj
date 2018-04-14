@@ -75,6 +75,7 @@
     <Compile Include="BookPenForm.Designer.cs">
       <DependentUpon>BookPenForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database_Class.cs" />
     <Compile Include="ExaminationFom.cs">
       <SubType>Form</SubType>
     </Compile>
