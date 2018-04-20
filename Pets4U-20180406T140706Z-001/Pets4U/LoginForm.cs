@@ -17,14 +17,15 @@ namespace Pets4U
             InitializeComponent();
         }
 
+        public OleDbConnection connection;
+        public OleDbDataAdapter adapter;
+        public string sql;
+
         private void button3_Click(object sender, EventArgs e)
         {
-            RegisterClinicForm MainForm = new RegisterClinicForm();
+            MainLoginForm MainForm = new MainLoginForm();
             MainForm.ShowDialog();
             this.Close();
-
-
-
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
@@ -44,7 +45,25 @@ namespace Pets4U
         private void btnRegClinic_Click(object sender, EventArgs e)
         {
             RegisterClinicForm regClinic = new RegisterClinicForm();
-            regClinic.Show();
+            regClinic.ShowDialog();
+            this.Close();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                Database_Class database = new Database_Class();
+                connection = 
+            }
+            catch(System.Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
     }
 }
