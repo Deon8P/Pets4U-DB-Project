@@ -29,7 +29,7 @@ namespace Pets4U
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Mainform mainForm = new Mainform();
+            RegisterClinicForm mainForm = new RegisterClinicForm();
             mainForm.ShowDialog();
             this.Close();
         }
