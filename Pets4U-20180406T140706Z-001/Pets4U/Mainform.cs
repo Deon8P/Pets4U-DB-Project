@@ -59,7 +59,7 @@ namespace Pets4U
         {
             LoginForm LoginForm = new LoginForm();
             LoginForm.ShowDialog();
-            this.Close();
+            this.Close();           
         }
     }
 }
