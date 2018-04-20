@@ -25,8 +25,6 @@ namespace Pets4U
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MainLoginForm MainForm = new MainLoginForm();
-            MainForm.ShowDialog();
             this.Close();
         }
 
@@ -68,7 +66,6 @@ namespace Pets4U
                 comboBox1.DisplayMember = "Clinic_Number";
                 comboBox1.ValueMember = "Clinic_Number";
                 comboBox1.DataSource = ds.Tables["clinic"];
-
             }
             catch(System.Exception exc)
             {
@@ -78,6 +75,12 @@ namespace Pets4U
             {
                 connection.Close();
             }
+        }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            MainLoginForm MainForm = new MainLoginForm();
+            MainForm.ShowDialog();
         }
     }
 }
