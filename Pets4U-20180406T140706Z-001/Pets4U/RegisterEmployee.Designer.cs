@@ -76,7 +76,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-3, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1601, 92);
             this.pictureBox1.TabIndex = 2;
@@ -90,7 +90,7 @@
             this.button3.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(1358, 26);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(125, 37);
             this.button3.TabIndex = 31;
@@ -102,7 +102,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-2, 80);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(642, 13);
             this.pictureBox2.TabIndex = 32;
@@ -112,7 +112,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(633, 80);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(642, 13);
             this.pictureBox3.TabIndex = 33;
@@ -122,7 +122,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(1072, 80);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(642, 13);
             this.pictureBox4.TabIndex = 34;
@@ -227,7 +227,7 @@
             // txtFName
             // 
             this.txtFName.Location = new System.Drawing.Point(302, 205);
-            this.txtFName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFName.Name = "txtFName";
             this.txtFName.Size = new System.Drawing.Size(202, 20);
             this.txtFName.TabIndex = 43;
@@ -235,7 +235,7 @@
             // txtLName
             // 
             this.txtLName.Location = new System.Drawing.Point(302, 245);
-            this.txtLName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLName.Margin = new System.Windows.Forms.Padding(2);
             this.txtLName.Name = "txtLName";
             this.txtLName.Size = new System.Drawing.Size(202, 20);
             this.txtLName.TabIndex = 44;
@@ -243,7 +243,7 @@
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(302, 286);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(202, 20);
             this.txtID.TabIndex = 45;
@@ -251,7 +251,7 @@
             // txtGender
             // 
             this.txtGender.Location = new System.Drawing.Point(302, 329);
-            this.txtGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGender.Margin = new System.Windows.Forms.Padding(2);
             this.txtGender.Name = "txtGender";
             this.txtGender.Size = new System.Drawing.Size(202, 20);
             this.txtGender.TabIndex = 46;
@@ -259,7 +259,7 @@
             // txtPosition
             // 
             this.txtPosition.Location = new System.Drawing.Point(302, 371);
-            this.txtPosition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPosition.Margin = new System.Windows.Forms.Padding(2);
             this.txtPosition.Name = "txtPosition";
             this.txtPosition.Size = new System.Drawing.Size(202, 20);
             this.txtPosition.TabIndex = 47;
@@ -267,7 +267,7 @@
             // txtTel
             // 
             this.txtTel.Location = new System.Drawing.Point(302, 499);
-            this.txtTel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTel.Margin = new System.Windows.Forms.Padding(2);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(202, 20);
             this.txtTel.TabIndex = 49;
@@ -275,7 +275,7 @@
             // txtEmp_num
             // 
             this.txtEmp_num.Location = new System.Drawing.Point(302, 544);
-            this.txtEmp_num.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmp_num.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmp_num.Name = "txtEmp_num";
             this.txtEmp_num.Size = new System.Drawing.Size(202, 20);
             this.txtEmp_num.TabIndex = 50;
@@ -307,7 +307,7 @@
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(302, 455);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(202, 20);
             this.txtAddress.TabIndex = 53;
@@ -339,7 +339,7 @@
             // txtCreatePass
             // 
             this.txtCreatePass.Location = new System.Drawing.Point(302, 636);
-            this.txtCreatePass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCreatePass.Margin = new System.Windows.Forms.Padding(2);
             this.txtCreatePass.Name = "txtCreatePass";
             this.txtCreatePass.Size = new System.Drawing.Size(202, 20);
             this.txtCreatePass.TabIndex = 57;
@@ -347,7 +347,7 @@
             // txtConfirm_pass
             // 
             this.txtConfirm_pass.Location = new System.Drawing.Point(302, 682);
-            this.txtConfirm_pass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConfirm_pass.Margin = new System.Windows.Forms.Padding(2);
             this.txtConfirm_pass.Name = "txtConfirm_pass";
             this.txtConfirm_pass.Size = new System.Drawing.Size(202, 20);
             this.txtConfirm_pass.TabIndex = 58;
@@ -360,18 +360,19 @@
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(239, 765);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 37);
             this.button1.TabIndex = 59;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(633, 94);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(868, 741);
             this.pictureBox5.TabIndex = 60;
@@ -381,7 +382,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(-3, 833);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(642, 13);
             this.pictureBox6.TabIndex = 61;
@@ -391,7 +392,7 @@
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(633, 833);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(642, 13);
             this.pictureBox7.TabIndex = 62;
@@ -401,7 +402,7 @@
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(1211, 833);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(642, 13);
             this.pictureBox8.TabIndex = 63;
@@ -410,7 +411,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(302, 409);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
             this.dateTimePicker1.TabIndex = 64;
@@ -420,7 +421,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1075, 749);
+            this.ClientSize = new System.Drawing.Size(1323, 833);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -454,7 +455,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegisterEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "RegisterEmployee";
