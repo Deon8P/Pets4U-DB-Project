@@ -17,21 +17,6 @@ namespace Pets4U
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             string fname, lname, Gen, Position, address, createPass, confirmPass;
@@ -59,9 +44,5 @@ namespace Pets4U
             this.Close();
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-           
-        }
     }
 }
