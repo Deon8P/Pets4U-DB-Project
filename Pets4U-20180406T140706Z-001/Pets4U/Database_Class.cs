@@ -10,7 +10,9 @@ using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
-   
+     
+    
+
     class Database_Class
     {
         MySqlConnection connection = new MySqlConnection("datasource=den1.mysql2.gear.host; port=3306; Initial Catalog='petclientdb1';username='petclientdb1';password='Ty7H~_KGS4Zf';");
