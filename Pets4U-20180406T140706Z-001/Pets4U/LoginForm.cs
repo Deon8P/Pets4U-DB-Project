@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.OleDb;
 
 namespace Pets4U
 {
@@ -17,10 +16,7 @@ namespace Pets4U
         {
             InitializeComponent();
         }
-
-        public OleDbConnection connection;
-        public OleDbDataAdapter adapter;
-        public string sql;
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -52,19 +48,6 @@ namespace Pets4U
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            try
-            {
-                Database_Class database = new Database_Class();
-                connection = 
-            }
-            catch(System.Exception exc)
-            {
-                MessageBox.Show(exc.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
         }
     }
 }
