@@ -19,7 +19,7 @@ namespace Pets4U
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Mainform MainForm = new Mainform();
+            RegisterClinicForm MainForm = new RegisterClinicForm();
             MainForm.ShowDialog();
             this.Close();
 
@@ -39,6 +39,12 @@ namespace Pets4U
             SecretariesForm SecForm = new SecretariesForm();
             SecForm.ShowDialog();
             this.Close();
+        }
+
+        private void btnRegClinic_Click(object sender, EventArgs e)
+        {
+            RegisterClinicForm regClinic = new RegisterClinicForm();
+            regClinic.Show();
         }
     }
 }

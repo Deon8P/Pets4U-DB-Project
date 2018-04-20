@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pets4U
 {
-    public partial class Mainform : Form
+    public partial class RegisterClinicForm : Form
     {
-        public Mainform()
+        public RegisterClinicForm()
         {
             InitializeComponent();
         }
@@ -57,9 +57,9 @@ namespace Pets4U
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             LoginForm LoginForm = new LoginForm();
-            LoginForm.ShowDialog();
-            this.Close();           
+            LoginForm.Show();         
         }
     }
 }

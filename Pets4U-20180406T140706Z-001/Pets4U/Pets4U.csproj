@@ -99,11 +99,11 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mainform.cs">
+    <Compile Include="RegisterClinicForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mainform.Designer.cs">
-      <DependentUpon>Mainform.cs</DependentUpon>
+    <Compile Include="RegisterClinicForm.Designer.cs">
+      <DependentUpon>RegisterClinicForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainLoginForm.cs">
       <SubType>Form</SubType>
@@ -167,8 +167,8 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mainform.resx">
-      <DependentUpon>Mainform.cs</DependentUpon>
+    <EmbeddedResource Include="RegisterClinicForm.resx">
+      <DependentUpon>RegisterClinicForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainLoginForm.resx">
       <DependentUpon>MainLoginForm.cs</DependentUpon>
