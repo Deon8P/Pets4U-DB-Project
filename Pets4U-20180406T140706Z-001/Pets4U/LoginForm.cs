@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.OleDb;
+using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
@@ -18,9 +18,10 @@ namespace Pets4U
             InitializeComponent();
         }
 
-        public OleDbConnection connection;
-        public OleDbDataAdapter adapter;
-        public string sql;
+        public MySqlConnection connection;
+        public MySqlDataAdapter adapter;
+        public DataSet ds;
+        public string query;
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -55,7 +56,19 @@ namespace Pets4U
             try
             {
                 Database_Class database = new Database_Class();
-                connection = 
+                connection = database.connection;
+                connection.Open();
+
+                adapter = new MySqlDataAdapter("SELECT Clinic_Number FROM clinic", connection);
+
+                ds = new DataSet();
+
+                adapter.Fill(ds, "clinic");
+
+                comboBox1.DisplayMember = "Clinic_Number";
+                comboBox1.ValueMember = "Clinic_Number";
+                comboBox1.DataSource = ds.Tables["clinic"];
+
             }
             catch(System.Exception exc)
             {
