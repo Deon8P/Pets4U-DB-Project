@@ -84,7 +84,6 @@
             this.pictureBox2.Size = new System.Drawing.Size(856, 16);
             this.pictureBox2.TabIndex = 33;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -423,7 +422,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "SecretariesForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.SecretariesForm_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SecretariesForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

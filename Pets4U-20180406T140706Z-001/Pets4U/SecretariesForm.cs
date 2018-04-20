@@ -17,25 +17,16 @@ namespace Pets4U
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SecretariesForm_Load(object sender, EventArgs e)
-        {
-
-        }
+        public bool flag = false;
 
         private void button5_Click(object sender, EventArgs e)
         {
-            RegisterClinicForm mainForm = new RegisterClinicForm();
-            mainForm.ShowDialog();
             this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            flag = true;
             RegisterPetFrom RegPetForm = new RegisterPetFrom();
             RegPetForm.ShowDialog();
             this.Close();
@@ -43,6 +34,7 @@ namespace Pets4U
 
         private void button4_Click(object sender, EventArgs e)
         {
+            flag = true;
             BookPenForm BookForm = new BookPenForm();
             BookForm.ShowDialog();
             this.Close();
@@ -50,6 +42,7 @@ namespace Pets4U
 
         private void button6_Click(object sender, EventArgs e)
         {
+            flag = true;
             AddSurgicalSuppForm AddSurSupp = new AddSurgicalSuppForm();
             AddSurSupp.ShowDialog();
             this.Close();
@@ -57,6 +50,7 @@ namespace Pets4U
 
         private void button9_Click(object sender, EventArgs e)
         {
+            flag = true;
             AddNonSurgicalSuppForm NonSurSuppForm = new AddNonSurgicalSuppForm();
             NonSurSuppForm.ShowDialog();
             this.Close();
@@ -64,6 +58,7 @@ namespace Pets4U
 
         private void button11_Click(object sender, EventArgs e)
         {
+            flag = true;
             AddPharmacticalSuppForm PharmSuppForm = new AddPharmacticalSuppForm();
             PharmSuppForm.ShowDialog();
             this.Close();
@@ -71,6 +66,7 @@ namespace Pets4U
 
         private void button12_Click(object sender, EventArgs e)
         {
+            flag = true;
             AppointmentForm AppForm = new AppointmentForm();
             AppForm.ShowDialog();
             this.Close();
@@ -78,10 +74,19 @@ namespace Pets4U
 
         private void button14_Click(object sender, EventArgs e)
         {
+            flag = true;
             InvoiceForm InvoiceFForm = new InvoiceForm();
             InvoiceFForm.ShowDialog();
             this.Close();
+        }
 
+        private void SecretariesForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (flag == false)
+            {
+                LoginForm loginForm = new LoginForm();
+                loginForm.ShowDialog();
+            }
         }
     }
 }
