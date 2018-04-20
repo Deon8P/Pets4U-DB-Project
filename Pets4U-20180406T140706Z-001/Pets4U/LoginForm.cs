@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
@@ -17,11 +16,7 @@ namespace Pets4U
         {
             InitializeComponent();
         }
-
-        public MySqlConnection connection;
-        public MySqlDataAdapter adapter;
-        public DataSet ds;
-        public string query;
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -51,6 +46,7 @@ namespace Pets4U
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             try
             {
                 Database_Class database = new Database_Class();
@@ -75,6 +71,8 @@ namespace Pets4U
             {
                 connection.Close();
             }
+=======
+>>>>>>> 0b30fee99b44f443e74ed267444ad9aa54204451
         }
 
         private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
