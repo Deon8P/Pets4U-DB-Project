@@ -17,49 +17,15 @@ namespace Pets4U
             InitializeComponent();
         }
 
-
-        private void Mainform_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FinanceReportBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SurgicalSuppBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LoginButton_Click(object sender, EventArgs e)
+        private void RegisterClinicForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             LoginForm LoginForm = new LoginForm();
             LoginForm.ShowDialog();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
             this.Close();
-        }
-
-        private void NonSurgicalSuppBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BookingReportBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-            LoginForm LoginForm = new LoginForm();
-            LoginForm.Show();         
         }
     }
 }

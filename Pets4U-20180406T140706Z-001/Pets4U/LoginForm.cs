@@ -18,6 +18,7 @@ namespace Pets4U
             InitializeComponent();
         }
 
+        public bool flag = false;
         public MySqlConnection connection;
         public MySqlDataAdapter adapter;
         public DataSet ds;
@@ -30,6 +31,7 @@ namespace Pets4U
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            flag = true;
             RegisterEmployee registerEmployee = new RegisterEmployee();
             registerEmployee.ShowDialog();
             this.Close();
@@ -37,6 +39,7 @@ namespace Pets4U
 
         private void button2_Click(object sender, EventArgs e)
         {
+            flag = true;
             SecretariesForm SecForm = new SecretariesForm();
             SecForm.ShowDialog();
             this.Close();
@@ -44,6 +47,7 @@ namespace Pets4U
 
         private void btnRegClinic_Click(object sender, EventArgs e)
         {
+            flag = true;
             RegisterClinicForm regClinic = new RegisterClinicForm();
             regClinic.ShowDialog();
             this.Close();
@@ -79,8 +83,11 @@ namespace Pets4U
 
         private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            MainLoginForm MainForm = new MainLoginForm();
-            MainForm.ShowDialog();
+            if (flag == false)
+            {
+                MainLoginForm MainForm = new MainLoginForm();
+                MainForm.ShowDialog();
+            }
         }
     }
 }
