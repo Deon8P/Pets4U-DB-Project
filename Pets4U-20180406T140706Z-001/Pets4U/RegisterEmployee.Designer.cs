@@ -175,7 +175,6 @@
             this.label4.Size = new System.Drawing.Size(89, 32);
             this.label4.TabIndex = 38;
             this.label4.Text = "Geneder:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -367,7 +366,6 @@
             this.button1.TabIndex = 59;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox5
             // 
@@ -408,7 +406,6 @@
             this.pictureBox8.Size = new System.Drawing.Size(642, 13);
             this.pictureBox8.TabIndex = 63;
             this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // dateTimePicker1
             // 
@@ -417,7 +414,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
             this.dateTimePicker1.TabIndex = 64;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // RegisterEmployee
             // 
