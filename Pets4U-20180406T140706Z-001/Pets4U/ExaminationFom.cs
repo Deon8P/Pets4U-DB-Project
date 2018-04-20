@@ -19,10 +19,33 @@ namespace Pets4U
 
         private void button7_Click(object sender, EventArgs e)
         {
+            string vetFname, vetLname, petName, petType, desctiption;
+            int examNum, petNum;
+            DateTime examDate, examTime;
+
+            vetFname = txtVetFName.Text;
+            vetLname = txtLName.Text;
+            petName = txtPet_name.Text;
+            petType = txtTypePet.Text;
+            desctiption = richTextBox1.Text;
+
+            examNum = Convert.ToInt32(txtExam_number.Text);
+            petNum = Convert.ToInt32(txtPet_num.Text);
+
+            examDate = Convert.ToDateTime(txtDate.Text);
+            examTime = Convert.ToDateTime(txtTime.Text);
+
+
+
             TreatmentReportForm treatmentForm = new TreatmentReportForm();
             treatmentForm.ShowDialog();
             this.Close();
                 
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
