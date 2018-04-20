@@ -21,6 +21,7 @@ namespace Pets4U
         {
             string fname, lname, Gen, Position, address, createPass, confirmPass;
             int tel, emp_num, ID;
+            DateTime date;
 
             fname = txtFName.Text;
             lname = txtLName.Text;
@@ -34,7 +35,9 @@ namespace Pets4U
             emp_num = Convert.ToInt32(txtTel.Text);
             ID = Convert.ToInt32(txtTel.Text);
 
-            //method
+            date = dateTimePicker1.Value;
+
+            //call method
             //////////////////////////////////////////////////////
 
             /////////////////////////////////////////////////////

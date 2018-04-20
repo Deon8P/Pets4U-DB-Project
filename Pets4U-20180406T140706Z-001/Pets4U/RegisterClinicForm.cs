@@ -25,6 +25,25 @@ namespace Pets4U
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            int clinic_number, zip, tel, fax;
+            string street, city, state;
+
+
+            clinic_number = Convert.ToInt32(txtClinic_number);
+            zip = Convert.ToInt32(txtZip.Text);
+            tel = Convert.ToInt32(txtTel.Text);
+            fax = Convert.ToInt32(txtFax.Text);
+
+            street = txtStreet.Text;
+            city = txtStreet.Text;
+            state = txtStreet.Text;
+
+            //call method
+            /////////////////////////////////////////////////////////////
+
+            /////////////////////////////////////////////////////////////
+            LoginForm LoginForm = new LoginForm();
+            LoginForm.Show();
             this.Close();
         }
     }
