@@ -35,6 +35,11 @@ namespace Pets4U
             examDate = Convert.ToDateTime(txtDate.Text);
             examTime = Convert.ToDateTime(txtTime.Text);
 
+            //method
+            ////////////////////////////////////////////////////////////
+            
+            /////////////////////////////////////////////////////////////
+
 
 
             TreatmentReportForm treatmentForm = new TreatmentReportForm();
