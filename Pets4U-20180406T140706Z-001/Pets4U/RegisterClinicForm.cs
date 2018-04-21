@@ -25,6 +25,7 @@ namespace Pets4U
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            /*
             int clinic_number, zip, tel, fax;
             string street, city, state;
 
@@ -37,15 +38,14 @@ namespace Pets4U
             street = txtStreet.Text;
             city = txtStreet.Text;
             state = txtStreet.Text;
-
+            
             //call method
             /////////////////////////////////////////////////////////////
             Database_Class dbc = new Database_Class();
 
             dbc.insert_clinic(clinic_number, street, city, state, zip, tel, fax);
             /////////////////////////////////////////////////////////////
-            LoginForm LoginForm = new LoginForm();
-            LoginForm.Show();
+            */
             this.Close();
         }
     }

@@ -415,6 +415,7 @@
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(268, 22);
             this.txtState.TabIndex = 70;
+            this.txtState.Enter += new System.EventHandler(this.txtState_Enter);
             // 
             // txtCity
             // 
@@ -484,7 +485,7 @@
             this.mtxtTel.Location = new System.Drawing.Point(404, 663);
             this.mtxtTel.Mask = "000  000  0000";
             this.mtxtTel.Name = "mtxtTel";
-            this.mtxtTel.Size = new System.Drawing.Size(271, 22);
+            this.mtxtTel.Size = new System.Drawing.Size(171, 22);
             this.mtxtTel.TabIndex = 76;
             // 
             // txtZip

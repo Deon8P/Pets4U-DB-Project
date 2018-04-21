@@ -187,6 +187,47 @@ namespace Pets4U
             return true;
         }
 
+        public bool EmployeelogIn(string emp_num, string password, int ClinicNum)
+        {
+            bool login = false;
+
+            try
+            {
+                connection.Open();
+
+               string query = "Select Staff_Number, Staff_Password, Clinic_Number From staff";
+
+               MySqlCommand  cmd = new MySqlCommand(query, connection);
+
+               MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string emp_number = reader[0].ToString();
+                    string emp_password = reader[1].ToString();
+                    string clinic_num = reader[2].ToString();
+
+                    if (emp_number.Equals(emp_num) && emp_password.Equals(password))//&& (clinic_num == ClinicNum)
+                    {
+                        login = true;
+                        break;
+                    }
+                }
+
+                reader.Close();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return login;
+        }
+
         //==================//////////////////==================//
 
 

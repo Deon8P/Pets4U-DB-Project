@@ -42,6 +42,11 @@ namespace Pets4U
             }
         }
 
+        private void txtState_Enter(object sender, EventArgs e)
+        {
+            txtState.Clear();
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             flag = false;
@@ -93,7 +98,7 @@ namespace Pets4U
 
         private void RegisterEmployee_Load(object sender, EventArgs e)
         {
-            txtState.Text = "NA";
+            txtState.Text = "**";
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
 
@@ -124,14 +129,14 @@ namespace Pets4U
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            random = new Random();
+                random = new Random();
 
-            state = txtState.Text;
-            Gen = comboBox1.SelectedItem.ToString();
-            Position = comboBox2.SelectedItem.ToString();
-            int num = random.Next(100, 999);
-            emp_num = state.Substring(0,2).ToUpper() + Position.Substring(0, 1) + num;
-            txtEmp_num.Text = emp_num;
+                state = txtState.Text;
+                Gen = comboBox1.SelectedItem.ToString();
+                Position = comboBox2.SelectedItem.ToString();
+                int num = random.Next(100, 999);
+                emp_num = state.Substring(0, 2).ToUpper() + Position.Substring(0, 1) + num;
+                txtEmp_num.Text = emp_num;
         }
 
         private void txtConfirm_pass_Leave(object sender, EventArgs e)

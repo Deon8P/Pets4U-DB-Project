@@ -18,6 +18,8 @@ namespace Pets4U
             InitializeComponent();
         }
 
+        Database_Class database = new Database_Class();
+
         public bool flag = false;
         public MySqlConnection connection;
         public MySqlDataAdapter adapter;
@@ -40,9 +42,13 @@ namespace Pets4U
         private void button2_Click(object sender, EventArgs e)
         {
             flag = true;
-            SecretariesForm SecForm = new SecretariesForm();
-            SecForm.ShowDialog();
-            this.Close();
+
+            if (database.EmployeelogIn(txtEmpNum.Text, txtPass.Text, Convert.ToInt32(cmbClinickNum.SelectedValue.ToString())))
+            {
+                SecretariesForm SecForm = new SecretariesForm();
+                SecForm.ShowDialog();
+                this.Close();
+            }
         }
 
         private void btnRegClinic_Click(object sender, EventArgs e)
@@ -57,7 +63,6 @@ namespace Pets4U
         {
             try
             {
-                Database_Class database = new Database_Class();
                 connection = database.connection;
                 connection.Open();
 
@@ -67,9 +72,9 @@ namespace Pets4U
 
                 adapter.Fill(ds, "clinic");
 
-                comboBox1.DisplayMember = "Clinic_Number";
-                comboBox1.ValueMember = "Clinic_Number";
-                comboBox1.DataSource = ds.Tables["clinic"];
+                cmbClinickNum.DisplayMember = "Clinic_Number";
+                cmbClinickNum.ValueMember = "Clinic_Number";
+                cmbClinickNum.DataSource = ds.Tables["clinic"];
             }
             catch(System.Exception exc)
             {
