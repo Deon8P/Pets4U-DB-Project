@@ -17,8 +17,16 @@ namespace Pets4U
             InitializeComponent();
         }
 
+        public bool flag = false;
+
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            flag = true;
             string fname, lname, Gen, Position, address, createPass, confirmPass;
             int tel, emp_num, ID;
             DateTime date;
@@ -42,14 +50,16 @@ namespace Pets4U
 
             /////////////////////////////////////////////////////
 
-            LoginForm loginForm = new LoginForm();
-            loginForm.ShowDialog();
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void RegisterEmployee_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            if (flag == false)
+            {
+                LoginForm loginForm = new LoginForm();
+                loginForm.ShowDialog();
+            }
         }
     }
 }
