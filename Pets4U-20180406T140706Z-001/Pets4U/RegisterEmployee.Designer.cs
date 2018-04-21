@@ -240,25 +240,7 @@
             this.txtID.Size = new System.Drawing.Size(268, 22);
             this.txtID.TabIndex = 45;
             // 
-<<<<<<< HEAD
-=======
-            // txtGender
-            // 
-            this.txtGender.Location = new System.Drawing.Point(403, 405);
-            this.txtGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtGender.Name = "txtGender";
-            this.txtGender.Size = new System.Drawing.Size(268, 22);
-            this.txtGender.TabIndex = 46;
-            // 
-            // txtPosition
-            // 
-            this.txtPosition.Location = new System.Drawing.Point(403, 457);
-            this.txtPosition.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPosition.Name = "txtPosition";
-            this.txtPosition.Size = new System.Drawing.Size(268, 22);
-            this.txtPosition.TabIndex = 47;
-            // 
->>>>>>> 9881f834f5ad777c5e1dce6cf7b46ee2d0e4bb9f
+           
             // txtTel
             // 
             this.txtTel.Location = new System.Drawing.Point(403, 614);
@@ -299,14 +281,12 @@
             // 
             // txtAddress
             // 
-<<<<<<< HEAD
             this.txtAddress.Location = new System.Drawing.Point(302, 454);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Multiline = true;
-=======
+
             this.txtAddress.Location = new System.Drawing.Point(403, 560);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> 9881f834f5ad777c5e1dce6cf7b46ee2d0e4bb9f
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(268, 22);
             this.txtAddress.TabIndex = 53;
@@ -363,7 +343,6 @@
             this.button1.TabIndex = 59;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox5
             // 
@@ -442,13 +421,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(1477, 833);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-=======
             this.ClientSize = new System.Drawing.Size(1764, 1032);
->>>>>>> 9881f834f5ad777c5e1dce6cf7b46ee2d0e4bb9f
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
