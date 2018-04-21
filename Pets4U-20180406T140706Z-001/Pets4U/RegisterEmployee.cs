@@ -68,7 +68,7 @@ namespace Pets4U
             //call method
             //////////////////////////////////////////////////////
 
-            database.insert_staff(emp_num, lname, fname, street_address, city, state, 1900, tel, date, Gen, ID, Position, anualSalary, createPass, clinic_Number);
+            database.insert_staff(emp_num, lname, fname, street_address, city, state, 1900, tel, date.ToString(), Gen, ID, Position, anualSalary, createPass, clinic_Number);
             /////////////////////////////////////////////////////
 
             this.Close();
