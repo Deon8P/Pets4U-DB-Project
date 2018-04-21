@@ -29,7 +29,7 @@ namespace Pets4U
             string street, city, state;
 
 
-            clinic_number = Convert.ToInt32(txtClinic_number);
+            clinic_number = Convert.ToInt32(txtClinic_number.Text);
             zip = Convert.ToInt32(txtZip.Text);
             tel = Convert.ToInt32(txtTel.Text);
             fax = Convert.ToInt32(txtFax.Text);
@@ -40,7 +40,9 @@ namespace Pets4U
 
             //call method
             /////////////////////////////////////////////////////////////
+            Database_Class dbc = new Database_Class();
 
+            dbc.insert_clinic(clinic_number, street, city, state, zip, tel, fax);
             /////////////////////////////////////////////////////////////
             LoginForm LoginForm = new LoginForm();
             LoginForm.Show();
