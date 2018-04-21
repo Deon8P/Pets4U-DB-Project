@@ -240,7 +240,6 @@
             this.txtID.Size = new System.Drawing.Size(268, 22);
             this.txtID.TabIndex = 45;
             // 
-           
             // txtTel
             // 
             this.txtTel.Location = new System.Drawing.Point(403, 614);
@@ -254,6 +253,7 @@
             this.txtEmp_num.Location = new System.Drawing.Point(403, 670);
             this.txtEmp_num.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmp_num.Name = "txtEmp_num";
+            this.txtEmp_num.ReadOnly = true;
             this.txtEmp_num.Size = new System.Drawing.Size(268, 22);
             this.txtEmp_num.TabIndex = 50;
             // 
@@ -281,12 +281,9 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(302, 454);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAddress.Multiline = true;
-
             this.txtAddress.Location = new System.Drawing.Point(403, 560);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(268, 22);
             this.txtAddress.TabIndex = 53;
@@ -398,9 +395,9 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(302, 327);
+            this.comboBox1.Location = new System.Drawing.Point(403, 406);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 65;
             // 
             // comboBox2
@@ -411,9 +408,9 @@
             "Nurse",
             "Secretary",
             "Cleaners"});
-            this.comboBox2.Location = new System.Drawing.Point(302, 370);
+            this.comboBox2.Location = new System.Drawing.Point(403, 458);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 66;
             // 
             // RegisterEmployee
@@ -421,11 +418,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-
-            this.ClientSize = new System.Drawing.Size(1477, 833);
+            this.ClientSize = new System.Drawing.Size(1764, 1032);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.ClientSize = new System.Drawing.Size(1764, 1032);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -463,6 +458,7 @@
             this.Text = "RegisterEmployee";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RegisterEmployee_FormClosing);
+            this.Load += new System.EventHandler(this.RegisterEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
