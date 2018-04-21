@@ -17,8 +17,11 @@ namespace Pets4U
             InitializeComponent();
         }
 
+        public bool flag = false;
+
         private void button3_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             
             LoginForm loginForm = new LoginForm();
             loginForm.ShowDialog();
@@ -27,6 +30,14 @@ namespace Pets4U
         
         private void button1_Click(object sender, EventArgs e)
         {
+=======
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            flag = true;
+>>>>>>> 9881f834f5ad777c5e1dce6cf7b46ee2d0e4bb9f
             string fname, lname, Gen, Position, address, createPass, confirmPass;
             int tel, emp_num, ID;
             DateTime date;
@@ -53,6 +64,19 @@ namespace Pets4U
             //dbc.insert_staff(123, lname, fname, );
             /////////////////////////////////////////////////////
 
+<<<<<<< HEAD
+=======
+            this.Close();
+        }
+
+        private void RegisterEmployee_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (flag == false)
+            {
+                LoginForm loginForm = new LoginForm();
+                loginForm.ShowDialog();
+            }
+>>>>>>> 9881f834f5ad777c5e1dce6cf7b46ee2d0e4bb9f
         }
     }
 }
