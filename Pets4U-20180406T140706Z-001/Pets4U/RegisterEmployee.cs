@@ -36,8 +36,8 @@ namespace Pets4U
         private void button1_Click_1(object sender, EventArgs e)
         {
             flag = true;
-            string fname, lname, street_address, city;
-            int tel, ID, clinic_Number;
+            string fname, lname, street_address, city, tel, ID;
+            int clinic_Number;
             double anualSalary = 0;
             DateTime date;
 
@@ -45,8 +45,8 @@ namespace Pets4U
             fname = txtFName.Text;
             lname = txtLName.Text;
             street_address = txtAddress.Text;
-            tel = Convert.ToInt32(txtTel.Text);
-            ID = Convert.ToInt32(mtxtIDNum.Text);
+            tel = mtxtTel.Text;
+            ID = mtxtIDNum.Text;
             date = dateTimePicker1.Value;
             MessageBox.Show(date.ToString());
             clinic_Number = Convert.ToInt32(comboBox3.SelectedValue.ToString());

@@ -67,7 +67,7 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.mtxtIDNum = new System.Windows.Forms.MaskedTextBox();
-            this.txtTel = new System.Windows.Forms.TextBox();
+            this.mtxtTel = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -476,13 +476,13 @@
             this.mtxtIDNum.Size = new System.Drawing.Size(265, 22);
             this.mtxtIDNum.TabIndex = 75;
             // 
-            // txtTel
+            // mtxtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(403, 629);
-            this.txtTel.MaxLength = 10;
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(268, 22);
-            this.txtTel.TabIndex = 76;
+            this.mtxtTel.Location = new System.Drawing.Point(400, 629);
+            this.mtxtTel.Mask = "000  000  0000";
+            this.mtxtTel.Name = "mtxtTel";
+            this.mtxtTel.Size = new System.Drawing.Size(271, 22);
+            this.mtxtTel.TabIndex = 76;
             // 
             // RegisterEmployee
             // 
@@ -490,7 +490,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1764, 1032);
-            this.Controls.Add(this.txtTel);
+            this.Controls.Add(this.mtxtTel);
             this.Controls.Add(this.mtxtIDNum);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label16);
@@ -589,6 +589,6 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.MaskedTextBox mtxtIDNum;
-        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.MaskedTextBox mtxtTel;
     }
 }
