@@ -33,6 +33,15 @@ namespace Pets4U
             this.Close();
         }
 
+        private void mtxtIDNum_Leave(object sender, EventArgs e)
+        {
+            if (database.validIDnumber(mtxtIDNum.Text) != true)
+            {
+                mtxtIDNum.Clear();
+                mtxtIDNum.Focus();
+            }
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             flag = false;

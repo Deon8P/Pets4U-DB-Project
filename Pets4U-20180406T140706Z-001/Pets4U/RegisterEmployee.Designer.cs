@@ -477,6 +477,7 @@
             this.mtxtIDNum.Name = "mtxtIDNum";
             this.mtxtIDNum.Size = new System.Drawing.Size(172, 22);
             this.mtxtIDNum.TabIndex = 75;
+            this.mtxtIDNum.Leave += new System.EventHandler(this.mtxtIDNum_Leave);
             // 
             // mtxtTel
             // 

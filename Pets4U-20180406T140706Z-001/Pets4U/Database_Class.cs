@@ -10,9 +10,6 @@ using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
-     
-    
-
     class Database_Class
     {
         public MySqlConnection connection = new MySqlConnection("datasource=den1.mysql2.gear.host; port=3306; Initial Catalog='petclientdb1';username='petclientdb1';password='Ty7H~_KGS4Zf';");
@@ -141,10 +138,58 @@ namespace Pets4U
 
         //==================//_____Brandon_____//==================//
 
+        public bool validIDnumber(string idNum)
+        {
+            string[] arrayID = new string[13];
+
+            int odd = 0;
+            int even = 0;
+            int controlValue = 0;
+            int total = 0;
+
+            for (int k = 0; k < 13; k++)
+            {
+                arrayID[k] = idNum.Substring(k, 1);
+            }
+
+            for (int i = 0; i < 6; i++)
+            {
+                odd += int.Parse(arrayID[2 * i].ToString());
+            }
+
+            for (int i = 0; i < 6; i++)
+            {
+                even = even * 10 + int.Parse(arrayID[2 * i + 1].ToString());
+            }
+
+            even *= 2;
+
+            do
+            {
+                total += even % 10;
+                even = even / 10;
+            }
+            while (even > 0);
+
+            total += odd;
+
+            controlValue = 10 - (total % 10);
+
+            if (controlValue == 10)
+                controlValue = 0;
+
+            if (controlValue != Convert.ToInt32(idNum.Substring(12, 1)))
+            {
+                MessageBox.Show("Invalid IDNumber");
+                return false;
+            }
+
+            return true;
+        }
 
         //==================//////////////////==================//
-        
-        
+
+
         //==================//_____Leonard//==================//
 
 
