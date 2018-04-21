@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
@@ -16,11 +17,16 @@ namespace Pets4U
         {
             InitializeComponent();
         }
+        Database_Class database = new Database_Class();
+
+        public MySqlConnection connection;
+        public MySqlDataAdapter adapter;
+        public DataSet ds;
+        public string query;
 
         public bool flag = false;
-        public string emp_num;
-        public string Position;
-        public string Gen;
+        public string emp_num = "";
+        public string Position, createPass, confirmPass, Gen, state;
         public Random random;
 
         private void button3_Click(object sender, EventArgs e)
@@ -31,26 +37,38 @@ namespace Pets4U
         private void button1_Click(object sender, EventArgs e)
         { 
             flag = true;
-            string fname, lname, address, createPass, confirmPass;
-            int tel, ID;
+            string fname, lname, street_address, city;
+            int tel, ID, clinic_Number;
+            double anualSalary = 0;
             DateTime date;
 
+            city = txtCity.Text;
             fname = txtFName.Text;
             lname = txtLName.Text;
-            address = txtAddress.Text;
-            createPass = txtCreatePass.Text;
-            confirmPass = txtConfirm_pass.Text;
-
+            street_address = txtAddress.Text;
             tel = Convert.ToInt32(txtTel.Text);
-            ID = Convert.ToInt32(txtTel.Text);
+            ID = Convert.ToInt32(txtID.Text);
 
             date = dateTimePicker1.Value;
+            clinic_Number = Convert.ToInt32(comboBox3.SelectedValue.ToString());
+
+            int code = comboBox2.SelectedIndex;
+            switch(code)
+            {
+                case 0 : anualSalary = 960000;
+                         break;
+                case 1 : anualSalary = 300000;
+                         break;
+                case 2 : anualSalary = 120000;
+                         break;
+                case 3 : anualSalary = 60000;
+                         break;
+            }
 
             //call method
             //////////////////////////////////////////////////////
-            Database_Class dbc = new Database_Class();
 
-            //dbc.insert_staff(123, lname, fname, );
+            database.insert_staff(emp_num, lname, fname, street_address, city, state, 1900, tel, date, Gen, ID, Position, anualSalary, createPass, clinic_Number);
             /////////////////////////////////////////////////////
 
             this.Close();
@@ -67,19 +85,59 @@ namespace Pets4U
 
         private void RegisterEmployee_Load(object sender, EventArgs e)
         {
+            txtState.Text = "NA";
             comboBox1.SelectedIndex = 0;
-            comboBox2.SelectedIndex = 0;            
+            comboBox2.SelectedIndex = 0;
+
+            try
+            {
+                connection = database.connection;
+                connection.Open();
+
+                adapter = new MySqlDataAdapter("SELECT Clinic_Number FROM clinic", connection);
+
+                ds = new DataSet();
+
+                adapter.Fill(ds, "clinic");
+
+                comboBox3.DisplayMember = "Clinic_Number";
+                comboBox3.ValueMember = "Clinic_Number";
+                comboBox3.DataSource = ds.Tables["clinic"];
+            }
+            catch (System.Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             random = new Random();
 
+            state = txtState.Text;
             Gen = comboBox1.SelectedItem.ToString();
             Position = comboBox2.SelectedItem.ToString();
             int num = random.Next(100, 999);
-            emp_num = Position.Substring(0, 1) + num;
+            emp_num = state.Substring(0,2).ToUpper() + Position.Substring(0, 1) + num;
             txtEmp_num.Text = emp_num;
+        }
+
+        private void txtConfirm_pass_Leave(object sender, EventArgs e)
+        {
+            createPass = txtCreatePass.Text;
+            confirmPass = txtConfirm_pass.Text;
+
+            if (!createPass.Equals(confirmPass))
+            {
+                MessageBox.Show("Password Mismatch");
+                txtCreatePass.Clear();
+                txtConfirm_pass.Clear();
+                txtCreatePass.Focus();
+            }
         }
     }
 }

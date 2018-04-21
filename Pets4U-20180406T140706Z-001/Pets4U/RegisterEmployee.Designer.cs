@@ -62,6 +62,12 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txtState = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -188,18 +194,18 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(228, 545);
+            this.label6.Location = new System.Drawing.Point(152, 491);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 40);
+            this.label6.Size = new System.Drawing.Size(180, 40);
             this.label6.TabIndex = 40;
-            this.label6.Text = "Address:";
+            this.label6.Text = "Street Address:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(119, 599);
+            this.label7.Location = new System.Drawing.Point(108, 611);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(224, 40);
             this.label7.TabIndex = 41;
@@ -210,7 +216,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(221, 442);
+            this.label8.Location = new System.Drawing.Point(211, 661);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(112, 40);
             this.label8.TabIndex = 42;
@@ -242,7 +248,7 @@
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(403, 614);
+            this.txtTel.Location = new System.Drawing.Point(403, 629);
             this.txtTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(268, 22);
@@ -250,7 +256,7 @@
             // 
             // txtEmp_num
             // 
-            this.txtEmp_num.Location = new System.Drawing.Point(403, 670);
+            this.txtEmp_num.Location = new System.Drawing.Point(403, 733);
             this.txtEmp_num.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmp_num.Name = "txtEmp_num";
             this.txtEmp_num.ReadOnly = true;
@@ -262,7 +268,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(173, 490);
+            this.label9.Location = new System.Drawing.Point(168, 440);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(164, 40);
             this.label9.TabIndex = 51;
@@ -273,7 +279,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(123, 655);
+            this.label10.Location = new System.Drawing.Point(122, 718);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(221, 40);
             this.label10.TabIndex = 52;
@@ -281,7 +287,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(403, 560);
+            this.txtAddress.Location = new System.Drawing.Point(403, 506);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
@@ -293,7 +299,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(135, 768);
+            this.label11.Location = new System.Drawing.Point(132, 822);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(202, 40);
             this.label11.TabIndex = 55;
@@ -304,7 +310,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(116, 825);
+            this.label12.Location = new System.Drawing.Point(113, 879);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(222, 40);
             this.label12.TabIndex = 56;
@@ -312,7 +318,7 @@
             // 
             // txtCreatePass
             // 
-            this.txtCreatePass.Location = new System.Drawing.Point(403, 783);
+            this.txtCreatePass.Location = new System.Drawing.Point(400, 837);
             this.txtCreatePass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCreatePass.Name = "txtCreatePass";
             this.txtCreatePass.Size = new System.Drawing.Size(268, 22);
@@ -320,11 +326,12 @@
             // 
             // txtConfirm_pass
             // 
-            this.txtConfirm_pass.Location = new System.Drawing.Point(403, 839);
+            this.txtConfirm_pass.Location = new System.Drawing.Point(400, 893);
             this.txtConfirm_pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtConfirm_pass.Name = "txtConfirm_pass";
             this.txtConfirm_pass.Size = new System.Drawing.Size(268, 22);
             this.txtConfirm_pass.TabIndex = 58;
+            this.txtConfirm_pass.Leave += new System.EventHandler(this.txtConfirm_pass_Leave);
             // 
             // button1
             // 
@@ -383,7 +390,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(403, 503);
+            this.dateTimePicker1.Location = new System.Drawing.Point(403, 453);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(268, 22);
@@ -408,11 +415,73 @@
             "Nurse",
             "Secretary",
             "Cleaners"});
-            this.comboBox2.Location = new System.Drawing.Point(403, 458);
+            this.comboBox2.Location = new System.Drawing.Point(403, 676);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 66;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // txtState
+            // 
+            this.txtState.Location = new System.Drawing.Point(403, 589);
+            this.txtState.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtState.Name = "txtState";
+            this.txtState.Size = new System.Drawing.Size(268, 22);
+            this.txtState.TabIndex = 70;
+            // 
+            // txtCity
+            // 
+            this.txtCity.Location = new System.Drawing.Point(403, 549);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(268, 22);
+            this.txtCity.TabIndex = 69;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(249, 571);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(85, 40);
+            this.label13.TabIndex = 68;
+            this.label13.Text = "State :";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(258, 531);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(74, 40);
+            this.label14.TabIndex = 67;
+            this.label14.Text = "City :";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Vet",
+            "Nurse",
+            "Secretary",
+            "Cleaners"});
+            this.comboBox3.Location = new System.Drawing.Point(403, 786);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 24);
+            this.comboBox3.TabIndex = 74;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(160, 770);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(183, 40);
+            this.label16.TabIndex = 73;
+            this.label16.Text = "Clinic Number :";
             // 
             // RegisterEmployee
             // 
@@ -420,6 +489,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1764, 1032);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.txtState);
+            this.Controls.Add(this.txtCity);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dateTimePicker1);
@@ -508,5 +583,11 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox txtState;
+        private System.Windows.Forms.TextBox txtCity;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label16;
     }
 }
