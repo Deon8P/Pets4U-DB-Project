@@ -273,7 +273,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(403, 506);
+            this.txtAddress.Location = new System.Drawing.Point(401, 506);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
@@ -410,7 +410,7 @@
             // 
             // txtState
             // 
-            this.txtState.Location = new System.Drawing.Point(400, 586);
+            this.txtState.Location = new System.Drawing.Point(403, 586);
             this.txtState.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(268, 22);
@@ -418,7 +418,7 @@
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(400, 549);
+            this.txtCity.Location = new System.Drawing.Point(401, 549);
             this.txtCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(268, 22);
@@ -475,12 +475,12 @@
             this.mtxtIDNum.Location = new System.Drawing.Point(403, 352);
             this.mtxtIDNum.Mask = "0000000000000";
             this.mtxtIDNum.Name = "mtxtIDNum";
-            this.mtxtIDNum.Size = new System.Drawing.Size(265, 22);
+            this.mtxtIDNum.Size = new System.Drawing.Size(172, 22);
             this.mtxtIDNum.TabIndex = 75;
             // 
             // mtxtTel
             // 
-            this.mtxtTel.Location = new System.Drawing.Point(401, 663);
+            this.mtxtTel.Location = new System.Drawing.Point(404, 663);
             this.mtxtTel.Mask = "000  000  0000";
             this.mtxtTel.Name = "mtxtTel";
             this.mtxtTel.Size = new System.Drawing.Size(271, 22);
@@ -488,7 +488,7 @@
             // 
             // txtZip
             // 
-            this.txtZip.Location = new System.Drawing.Point(400, 620);
+            this.txtZip.Location = new System.Drawing.Point(403, 620);
             this.txtZip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtZip.Name = "txtZip";
             this.txtZip.Size = new System.Drawing.Size(268, 22);
