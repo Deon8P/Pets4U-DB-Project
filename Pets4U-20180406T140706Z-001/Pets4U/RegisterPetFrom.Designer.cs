@@ -73,7 +73,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1601, 92);
             this.pictureBox1.TabIndex = 3;
@@ -83,7 +83,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-2, 85);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(642, 13);
             this.pictureBox2.TabIndex = 33;
@@ -93,7 +93,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(626, 85);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(642, 13);
             this.pictureBox3.TabIndex = 34;
@@ -103,7 +103,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(1153, 85);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(642, 13);
             this.pictureBox4.TabIndex = 35;
@@ -184,7 +184,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(1139, 391);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
             this.dateTimePicker1.TabIndex = 42;
@@ -205,7 +205,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(1139, 427);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(202, 20);
             this.dateTimePicker2.TabIndex = 44;
@@ -225,7 +225,7 @@
             // txtPet_name
             // 
             this.txtPet_name.Location = new System.Drawing.Point(1139, 220);
-            this.txtPet_name.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPet_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPet_name.Name = "txtPet_name";
             this.txtPet_name.Size = new System.Drawing.Size(202, 20);
             this.txtPet_name.TabIndex = 46;
@@ -233,7 +233,7 @@
             // txtPet_num
             // 
             this.txtPet_num.Location = new System.Drawing.Point(1139, 263);
-            this.txtPet_num.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPet_num.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPet_num.Name = "txtPet_num";
             this.txtPet_num.Size = new System.Drawing.Size(202, 20);
             this.txtPet_num.TabIndex = 47;
@@ -241,7 +241,7 @@
             // txtPet_type
             // 
             this.txtPet_type.Location = new System.Drawing.Point(1139, 306);
-            this.txtPet_type.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPet_type.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPet_type.Name = "txtPet_type";
             this.txtPet_type.Size = new System.Drawing.Size(202, 20);
             this.txtPet_type.TabIndex = 48;
@@ -249,7 +249,7 @@
             // txtDescription
             // 
             this.txtDescription.Location = new System.Drawing.Point(1139, 346);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(202, 20);
             this.txtDescription.TabIndex = 49;
@@ -257,7 +257,7 @@
             // txtStatus
             // 
             this.txtStatus.Location = new System.Drawing.Point(1139, 468);
-            this.txtStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.txtStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(202, 20);
             this.txtStatus.TabIndex = 50;
@@ -337,7 +337,7 @@
             // txtOwn_FName
             // 
             this.txtOwn_FName.Location = new System.Drawing.Point(410, 218);
-            this.txtOwn_FName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOwn_FName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOwn_FName.Name = "txtOwn_FName";
             this.txtOwn_FName.Size = new System.Drawing.Size(202, 20);
             this.txtOwn_FName.TabIndex = 57;
@@ -345,7 +345,7 @@
             // txtOwn_LName
             // 
             this.txtOwn_LName.Location = new System.Drawing.Point(410, 261);
-            this.txtOwn_LName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOwn_LName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOwn_LName.Name = "txtOwn_LName";
             this.txtOwn_LName.Size = new System.Drawing.Size(202, 20);
             this.txtOwn_LName.TabIndex = 58;
@@ -353,7 +353,7 @@
             // txtOwn_Address
             // 
             this.txtOwn_Address.Location = new System.Drawing.Point(410, 303);
-            this.txtOwn_Address.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOwn_Address.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOwn_Address.Name = "txtOwn_Address";
             this.txtOwn_Address.Size = new System.Drawing.Size(202, 20);
             this.txtOwn_Address.TabIndex = 59;
@@ -361,7 +361,7 @@
             // txtOwn_ID
             // 
             this.txtOwn_ID.Location = new System.Drawing.Point(410, 349);
-            this.txtOwn_ID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOwn_ID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOwn_ID.Name = "txtOwn_ID";
             this.txtOwn_ID.Size = new System.Drawing.Size(202, 20);
             this.txtOwn_ID.TabIndex = 60;
@@ -369,7 +369,7 @@
             // txtOwn_tel
             // 
             this.txtOwn_tel.Location = new System.Drawing.Point(410, 391);
-            this.txtOwn_tel.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOwn_tel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOwn_tel.Name = "txtOwn_tel";
             this.txtOwn_tel.Size = new System.Drawing.Size(202, 20);
             this.txtOwn_tel.TabIndex = 61;
@@ -382,7 +382,7 @@
             this.button5.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Location = new System.Drawing.Point(1341, 25);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(125, 37);
             this.button5.TabIndex = 62;
@@ -398,7 +398,7 @@
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(1176, 522);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 37);
             this.button1.TabIndex = 63;
@@ -410,7 +410,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(94, 427);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(928, 481);
             this.pictureBox5.TabIndex = 64;
@@ -455,7 +455,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox5);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RegisterPetFrom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "RegisterPetFrom";

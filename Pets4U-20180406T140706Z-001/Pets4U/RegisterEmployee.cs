@@ -19,14 +19,22 @@ namespace Pets4U
 
         private void button3_Click(object sender, EventArgs e)
         {
+            
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+            this.Close();
+        }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
             string fname, lname, Gen, Position, address, createPass, confirmPass;
             int tel, emp_num, ID;
             DateTime date;
 
             fname = txtFName.Text;
             lname = txtLName.Text;
-            Gen = txtGender.Text;
-            Position = txtPosition.Text;
+            //Gen = txtGender.Text;
+            //Position = txtPosition.Text;
             address = txtAddress.Text;
             createPass = txtCreatePass.Text;
             confirmPass = txtConfirm_pass.Text;
@@ -37,18 +45,13 @@ namespace Pets4U
 
             date = dateTimePicker1.Value;
 
+            MessageBox.Show(date.ToString());
             //call method
             //////////////////////////////////////////////////////
+            Database_Class dbc = new Database_Class();
 
+            //dbc.insert_staff(123, lname, fname, );
             /////////////////////////////////////////////////////
-
-            LoginForm loginForm = new LoginForm();
-            loginForm.ShowDialog();
-            this.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
 
         }
     }

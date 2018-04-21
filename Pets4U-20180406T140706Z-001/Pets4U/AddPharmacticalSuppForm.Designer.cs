@@ -45,8 +45,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtDrugNum = new System.Windows.Forms.TextBox();
-            this.txtDrugName = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -65,40 +65,36 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1601, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(2135, 113);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-3, 79);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(-4, 97);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(642, 13);
+            this.pictureBox2.Size = new System.Drawing.Size(856, 16);
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(623, 79);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(831, 97);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(642, 13);
+            this.pictureBox3.Size = new System.Drawing.Size(856, 16);
             this.pictureBox3.TabIndex = 35;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1218, 79);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(1624, 97);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(642, 13);
+            this.pictureBox4.Size = new System.Drawing.Size(856, 16);
             this.pictureBox4.TabIndex = 36;
             this.pictureBox4.TabStop = false;
             // 
@@ -109,10 +105,9 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(1343, 22);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Location = new System.Drawing.Point(1791, 27);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 37);
+            this.button5.Size = new System.Drawing.Size(167, 45);
             this.button5.TabIndex = 63;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
@@ -122,10 +117,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Sitka Banner", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(159, 119);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(212, 147);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(387, 50);
+            this.label9.Size = new System.Drawing.Size(477, 62);
             this.label9.TabIndex = 64;
             this.label9.Text = "Add Pharmacetical Supplies";
             // 
@@ -134,10 +128,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(124, 213);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(165, 262);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(135, 32);
+            this.label10.Size = new System.Drawing.Size(171, 40);
             this.label10.TabIndex = 65;
             this.label10.Text = "Drug Number:";
             // 
@@ -146,10 +139,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(143, 258);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(191, 318);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 32);
+            this.label1.Size = new System.Drawing.Size(145, 40);
             this.label1.TabIndex = 66;
             this.label1.Text = "Drug Name:";
             // 
@@ -158,10 +150,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(98, 306);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(130, 377);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 32);
+            this.label2.Size = new System.Drawing.Size(206, 40);
             this.label2.TabIndex = 67;
             this.label2.Text = "Drug Description:";
             // 
@@ -170,10 +161,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(176, 351);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(235, 432);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 32);
+            this.label3.Size = new System.Drawing.Size(101, 40);
             this.label3.TabIndex = 68;
             this.label3.Text = "Dosage:";
             // 
@@ -182,10 +172,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(23, 400);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(31, 492);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 32);
+            this.label4.Size = new System.Drawing.Size(305, 40);
             this.label4.TabIndex = 69;
             this.label4.Text = "Method Of Administration:";
             // 
@@ -194,10 +183,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(93, 449);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(124, 553);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(169, 32);
+            this.label5.Size = new System.Drawing.Size(212, 40);
             this.label5.TabIndex = 70;
             this.label5.Text = "Quantity In Stock:";
             // 
@@ -206,10 +194,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(124, 505);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(166, 621);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 32);
+            this.label6.Size = new System.Drawing.Size(170, 40);
             this.label6.TabIndex = 71;
             this.label6.Text = "Reorder Level:";
             // 
@@ -218,10 +205,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(86, 554);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(114, 682);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(166, 32);
+            this.label7.Size = new System.Drawing.Size(211, 40);
             this.label7.TabIndex = 72;
             this.label7.Text = "Reorder Quantity:";
             // 
@@ -230,10 +216,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(143, 605);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(191, 745);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 32);
+            this.label8.Size = new System.Drawing.Size(132, 40);
             this.label8.TabIndex = 73;
             this.label8.Text = "Drug Cost:";
             // 
@@ -244,103 +229,91 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(210, 701);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(280, 863);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 37);
+            this.button1.Size = new System.Drawing.Size(167, 45);
             this.button1.TabIndex = 74;
             this.button1.Text = "Place Order";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // txtDrugNum
+            // textBox6
             // 
-            this.txtDrugNum.Location = new System.Drawing.Point(299, 225);
-            this.txtDrugNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtDrugNum.Name = "txtDrugNum";
-            this.txtDrugNum.Size = new System.Drawing.Size(202, 20);
-            this.txtDrugNum.TabIndex = 75;
+            this.textBox6.Location = new System.Drawing.Point(399, 277);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(268, 22);
+            this.textBox6.TabIndex = 75;
             // 
-            // txtDrugName
+            // textBox1
             // 
-            this.txtDrugName.Location = new System.Drawing.Point(299, 271);
-            this.txtDrugName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtDrugName.Name = "txtDrugName";
-            this.txtDrugName.Size = new System.Drawing.Size(202, 20);
-            this.txtDrugName.TabIndex = 76;
+            this.textBox1.Location = new System.Drawing.Point(399, 333);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(268, 22);
+            this.textBox1.TabIndex = 76;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(299, 318);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Location = new System.Drawing.Point(399, 392);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 20);
+            this.textBox2.Size = new System.Drawing.Size(268, 22);
             this.textBox2.TabIndex = 77;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(299, 363);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Location = new System.Drawing.Point(399, 447);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(202, 20);
+            this.textBox3.Size = new System.Drawing.Size(268, 22);
             this.textBox3.TabIndex = 78;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(299, 412);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Location = new System.Drawing.Point(399, 507);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 20);
+            this.textBox4.Size = new System.Drawing.Size(268, 22);
             this.textBox4.TabIndex = 79;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(299, 462);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Location = new System.Drawing.Point(399, 568);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(202, 20);
+            this.textBox5.Size = new System.Drawing.Size(268, 22);
             this.textBox5.TabIndex = 80;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(299, 517);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox7.Location = new System.Drawing.Point(399, 636);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(202, 20);
+            this.textBox7.Size = new System.Drawing.Size(268, 22);
             this.textBox7.TabIndex = 81;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(299, 566);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox8.Location = new System.Drawing.Point(399, 697);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(202, 20);
+            this.textBox8.Size = new System.Drawing.Size(268, 22);
             this.textBox8.TabIndex = 82;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(299, 618);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox9.Location = new System.Drawing.Point(399, 760);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(202, 20);
+            this.textBox9.Size = new System.Drawing.Size(268, 22);
             this.textBox9.TabIndex = 83;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(573, 239);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(764, 294);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(929, 570);
+            this.pictureBox5.Size = new System.Drawing.Size(1239, 702);
             this.pictureBox5.TabIndex = 84;
             this.pictureBox5.TabStop = false;
             // 
             // AddPharmacticalSuppForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1028, 749);
+            this.ClientSize = new System.Drawing.Size(1924, 1043);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
@@ -349,8 +322,8 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.txtDrugName);
-            this.Controls.Add(this.txtDrugNum);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -367,7 +340,6 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddPharmacticalSuppForm";
             this.Text = "AddPharmacticalSuppForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -400,8 +372,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txtDrugNum;
-        private System.Windows.Forms.TextBox txtDrugName;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;

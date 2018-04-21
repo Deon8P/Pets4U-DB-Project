@@ -42,13 +42,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtItem_num = new System.Windows.Forms.TextBox();
-            this.txtItemName = new System.Windows.Forms.TextBox();
-            this.txtItemDescription = new System.Windows.Forms.TextBox();
-            this.cmbQuantity = new System.Windows.Forms.ComboBox();
-            this.cmbReorderLevel = new System.Windows.Forms.ComboBox();
-            this.cmbReorderQuantity = new System.Windows.Forms.ComboBox();
-            this.txtItemCost = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -63,40 +63,36 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1601, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(2135, 113);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-4, 84);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(-5, 103);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(642, 13);
+            this.pictureBox2.Size = new System.Drawing.Size(856, 16);
             this.pictureBox2.TabIndex = 36;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(631, 84);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(841, 103);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(642, 13);
+            this.pictureBox3.Size = new System.Drawing.Size(856, 16);
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1217, 84);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Location = new System.Drawing.Point(1623, 103);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(642, 13);
+            this.pictureBox4.Size = new System.Drawing.Size(856, 16);
             this.pictureBox4.TabIndex = 38;
             this.pictureBox4.TabStop = false;
             // 
@@ -107,10 +103,9 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(1366, 27);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(1821, 33);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 37);
+            this.button5.Size = new System.Drawing.Size(167, 45);
             this.button5.TabIndex = 65;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
@@ -121,10 +116,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Sitka Banner", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(74, 127);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(98, 156);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(375, 50);
+            this.label9.Size = new System.Drawing.Size(462, 62);
             this.label9.TabIndex = 66;
             this.label9.Text = "Add Non-Surgical Supplies";
             // 
@@ -133,10 +127,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(70, 219);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(93, 269);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 32);
+            this.label10.Size = new System.Drawing.Size(166, 40);
             this.label10.TabIndex = 67;
             this.label10.Text = "Item Number:";
             // 
@@ -145,10 +138,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(89, 264);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(119, 325);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 32);
+            this.label1.Size = new System.Drawing.Size(140, 40);
             this.label1.TabIndex = 68;
             this.label1.Text = "Item Name:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -158,10 +150,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(100, 355);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(133, 437);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 32);
+            this.label3.Size = new System.Drawing.Size(126, 40);
             this.label3.TabIndex = 70;
             this.label3.Text = "Quantity :";
             // 
@@ -170,10 +161,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(44, 304);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(58, 374);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 32);
+            this.label2.Size = new System.Drawing.Size(201, 40);
             this.label2.TabIndex = 71;
             this.label2.Text = "Item Description:";
             // 
@@ -182,10 +172,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(67, 410);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(89, 505);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 32);
+            this.label4.Size = new System.Drawing.Size(170, 40);
             this.label4.TabIndex = 72;
             this.label4.Text = "Reorder Level:";
             // 
@@ -194,10 +183,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(36, 462);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(48, 569);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 32);
+            this.label6.Size = new System.Drawing.Size(211, 40);
             this.label6.TabIndex = 73;
             this.label6.Text = "Reorder Quantity:";
             // 
@@ -206,40 +194,36 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(100, 513);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(133, 631);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 32);
+            this.label5.Size = new System.Drawing.Size(127, 40);
             this.label5.TabIndex = 74;
             this.label5.Text = "Item Cost:";
             // 
-            // txtItem_num
+            // textBox6
             // 
-            this.txtItem_num.Location = new System.Drawing.Point(251, 233);
-            this.txtItem_num.Margin = new System.Windows.Forms.Padding(2);
-            this.txtItem_num.Name = "txtItem_num";
-            this.txtItem_num.Size = new System.Drawing.Size(202, 20);
-            this.txtItem_num.TabIndex = 78;
+            this.textBox6.Location = new System.Drawing.Point(335, 287);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(268, 22);
+            this.textBox6.TabIndex = 78;
             // 
-            // txtItemName
+            // textBox1
             // 
-            this.txtItemName.Location = new System.Drawing.Point(251, 276);
-            this.txtItemName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtItemName.Name = "txtItemName";
-            this.txtItemName.Size = new System.Drawing.Size(202, 20);
-            this.txtItemName.TabIndex = 79;
+            this.textBox1.Location = new System.Drawing.Point(335, 340);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(268, 22);
+            this.textBox1.TabIndex = 79;
             // 
-            // txtItemDescription
+            // textBox2
             // 
-            this.txtItemDescription.Location = new System.Drawing.Point(251, 316);
-            this.txtItemDescription.Margin = new System.Windows.Forms.Padding(2);
-            this.txtItemDescription.Name = "txtItemDescription";
-            this.txtItemDescription.Size = new System.Drawing.Size(202, 20);
-            this.txtItemDescription.TabIndex = 80;
+            this.textBox2.Location = new System.Drawing.Point(335, 389);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(268, 22);
+            this.textBox2.TabIndex = 80;
             // 
-            // cmbQuantity
+            // comboBox1
             // 
-            this.cmbQuantity.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -250,8 +234,8 @@
             "8",
             "9",
             "10"});
-            this.cmbQuantity.FormattingEnabled = true;
-            this.cmbQuantity.Items.AddRange(new object[] {
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -262,15 +246,14 @@
             "8",
             "9",
             "10"});
-            this.cmbQuantity.Location = new System.Drawing.Point(251, 367);
-            this.cmbQuantity.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbQuantity.Name = "cmbQuantity";
-            this.cmbQuantity.Size = new System.Drawing.Size(202, 21);
-            this.cmbQuantity.TabIndex = 81;
+            this.comboBox1.Location = new System.Drawing.Point(335, 452);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(268, 24);
+            this.comboBox1.TabIndex = 81;
             // 
-            // cmbReorderLevel
+            // comboBox2
             // 
-            this.cmbReorderLevel.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -281,21 +264,20 @@
             "8",
             "9",
             "10"});
-            this.cmbReorderLevel.FormattingEnabled = true;
-            this.cmbReorderLevel.Items.AddRange(new object[] {
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4"});
-            this.cmbReorderLevel.Location = new System.Drawing.Point(251, 423);
-            this.cmbReorderLevel.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbReorderLevel.Name = "cmbReorderLevel";
-            this.cmbReorderLevel.Size = new System.Drawing.Size(202, 21);
-            this.cmbReorderLevel.TabIndex = 82;
+            this.comboBox2.Location = new System.Drawing.Point(335, 521);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(268, 24);
+            this.comboBox2.TabIndex = 82;
             // 
-            // cmbReorderQuantity
+            // comboBox3
             // 
-            this.cmbReorderQuantity.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboBox3.AutoCompleteCustomSource.AddRange(new string[] {
             "1",
             "2",
             "3",
@@ -306,8 +288,8 @@
             "8",
             "9",
             "10"});
-            this.cmbReorderQuantity.FormattingEnabled = true;
-            this.cmbReorderQuantity.Items.AddRange(new object[] {
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -318,19 +300,17 @@
             "8",
             "9",
             "10"});
-            this.cmbReorderQuantity.Location = new System.Drawing.Point(251, 474);
-            this.cmbReorderQuantity.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbReorderQuantity.Name = "cmbReorderQuantity";
-            this.cmbReorderQuantity.Size = new System.Drawing.Size(202, 21);
-            this.cmbReorderQuantity.TabIndex = 83;
+            this.comboBox3.Location = new System.Drawing.Point(335, 584);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(268, 24);
+            this.comboBox3.TabIndex = 83;
             // 
-            // txtItemCost
+            // textBox3
             // 
-            this.txtItemCost.Location = new System.Drawing.Point(251, 525);
-            this.txtItemCost.Margin = new System.Windows.Forms.Padding(2);
-            this.txtItemCost.Name = "txtItemCost";
-            this.txtItemCost.Size = new System.Drawing.Size(202, 20);
-            this.txtItemCost.TabIndex = 84;
+            this.textBox3.Location = new System.Drawing.Point(335, 646);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(268, 22);
+            this.textBox3.TabIndex = 84;
             // 
             // button1
             // 
@@ -339,51 +319,46 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(287, 583);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(383, 717);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 37);
+            this.button1.Size = new System.Drawing.Size(167, 45);
             this.button1.TabIndex = 85;
             this.button1.Text = "Place Order";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(392, 316);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Location = new System.Drawing.Point(523, 389);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(796, 513);
+            this.pictureBox5.Size = new System.Drawing.Size(1061, 631);
             this.pictureBox5.TabIndex = 86;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1078, 102);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Location = new System.Drawing.Point(1438, 125);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(458, 418);
+            this.pictureBox6.Size = new System.Drawing.Size(611, 515);
             this.pictureBox6.TabIndex = 87;
             this.pictureBox6.TabStop = false;
             // 
             // AddNonSurgicalSuppForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1370, 686);
+            this.ClientSize = new System.Drawing.Size(1924, 1043);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtItemCost);
-            this.Controls.Add(this.cmbReorderQuantity);
-            this.Controls.Add(this.cmbReorderLevel);
-            this.Controls.Add(this.cmbQuantity);
-            this.Controls.Add(this.txtItemDescription);
-            this.Controls.Add(this.txtItemName);
-            this.Controls.Add(this.txtItem_num);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -398,7 +373,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox5);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddNonSurgicalSuppForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "AddNonSurgicalSuppForm";
@@ -430,13 +404,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtItem_num;
-        private System.Windows.Forms.TextBox txtItemName;
-        private System.Windows.Forms.TextBox txtItemDescription;
-        private System.Windows.Forms.ComboBox cmbQuantity;
-        private System.Windows.Forms.ComboBox cmbReorderLevel;
-        private System.Windows.Forms.ComboBox cmbReorderQuantity;
-        private System.Windows.Forms.TextBox txtItemCost;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
