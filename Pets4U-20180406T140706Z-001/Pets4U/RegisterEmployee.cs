@@ -18,6 +18,9 @@ namespace Pets4U
         }
 
         public bool flag = false;
+        public string emp_num;
+        public string Position;
+        public string Gen;
         public Random random;
 
         private void button3_Click(object sender, EventArgs e)
@@ -26,16 +29,14 @@ namespace Pets4U
         }
         
         private void button1_Click(object sender, EventArgs e)
-        {
+        { 
             flag = true;
-            string fname, lname, Gen, Position, address, createPass, confirmPass, emp_num;
-            int tel, ID, num;
+            string fname, lname, address, createPass, confirmPass;
+            int tel, ID;
             DateTime date;
 
             fname = txtFName.Text;
             lname = txtLName.Text;
-            Gen = comboBox1.SelectedItem.ToString();
-            Position = comboBox2.SelectedItem.ToString();
             address = txtAddress.Text;
             createPass = txtCreatePass.Text;
             confirmPass = txtConfirm_pass.Text;
@@ -45,10 +46,6 @@ namespace Pets4U
 
             date = dateTimePicker1.Value;
 
-            num = random.Next(100, 999);
-            emp_num = Position.Substring(0, 1) + num;
-
-            MessageBox.Show(date.ToString());
             //call method
             //////////////////////////////////////////////////////
             Database_Class dbc = new Database_Class();
@@ -71,7 +68,18 @@ namespace Pets4U
         private void RegisterEmployee_Load(object sender, EventArgs e)
         {
             comboBox1.SelectedIndex = 0;
-            comboBox2.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;            
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            random = new Random();
+
+            Gen = comboBox1.SelectedItem.ToString();
+            Position = comboBox2.SelectedItem.ToString();
+            int num = random.Next(100, 999);
+            emp_num = Position.Substring(0, 1) + num;
+            txtEmp_num.Text = emp_num;
         }
     }
 }
