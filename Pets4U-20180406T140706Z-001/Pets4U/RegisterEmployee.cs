@@ -25,17 +25,16 @@ namespace Pets4U
         public string query;
 
         public bool flag = false;
-        public string emp_num = "";
-        public string Position, createPass, confirmPass, Gen, state;
+        public string emp_num, Position, createPass, confirmPass, Gen, state;
         public Random random;
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        
-        private void button1_Click(object sender, EventArgs e)
-        { 
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
             flag = true;
             string fname, lname, street_address, city;
             int tel, ID, clinic_Number;
@@ -47,29 +46,29 @@ namespace Pets4U
             lname = txtLName.Text;
             street_address = txtAddress.Text;
             tel = Convert.ToInt32(txtTel.Text);
-            ID = Convert.ToInt32(txtID.Text);
-
+            ID = Convert.ToInt32(mtxtIDNum.Text);
             date = dateTimePicker1.Value;
+            MessageBox.Show(date.ToString());
             clinic_Number = Convert.ToInt32(comboBox3.SelectedValue.ToString());
 
             int code = comboBox2.SelectedIndex;
-            switch(code)
+            switch (code)
             {
-                case 0 : anualSalary = 960000;
-                         break;
-                case 1 : anualSalary = 300000;
-                         break;
-                case 2 : anualSalary = 120000;
-                         break;
-                case 3 : anualSalary = 60000;
-                         break;
+                case 0:
+                    anualSalary = 960000;
+                    break;
+                case 1:
+                    anualSalary = 300000;
+                    break;
+                case 2:
+                    anualSalary = 120000;
+                    break;
+                case 3:
+                    anualSalary = 60000;
+                    break;
             }
 
-            //call method
-            //////////////////////////////////////////////////////
-
             database.insert_staff(emp_num, lname, fname, street_address, city, state, 1900, tel, date.ToString(), Gen, ID, Position, anualSalary, createPass, clinic_Number);
-            /////////////////////////////////////////////////////
 
             this.Close();
         }

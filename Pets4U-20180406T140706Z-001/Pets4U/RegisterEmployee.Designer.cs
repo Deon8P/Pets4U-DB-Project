@@ -44,8 +44,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtFName = new System.Windows.Forms.TextBox();
             this.txtLName = new System.Windows.Forms.TextBox();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtTel = new System.Windows.Forms.TextBox();
             this.txtEmp_num = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -68,6 +66,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.mtxtIDNum = new System.Windows.Forms.MaskedTextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -238,22 +238,6 @@
             this.txtLName.Size = new System.Drawing.Size(268, 22);
             this.txtLName.TabIndex = 44;
             // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(403, 352);
-            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(268, 22);
-            this.txtID.TabIndex = 45;
-            // 
-            // txtTel
-            // 
-            this.txtTel.Location = new System.Drawing.Point(403, 629);
-            this.txtTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(268, 22);
-            this.txtTel.TabIndex = 49;
-            // 
             // txtEmp_num
             // 
             this.txtEmp_num.Location = new System.Drawing.Point(403, 733);
@@ -347,6 +331,7 @@
             this.button1.TabIndex = 59;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // pictureBox5
             // 
@@ -483,12 +468,30 @@
             this.label16.TabIndex = 73;
             this.label16.Text = "Clinic Number :";
             // 
+            // mtxtIDNum
+            // 
+            this.mtxtIDNum.Location = new System.Drawing.Point(403, 352);
+            this.mtxtIDNum.Mask = "0000000000000";
+            this.mtxtIDNum.Name = "mtxtIDNum";
+            this.mtxtIDNum.Size = new System.Drawing.Size(265, 22);
+            this.mtxtIDNum.TabIndex = 75;
+            // 
+            // txtTel
+            // 
+            this.txtTel.Location = new System.Drawing.Point(403, 629);
+            this.txtTel.MaxLength = 10;
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(268, 22);
+            this.txtTel.TabIndex = 76;
+            // 
             // RegisterEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1764, 1032);
+            this.Controls.Add(this.txtTel);
+            this.Controls.Add(this.mtxtIDNum);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtState);
@@ -511,8 +514,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtEmp_num);
-            this.Controls.Add(this.txtTel);
-            this.Controls.Add(this.txtID);
             this.Controls.Add(this.txtLName);
             this.Controls.Add(this.txtFName);
             this.Controls.Add(this.label8);
@@ -565,8 +566,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtFName;
         private System.Windows.Forms.TextBox txtLName;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.TextBox txtEmp_num;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -589,5 +588,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.MaskedTextBox mtxtIDNum;
+        private System.Windows.Forms.TextBox txtTel;
     }
 }
