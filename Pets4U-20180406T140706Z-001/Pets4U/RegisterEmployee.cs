@@ -35,9 +35,9 @@ namespace Pets4U
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            flag = true;
+            flag = false;
             string fname, lname, street_address, city, tel, ID;
-            int clinic_Number;
+            int clinic_Number, Zip_Code;
             double anualSalary = 0;
             DateTime date;
 
@@ -47,8 +47,8 @@ namespace Pets4U
             street_address = txtAddress.Text;
             tel = mtxtTel.Text;
             ID = mtxtIDNum.Text;
+            Zip_Code = Convert.ToInt32(txtZip.Text);
             date = dateTimePicker1.Value;
-            MessageBox.Show(date.ToString());
             clinic_Number = Convert.ToInt32(comboBox3.SelectedValue.ToString());
 
             int code = comboBox2.SelectedIndex;
@@ -68,7 +68,7 @@ namespace Pets4U
                     break;
             }
 
-            database.insert_staff(emp_num, lname, fname, street_address, city, state, 1900, tel, date.ToString(), Gen, ID, Position, anualSalary, createPass, clinic_Number);
+            database.insert_staff(emp_num, lname, fname, street_address, city, state, Zip_Code, tel, date.ToString(), Gen, ID, Position, anualSalary, createPass, clinic_Number);
 
             this.Close();
         }

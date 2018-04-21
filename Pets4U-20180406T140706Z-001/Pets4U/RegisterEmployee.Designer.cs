@@ -68,6 +68,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.mtxtIDNum = new System.Windows.Forms.MaskedTextBox();
             this.mtxtTel = new System.Windows.Forms.MaskedTextBox();
+            this.txtZip = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -205,7 +207,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(108, 611);
+            this.label7.Location = new System.Drawing.Point(109, 645);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(224, 40);
             this.label7.TabIndex = 41;
@@ -216,7 +218,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(211, 661);
+            this.label8.Location = new System.Drawing.Point(212, 695);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(112, 40);
             this.label8.TabIndex = 42;
@@ -240,7 +242,7 @@
             // 
             // txtEmp_num
             // 
-            this.txtEmp_num.Location = new System.Drawing.Point(403, 733);
+            this.txtEmp_num.Location = new System.Drawing.Point(404, 767);
             this.txtEmp_num.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmp_num.Name = "txtEmp_num";
             this.txtEmp_num.ReadOnly = true;
@@ -263,7 +265,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(122, 718);
+            this.label10.Location = new System.Drawing.Point(123, 752);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(221, 40);
             this.label10.TabIndex = 52;
@@ -283,7 +285,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(132, 822);
+            this.label11.Location = new System.Drawing.Point(133, 856);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(202, 40);
             this.label11.TabIndex = 55;
@@ -294,7 +296,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(113, 879);
+            this.label12.Location = new System.Drawing.Point(114, 913);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(222, 40);
             this.label12.TabIndex = 56;
@@ -302,7 +304,7 @@
             // 
             // txtCreatePass
             // 
-            this.txtCreatePass.Location = new System.Drawing.Point(400, 837);
+            this.txtCreatePass.Location = new System.Drawing.Point(401, 871);
             this.txtCreatePass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCreatePass.Name = "txtCreatePass";
             this.txtCreatePass.Size = new System.Drawing.Size(268, 22);
@@ -310,7 +312,7 @@
             // 
             // txtConfirm_pass
             // 
-            this.txtConfirm_pass.Location = new System.Drawing.Point(400, 893);
+            this.txtConfirm_pass.Location = new System.Drawing.Point(401, 927);
             this.txtConfirm_pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtConfirm_pass.Name = "txtConfirm_pass";
             this.txtConfirm_pass.Size = new System.Drawing.Size(268, 22);
@@ -324,7 +326,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(319, 942);
+            this.button1.Location = new System.Drawing.Point(320, 966);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 46);
@@ -400,7 +402,7 @@
             "Nurse",
             "Secretary",
             "Cleaners"});
-            this.comboBox2.Location = new System.Drawing.Point(403, 676);
+            this.comboBox2.Location = new System.Drawing.Point(404, 710);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
             this.comboBox2.TabIndex = 66;
@@ -408,7 +410,7 @@
             // 
             // txtState
             // 
-            this.txtState.Location = new System.Drawing.Point(403, 589);
+            this.txtState.Location = new System.Drawing.Point(400, 586);
             this.txtState.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(268, 22);
@@ -416,7 +418,7 @@
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(403, 549);
+            this.txtCity.Location = new System.Drawing.Point(400, 549);
             this.txtCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(268, 22);
@@ -452,7 +454,7 @@
             "Nurse",
             "Secretary",
             "Cleaners"});
-            this.comboBox3.Location = new System.Drawing.Point(403, 786);
+            this.comboBox3.Location = new System.Drawing.Point(404, 820);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 24);
             this.comboBox3.TabIndex = 74;
@@ -462,7 +464,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(160, 770);
+            this.label16.Location = new System.Drawing.Point(161, 804);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(183, 40);
             this.label16.TabIndex = 73;
@@ -478,11 +480,30 @@
             // 
             // mtxtTel
             // 
-            this.mtxtTel.Location = new System.Drawing.Point(400, 629);
+            this.mtxtTel.Location = new System.Drawing.Point(401, 663);
             this.mtxtTel.Mask = "000  000  0000";
             this.mtxtTel.Name = "mtxtTel";
             this.mtxtTel.Size = new System.Drawing.Size(271, 22);
             this.mtxtTel.TabIndex = 76;
+            // 
+            // txtZip
+            // 
+            this.txtZip.Location = new System.Drawing.Point(400, 620);
+            this.txtZip.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtZip.Name = "txtZip";
+            this.txtZip.Size = new System.Drawing.Size(268, 22);
+            this.txtZip.TabIndex = 78;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(217, 605);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(117, 40);
+            this.label15.TabIndex = 77;
+            this.label15.Text = "Zip Code:";
             // 
             // RegisterEmployee
             // 
@@ -490,6 +511,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1764, 1032);
+            this.Controls.Add(this.txtZip);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.mtxtTel);
             this.Controls.Add(this.mtxtIDNum);
             this.Controls.Add(this.comboBox3);
@@ -590,5 +613,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.MaskedTextBox mtxtIDNum;
         private System.Windows.Forms.MaskedTextBox mtxtTel;
+        private System.Windows.Forms.TextBox txtZip;
+        private System.Windows.Forms.Label label15;
     }
 }

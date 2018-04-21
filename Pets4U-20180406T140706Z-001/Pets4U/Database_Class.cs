@@ -47,7 +47,7 @@ namespace Pets4U
             param[6] = new MySqlParameter("Staff_Zip", MySqlDbType.Int32);
             param[6].Value = Staff_Zip;
 
-            param[7] = new MySqlParameter("Staff_Tel", MySqlDbType.Int32);
+            param[7] = new MySqlParameter("Staff_Tel", MySqlDbType.VarChar);
             param[7].Value = Staff_Tel;
 
             param[8] = new MySqlParameter("Staff_Birth_Date", MySqlDbType.Date);
@@ -56,7 +56,7 @@ namespace Pets4U
             param[9] = new MySqlParameter("Staff_Sex", MySqlDbType.VarChar);
             param[9].Value = Staff_Sex;
 
-            param[10] = new MySqlParameter("Staff_ID", MySqlDbType.Int32);
+            param[10] = new MySqlParameter("Staff_ID", MySqlDbType.VarChar);
             param[10].Value = Staff_ID;
 
             param[11] = new MySqlParameter("Staff_Position", MySqlDbType.VarChar);
