@@ -20,13 +20,13 @@ namespace Pets4U
 
         
 
-        public void insert_staff(int Staff_Number, string Staff_Lname, string Staff_Fname, string Staff_Street, string Staff_City,
+        public void insert_staff(string Staff_Number, string Staff_Lname, string Staff_Fname, string Staff_Street, string Staff_City,
                                  string Staff_State, int Staff_Zip, int Staff_Tel, string Staff_Birth_Date, string Staff_Sex,
                                  int Staff_ID, string Staff_Position, double Staff_Annual_Salary, string Staff_Password, int Clinic_Number)
         {
             MySqlParameter[] param = new MySqlParameter[15];
 
-            param[0] = new MySqlParameter("Staff_Number", MySqlDbType.Int32);
+            param[0] = new MySqlParameter("Staff_Number", MySqlDbType.VarChar);
             param[0].Value = Staff_Number;
 
             param[1] = new MySqlParameter("Staff_Lname", MySqlDbType.VarChar);
