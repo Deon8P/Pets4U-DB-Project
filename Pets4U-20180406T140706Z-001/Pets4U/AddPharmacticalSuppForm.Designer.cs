@@ -47,13 +47,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtDrugNum = new System.Windows.Forms.TextBox();
             this.txtDrugName = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtDrugDescription = new System.Windows.Forms.TextBox();
+            this.txtDosage = new System.Windows.Forms.TextBox();
+            this.txtMethodAdministration = new System.Windows.Forms.TextBox();
+            this.txtQuantityStock = new System.Windows.Forms.TextBox();
+            this.txtReorderLvl = new System.Windows.Forms.TextBox();
+            this.txtReorderQuantity = new System.Windows.Forms.TextBox();
+            this.txtDrugCost = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -66,7 +66,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-3, -7);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1601, 92);
             this.pictureBox1.TabIndex = 4;
@@ -76,7 +76,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-3, 79);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(642, 13);
             this.pictureBox2.TabIndex = 34;
@@ -86,7 +86,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(623, 79);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(642, 13);
             this.pictureBox3.TabIndex = 35;
@@ -96,7 +96,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(1218, 79);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(642, 13);
             this.pictureBox4.TabIndex = 36;
@@ -110,7 +110,7 @@
             this.button5.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Location = new System.Drawing.Point(1343, 22);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(125, 37);
             this.button5.TabIndex = 63;
@@ -245,17 +245,18 @@
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(210, 701);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 37);
             this.button1.TabIndex = 74;
             this.button1.Text = "Place Order";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtDrugNum
             // 
             this.txtDrugNum.Location = new System.Drawing.Point(299, 225);
-            this.txtDrugNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDrugNum.Margin = new System.Windows.Forms.Padding(2);
             this.txtDrugNum.Name = "txtDrugNum";
             this.txtDrugNum.Size = new System.Drawing.Size(202, 20);
             this.txtDrugNum.TabIndex = 75;
@@ -263,73 +264,73 @@
             // txtDrugName
             // 
             this.txtDrugName.Location = new System.Drawing.Point(299, 271);
-            this.txtDrugName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDrugName.Margin = new System.Windows.Forms.Padding(2);
             this.txtDrugName.Name = "txtDrugName";
             this.txtDrugName.Size = new System.Drawing.Size(202, 20);
             this.txtDrugName.TabIndex = 76;
             // 
-            // textBox2
+            // txtDrugDescription
             // 
-            this.textBox2.Location = new System.Drawing.Point(299, 318);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 20);
-            this.textBox2.TabIndex = 77;
+            this.txtDrugDescription.Location = new System.Drawing.Point(299, 318);
+            this.txtDrugDescription.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDrugDescription.Name = "txtDrugDescription";
+            this.txtDrugDescription.Size = new System.Drawing.Size(202, 20);
+            this.txtDrugDescription.TabIndex = 77;
             // 
-            // textBox3
+            // txtDosage
             // 
-            this.textBox3.Location = new System.Drawing.Point(299, 363);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(202, 20);
-            this.textBox3.TabIndex = 78;
+            this.txtDosage.Location = new System.Drawing.Point(299, 363);
+            this.txtDosage.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDosage.Name = "txtDosage";
+            this.txtDosage.Size = new System.Drawing.Size(202, 20);
+            this.txtDosage.TabIndex = 78;
             // 
-            // textBox4
+            // txtMethodAdministration
             // 
-            this.textBox4.Location = new System.Drawing.Point(299, 412);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(202, 20);
-            this.textBox4.TabIndex = 79;
+            this.txtMethodAdministration.Location = new System.Drawing.Point(299, 412);
+            this.txtMethodAdministration.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMethodAdministration.Name = "txtMethodAdministration";
+            this.txtMethodAdministration.Size = new System.Drawing.Size(202, 20);
+            this.txtMethodAdministration.TabIndex = 79;
             // 
-            // textBox5
+            // txtQuantityStock
             // 
-            this.textBox5.Location = new System.Drawing.Point(299, 462);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(202, 20);
-            this.textBox5.TabIndex = 80;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.txtQuantityStock.Location = new System.Drawing.Point(299, 462);
+            this.txtQuantityStock.Margin = new System.Windows.Forms.Padding(2);
+            this.txtQuantityStock.Name = "txtQuantityStock";
+            this.txtQuantityStock.Size = new System.Drawing.Size(202, 20);
+            this.txtQuantityStock.TabIndex = 80;
+            this.txtQuantityStock.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // textBox7
+            // txtReorderLvl
             // 
-            this.textBox7.Location = new System.Drawing.Point(299, 517);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(202, 20);
-            this.textBox7.TabIndex = 81;
+            this.txtReorderLvl.Location = new System.Drawing.Point(299, 517);
+            this.txtReorderLvl.Margin = new System.Windows.Forms.Padding(2);
+            this.txtReorderLvl.Name = "txtReorderLvl";
+            this.txtReorderLvl.Size = new System.Drawing.Size(202, 20);
+            this.txtReorderLvl.TabIndex = 81;
             // 
-            // textBox8
+            // txtReorderQuantity
             // 
-            this.textBox8.Location = new System.Drawing.Point(299, 566);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(202, 20);
-            this.textBox8.TabIndex = 82;
+            this.txtReorderQuantity.Location = new System.Drawing.Point(299, 566);
+            this.txtReorderQuantity.Margin = new System.Windows.Forms.Padding(2);
+            this.txtReorderQuantity.Name = "txtReorderQuantity";
+            this.txtReorderQuantity.Size = new System.Drawing.Size(202, 20);
+            this.txtReorderQuantity.TabIndex = 82;
             // 
-            // textBox9
+            // txtDrugCost
             // 
-            this.textBox9.Location = new System.Drawing.Point(299, 618);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(202, 20);
-            this.textBox9.TabIndex = 83;
+            this.txtDrugCost.Location = new System.Drawing.Point(299, 618);
+            this.txtDrugCost.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDrugCost.Name = "txtDrugCost";
+            this.txtDrugCost.Size = new System.Drawing.Size(202, 20);
+            this.txtDrugCost.TabIndex = 83;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(573, 239);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(929, 570);
             this.pictureBox5.TabIndex = 84;
@@ -342,13 +343,13 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1028, 749);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDrugCost);
+            this.Controls.Add(this.txtReorderQuantity);
+            this.Controls.Add(this.txtReorderLvl);
+            this.Controls.Add(this.txtQuantityStock);
+            this.Controls.Add(this.txtMethodAdministration);
+            this.Controls.Add(this.txtDosage);
+            this.Controls.Add(this.txtDrugDescription);
             this.Controls.Add(this.txtDrugName);
             this.Controls.Add(this.txtDrugNum);
             this.Controls.Add(this.button1);
@@ -367,7 +368,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AddPharmacticalSuppForm";
             this.Text = "AddPharmacticalSuppForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -402,13 +403,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtDrugNum;
         private System.Windows.Forms.TextBox txtDrugName;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtDrugDescription;
+        private System.Windows.Forms.TextBox txtDosage;
+        private System.Windows.Forms.TextBox txtMethodAdministration;
+        private System.Windows.Forms.TextBox txtQuantityStock;
+        private System.Windows.Forms.TextBox txtReorderLvl;
+        private System.Windows.Forms.TextBox txtReorderQuantity;
+        private System.Windows.Forms.TextBox txtDrugCost;
         private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

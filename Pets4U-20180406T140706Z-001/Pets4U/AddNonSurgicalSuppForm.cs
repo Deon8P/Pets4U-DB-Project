@@ -66,6 +66,8 @@ namespace Pets4U
                 reoreder_quantity = int.Parse(cmbReorderQuantity.SelectedItem.ToString());
             }
 
+            item_cost = Convert.ToDouble(txtItemCost.Text);
+
             //call method
             ///////////////////////////////////////////////////////////////////
 
