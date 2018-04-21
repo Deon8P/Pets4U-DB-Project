@@ -38,5 +38,46 @@ namespace Pets4U
             SecForm.ShowDialog();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string item_name, item_description;
+            int item_num,reorder_level, reoreder_quantity, quantity;
+            double item_cost;
+
+            item_name = txtItemName.Text;
+            item_description = txtItemDescription.Text;
+
+            item_num = Convert.ToInt32(txtItem_num.Text);
+            
+
+            if (cmbQuantity.SelectedItem != null)
+            {
+                quantity = int.Parse(cmbQuantity.SelectedItem.ToString());
+            }
+
+            if (cmbReorderLevel.SelectedItem != null)
+            {
+                reorder_level = int.Parse(cmbReorderLevel.SelectedItem.ToString());
+            }
+
+            if (cmbReorderQuantity.SelectedItem != null)
+            {
+                reoreder_quantity = int.Parse(cmbReorderQuantity.SelectedItem.ToString());
+            }
+
+            //call method
+            ///////////////////////////////////////////////////////////////////
+
+            ///////////////////////////////////////////////////////////////////
+
+
+
+        }  
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

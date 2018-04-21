@@ -45,6 +45,8 @@
             this.txtFName = new System.Windows.Forms.TextBox();
             this.txtLName = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.txtGender = new System.Windows.Forms.TextBox();
+            this.txtPosition = new System.Windows.Forms.TextBox();
             this.txtTel = new System.Windows.Forms.TextBox();
             this.txtEmp_num = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -60,8 +62,6 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -248,6 +248,22 @@
             this.txtID.Size = new System.Drawing.Size(202, 20);
             this.txtID.TabIndex = 45;
             // 
+            // txtGender
+            // 
+            this.txtGender.Location = new System.Drawing.Point(302, 329);
+            this.txtGender.Margin = new System.Windows.Forms.Padding(2);
+            this.txtGender.Name = "txtGender";
+            this.txtGender.Size = new System.Drawing.Size(202, 20);
+            this.txtGender.TabIndex = 46;
+            // 
+            // txtPosition
+            // 
+            this.txtPosition.Location = new System.Drawing.Point(302, 371);
+            this.txtPosition.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPosition.Name = "txtPosition";
+            this.txtPosition.Size = new System.Drawing.Size(202, 20);
+            this.txtPosition.TabIndex = 47;
+            // 
             // txtTel
             // 
             this.txtTel.Location = new System.Drawing.Point(302, 499);
@@ -290,9 +306,8 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(302, 454);
+            this.txtAddress.Location = new System.Drawing.Point(302, 455);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(202, 20);
             this.txtAddress.TabIndex = 53;
@@ -401,38 +416,12 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
             this.dateTimePicker1.TabIndex = 64;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(302, 327);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 65;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Vet",
-            "Nurse",
-            "Secretary",
-            "Cleaners"});
-            this.comboBox2.Location = new System.Drawing.Point(302, 370);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 66;
-            // 
             // RegisterEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1477, 833);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(1323, 749);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -448,6 +437,8 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtEmp_num);
             this.Controls.Add(this.txtTel);
+            this.Controls.Add(this.txtPosition);
+            this.Controls.Add(this.txtGender);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.txtLName);
             this.Controls.Add(this.txtFName);
@@ -500,6 +491,8 @@
         private System.Windows.Forms.TextBox txtFName;
         private System.Windows.Forms.TextBox txtLName;
         private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtGender;
+        private System.Windows.Forms.TextBox txtPosition;
         private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.TextBox txtEmp_num;
         private System.Windows.Forms.Label label9;
@@ -515,7 +508,5 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
