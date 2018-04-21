@@ -79,7 +79,7 @@ namespace Pets4U
             connection.Open();
             if (command.ExecuteNonQuery() == 1)
             {
-                MessageBox.Show("Staff member has been registered.", "Registered Staff Member" , MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Staff member has been registered.", "Registered Staff Member", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
