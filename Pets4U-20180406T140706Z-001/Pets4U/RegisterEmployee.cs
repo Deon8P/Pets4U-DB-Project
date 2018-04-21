@@ -33,8 +33,8 @@ namespace Pets4U
 
             fname = txtFName.Text;
             lname = txtLName.Text;
-            Gen = txtGender.Text;
-            Position = txtPosition.Text;
+            //Gen = txtGender.Text;
+            //Position = txtPosition.Text;
             address = txtAddress.Text;
             createPass = txtCreatePass.Text;
             confirmPass = txtConfirm_pass.Text;
