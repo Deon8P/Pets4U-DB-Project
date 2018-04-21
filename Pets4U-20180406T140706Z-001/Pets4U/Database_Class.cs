@@ -88,7 +88,7 @@ namespace Pets4U
             connection.Close();
         }
 
-        public void insert_clinic(int Clinic_num, string Clinic_street, string Clinic_city, string Clinic_state, int Clinic_zip, int Clinic_tel, int Clinic_fax)
+        public void insert_clinic(int Clinic_num, string Clinic_street, string Clinic_city, string Clinic_state, int Clinic_zip, string Clinic_tel, string Clinic_fax)
         {
             MySqlParameter[] param = new MySqlParameter[7];
 
@@ -107,10 +107,10 @@ namespace Pets4U
             param[4] = new MySqlParameter("Clinic_zip", MySqlDbType.Int32);
             param[4].Value = Clinic_zip;
 
-            param[5] = new MySqlParameter("Clinic_tel", MySqlDbType.Int32);
+            param[5] = new MySqlParameter("Clinic_tel", MySqlDbType.VarChar);
             param[5].Value = Clinic_tel;
 
-            param[6] = new MySqlParameter("Clinic_fax", MySqlDbType.Int32);
+            param[6] = new MySqlParameter("Clinic_fax", MySqlDbType.VarChar);
             param[6].Value = Clinic_fax;
 
             MySqlCommand command = new MySqlCommand();

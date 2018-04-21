@@ -17,6 +17,8 @@ namespace Pets4U
             InitializeComponent();
         }
 
+        Database_Class database = new Database_Class();
+
         private void RegisterClinicForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             LoginForm LoginForm = new LoginForm();
@@ -25,27 +27,21 @@ namespace Pets4U
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            /*
-            int clinic_number, zip, tel, fax;
-            string street, city, state;
+            int clinic_number, zip;
+            string street, city, state, tel, fax;
 
 
             clinic_number = Convert.ToInt32(txtClinic_number.Text);
             zip = Convert.ToInt32(txtZip.Text);
-            tel = Convert.ToInt32(txtTel.Text);
-            fax = Convert.ToInt32(txtFax.Text);
+            tel = mtxtTel.Text;
+            fax = mtxtFax.Text;
 
             street = txtStreet.Text;
-            city = txtStreet.Text;
-            state = txtStreet.Text;
-            
-            //call method
-            /////////////////////////////////////////////////////////////
-            Database_Class dbc = new Database_Class();
+            city = txtCity.Text;
+            state = txtState.Text;
 
-            dbc.insert_clinic(clinic_number, street, city, state, zip, tel, fax);
-            /////////////////////////////////////////////////////////////
-            */
+            database.insert_clinic(clinic_number, street, city, state, zip, tel, fax);
+
             this.Close();
         }
     }
