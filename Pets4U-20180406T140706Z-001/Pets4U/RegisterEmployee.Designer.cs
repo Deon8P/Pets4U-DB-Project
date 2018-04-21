@@ -75,10 +75,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(2135, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(1601, 92);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -89,10 +89,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(1811, 32);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(1358, 26);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 46);
+            this.button3.Size = new System.Drawing.Size(125, 37);
             this.button3.TabIndex = 31;
             this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = false;
@@ -101,30 +101,30 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-3, 98);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(-2, 80);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(856, 16);
+            this.pictureBox2.Size = new System.Drawing.Size(642, 13);
             this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(844, 98);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(633, 80);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(856, 16);
+            this.pictureBox3.Size = new System.Drawing.Size(642, 13);
             this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(1429, 98);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(1072, 80);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(856, 16);
+            this.pictureBox4.Size = new System.Drawing.Size(642, 13);
             this.pictureBox4.TabIndex = 34;
             this.pictureBox4.TabStop = false;
             // 
@@ -133,9 +133,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(279, 128);
+            this.label2.Location = new System.Drawing.Point(209, 104);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(327, 62);
+            this.label2.Size = new System.Drawing.Size(266, 50);
             this.label2.TabIndex = 35;
             this.label2.Text = "Register Employee";
             // 
@@ -144,9 +145,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(197, 238);
+            this.label3.Location = new System.Drawing.Point(148, 193);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 40);
+            this.label3.Size = new System.Drawing.Size(113, 32);
             this.label3.TabIndex = 36;
             this.label3.Text = "First Name:";
             // 
@@ -155,9 +157,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(197, 286);
+            this.label1.Location = new System.Drawing.Point(148, 232);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 40);
+            this.label1.Size = new System.Drawing.Size(110, 32);
             this.label1.TabIndex = 37;
             this.label1.Text = "Last Name:";
             // 
@@ -166,9 +169,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(221, 390);
+            this.label4.Location = new System.Drawing.Point(166, 317);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 40);
+            this.label4.Size = new System.Drawing.Size(89, 32);
             this.label4.TabIndex = 38;
             this.label4.Text = "Geneder:";
             // 
@@ -177,9 +181,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(191, 337);
+            this.label5.Location = new System.Drawing.Point(143, 274);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 40);
+            this.label5.Size = new System.Drawing.Size(112, 32);
             this.label5.TabIndex = 39;
             this.label5.Text = "ID Number:";
             // 
@@ -188,9 +193,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(228, 545);
+            this.label6.Location = new System.Drawing.Point(171, 443);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 40);
+            this.label6.Size = new System.Drawing.Size(87, 32);
             this.label6.TabIndex = 40;
             this.label6.Text = "Address:";
             // 
@@ -199,9 +205,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(119, 599);
+            this.label7.Location = new System.Drawing.Point(89, 487);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(224, 40);
+            this.label7.Size = new System.Drawing.Size(175, 32);
             this.label7.TabIndex = 41;
             this.label7.Text = "Telephone Number:";
             // 
@@ -210,51 +217,51 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(221, 442);
+            this.label8.Location = new System.Drawing.Point(166, 359);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 40);
+            this.label8.Size = new System.Drawing.Size(88, 32);
             this.label8.TabIndex = 42;
             this.label8.Text = "Position:";
             // 
             // txtFName
             // 
-            this.txtFName.Location = new System.Drawing.Point(403, 252);
-            this.txtFName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtFName.Location = new System.Drawing.Point(302, 205);
+            this.txtFName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFName.Name = "txtFName";
-            this.txtFName.Size = new System.Drawing.Size(268, 22);
+            this.txtFName.Size = new System.Drawing.Size(202, 20);
             this.txtFName.TabIndex = 43;
             // 
             // txtLName
             // 
-            this.txtLName.Location = new System.Drawing.Point(403, 302);
-            this.txtLName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLName.Location = new System.Drawing.Point(302, 245);
+            this.txtLName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLName.Name = "txtLName";
-            this.txtLName.Size = new System.Drawing.Size(268, 22);
+            this.txtLName.Size = new System.Drawing.Size(202, 20);
             this.txtLName.TabIndex = 44;
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(403, 352);
-            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtID.Location = new System.Drawing.Point(302, 286);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(268, 22);
+            this.txtID.Size = new System.Drawing.Size(202, 20);
             this.txtID.TabIndex = 45;
             // 
-           
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(403, 614);
-            this.txtTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTel.Location = new System.Drawing.Point(302, 499);
+            this.txtTel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(268, 22);
+            this.txtTel.Size = new System.Drawing.Size(202, 20);
             this.txtTel.TabIndex = 49;
             // 
             // txtEmp_num
             // 
-            this.txtEmp_num.Location = new System.Drawing.Point(403, 670);
-            this.txtEmp_num.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmp_num.Location = new System.Drawing.Point(302, 544);
+            this.txtEmp_num.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmp_num.Name = "txtEmp_num";
-            this.txtEmp_num.Size = new System.Drawing.Size(268, 22);
+            this.txtEmp_num.Size = new System.Drawing.Size(202, 20);
             this.txtEmp_num.TabIndex = 50;
             // 
             // label9
@@ -262,9 +269,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(173, 490);
+            this.label9.Location = new System.Drawing.Point(130, 398);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(164, 40);
+            this.label9.Size = new System.Drawing.Size(132, 32);
             this.label9.TabIndex = 51;
             this.label9.Text = "Date Of Birth:";
             // 
@@ -273,22 +281,20 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(123, 655);
+            this.label10.Location = new System.Drawing.Point(92, 532);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(221, 40);
+            this.label10.Size = new System.Drawing.Size(172, 32);
             this.label10.TabIndex = 52;
             this.label10.Text = "Employee Number:";
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(302, 454);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAddress.Location = new System.Drawing.Point(302, 455);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAddress.Multiline = true;
-
-            this.txtAddress.Location = new System.Drawing.Point(403, 560);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(268, 22);
+            this.txtAddress.Size = new System.Drawing.Size(202, 19);
             this.txtAddress.TabIndex = 53;
             // 
             // label11
@@ -296,9 +302,10 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(135, 768);
+            this.label11.Location = new System.Drawing.Point(101, 624);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(202, 40);
+            this.label11.Size = new System.Drawing.Size(160, 32);
             this.label11.TabIndex = 55;
             this.label11.Text = "Create Password:";
             // 
@@ -307,26 +314,27 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(116, 825);
+            this.label12.Location = new System.Drawing.Point(87, 670);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(222, 40);
+            this.label12.Size = new System.Drawing.Size(176, 32);
             this.label12.TabIndex = 56;
             this.label12.Text = "Confirm Password:";
             // 
             // txtCreatePass
             // 
-            this.txtCreatePass.Location = new System.Drawing.Point(403, 783);
-            this.txtCreatePass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCreatePass.Location = new System.Drawing.Point(302, 636);
+            this.txtCreatePass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCreatePass.Name = "txtCreatePass";
-            this.txtCreatePass.Size = new System.Drawing.Size(268, 22);
+            this.txtCreatePass.Size = new System.Drawing.Size(202, 20);
             this.txtCreatePass.TabIndex = 57;
             // 
             // txtConfirm_pass
             // 
-            this.txtConfirm_pass.Location = new System.Drawing.Point(403, 839);
-            this.txtConfirm_pass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtConfirm_pass.Location = new System.Drawing.Point(302, 682);
+            this.txtConfirm_pass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConfirm_pass.Name = "txtConfirm_pass";
-            this.txtConfirm_pass.Size = new System.Drawing.Size(268, 22);
+            this.txtConfirm_pass.Size = new System.Drawing.Size(202, 20);
             this.txtConfirm_pass.TabIndex = 58;
             // 
             // button1
@@ -336,10 +344,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(319, 942);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(239, 765);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 46);
+            this.button1.Size = new System.Drawing.Size(125, 37);
             this.button1.TabIndex = 59;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = false;
@@ -347,49 +355,49 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(844, 116);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(633, 94);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(1157, 912);
+            this.pictureBox5.Size = new System.Drawing.Size(868, 741);
             this.pictureBox5.TabIndex = 60;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(-4, 1025);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Location = new System.Drawing.Point(-3, 833);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(856, 16);
+            this.pictureBox6.Size = new System.Drawing.Size(642, 13);
             this.pictureBox6.TabIndex = 61;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(844, 1025);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox7.Location = new System.Drawing.Point(633, 833);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(856, 16);
+            this.pictureBox7.Size = new System.Drawing.Size(642, 13);
             this.pictureBox7.TabIndex = 62;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(1615, 1025);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox8.Location = new System.Drawing.Point(1211, 833);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(856, 16);
+            this.pictureBox8.Size = new System.Drawing.Size(642, 13);
             this.pictureBox8.TabIndex = 63;
             this.pictureBox8.TabStop = false;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(403, 503);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker1.Location = new System.Drawing.Point(302, 409);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(268, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(202, 20);
             this.dateTimePicker1.TabIndex = 64;
             // 
             // comboBox1
@@ -398,9 +406,10 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(302, 327);
+            this.comboBox1.Location = new System.Drawing.Point(302, 328);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 65;
             // 
             // comboBox2
@@ -412,20 +421,19 @@
             "Secretary",
             "Cleaners"});
             this.comboBox2.Location = new System.Drawing.Point(302, 370);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(92, 21);
             this.comboBox2.TabIndex = 66;
             // 
             // RegisterEmployee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-
-            this.ClientSize = new System.Drawing.Size(1477, 833);
+            this.ClientSize = new System.Drawing.Size(1323, 838);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.ClientSize = new System.Drawing.Size(1764, 1032);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -457,7 +465,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RegisterEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "RegisterEmployee";
