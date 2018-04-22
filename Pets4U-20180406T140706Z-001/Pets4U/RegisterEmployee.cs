@@ -133,14 +133,14 @@ namespace Pets4U
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-                random = new Random();
-
-                state = txtState.Text;
-                Gen = comboBox1.SelectedItem.ToString();
                 Position = comboBox2.SelectedItem.ToString();
                 int num = random.Next(100, 999);
-                emp_num = state.Substring(0, 3).ToUpper() + Position.Substring(0, 1) + num;
-                txtEmp_num.Text = emp_num;
+            state = txtState.Text;
+            Gen = comboBox1.SelectedItem.ToString();
+            Position = comboBox2.SelectedItem.ToString();
+            int num = random.Next(100, 999);
+            emp_num = state.Substring(0, 3).ToUpper() + Position.Substring(0, 1) + num;
+            txtEmp_num.Text = emp_num;
         }
 
         private void txtConfirm_pass_Leave(object sender, EventArgs e)
