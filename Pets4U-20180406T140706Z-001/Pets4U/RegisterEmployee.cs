@@ -53,7 +53,8 @@ namespace Pets4U
             string fname, lname, street_address, city, tel, ID;
             int clinic_Number, Zip_Code;
             double anualSalary = 0;
-            DateTime date;
+            string date;
+
 
             city = txtCity.Text;
             fname = txtFName.Text;
@@ -62,10 +63,13 @@ namespace Pets4U
             tel = mtxtTel.Text;
             ID = mtxtIDNum.Text;
             Zip_Code = Convert.ToInt32(txtZip.Text);
-            date = dateTimePicker1.Value;
+            date = dateTimePicker1.Value.ToString();
             clinic_Number = Convert.ToInt32(comboBox3.SelectedValue.ToString());
-
             int code = comboBox2.SelectedIndex;
+  
+            date = date.Substring(0, 9).Replace('/', '-');
+
+
             switch (code)
             {
                 case 0:
@@ -82,7 +86,7 @@ namespace Pets4U
                     break;
             }
 
-            database.insert_staff(emp_num, lname, fname, street_address, city, state, Zip_Code, tel, date.ToString(), Gen, ID, Position, anualSalary, createPass, clinic_Number);
+            database.insert_staff(emp_num, lname, fname, street_address, city, state, Zip_Code, tel, date, Gen, ID, Position, anualSalary, createPass, clinic_Number);
 
             this.Close();
         }
@@ -98,7 +102,7 @@ namespace Pets4U
 
         private void RegisterEmployee_Load(object sender, EventArgs e)
         {
-            txtState.Text = "**";
+            txtState.Text = "***";
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
 
@@ -135,7 +139,7 @@ namespace Pets4U
                 Gen = comboBox1.SelectedItem.ToString();
                 Position = comboBox2.SelectedItem.ToString();
                 int num = random.Next(100, 999);
-                emp_num = state.Substring(0, 2).ToUpper() + Position.Substring(0, 1) + num;
+                emp_num = state.Substring(0, 3).ToUpper() + Position.Substring(0, 1) + num;
                 txtEmp_num.Text = emp_num;
         }
 
