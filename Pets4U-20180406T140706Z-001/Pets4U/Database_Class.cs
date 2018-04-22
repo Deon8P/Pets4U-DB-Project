@@ -133,6 +133,47 @@ namespace Pets4U
             connection.Close();
         }
 
+        public void insert_appointment(int Appointment_Number, int Owner_Num, string Owner_Lname, string Owner_Fname, int Owner_Tel, 
+                                       int Pet_Number, string Pet_Name, string Pet_Type, string Appointment_Date, string Appointment_Time, int Clinic_Number)
+        {
+            MySqlParameter[] param = new MySqlParameter[11];
+
+            param[0] = new MySqlParameter("Appointment_Number", MySqlDbType.Int32);
+            param[0].Value = Appointment_Number;
+
+            param[1] = new MySqlParameter("Owner_Num", MySqlDbType.Int32);
+            param[1].Value = Owner_Num;
+
+            param[2] = new MySqlParameter("Owner_Lname", MySqlDbType.VarChar);
+            param[2].Value = Owner_Lname;
+
+            param[3] = new MySqlParameter("Owner_Fname", MySqlDbType.VarChar);
+            param[3].Value = Owner_Fname;
+
+            param[4] = new MySqlParameter("Owner_Tel", MySqlDbType.Int32);
+            param[4].Value = Owner_Tel;
+
+            param[5] = new MySqlParameter("Pet_Number", MySqlDbType.Int32);
+            param[5].Value = Pet_Number;
+
+            param[6] = new MySqlParameter("Pet_Name", MySqlDbType.VarChar);
+            param[6].Value = Pet_Name;
+
+            param[7] = new MySqlParameter("Pet_Type", MySqlDbType.VarChar);
+            param[7].Value = Pet_Type;
+
+            param[8] = new MySqlParameter("Appointment_Date", MySqlDbType.Date);
+            param[8].Value = Appointment_Date;
+
+            param[9] = new MySqlParameter("Appointment_Time", MySqlDbType.Time);
+            param[9].Value = Appointment_Time;
+
+            param[10] = new MySqlParameter("Clinic_Number", MySqlDbType.Int32);
+            param[10].Value = Clinic_Number;
+            
+        }
+
+
         //==================//////////////////==================//
 
 
