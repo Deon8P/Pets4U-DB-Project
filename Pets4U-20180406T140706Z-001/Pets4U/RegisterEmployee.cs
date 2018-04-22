@@ -133,8 +133,8 @@ namespace Pets4U
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-                Position = comboBox2.SelectedItem.ToString();
-                int num = random.Next(100, 999);
+            random = new Random();
+
             state = txtState.Text;
             Gen = comboBox1.SelectedItem.ToString();
             Position = comboBox2.SelectedItem.ToString();
