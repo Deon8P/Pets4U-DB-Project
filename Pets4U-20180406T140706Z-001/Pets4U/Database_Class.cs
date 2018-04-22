@@ -170,9 +170,32 @@ namespace Pets4U
 
             param[10] = new MySqlParameter("Clinic_Number", MySqlDbType.Int32);
             param[10].Value = Clinic_Number;
-            
+
+            MySqlCommand command = new MySqlCommand();
+
+            command.Connection = connection;
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            command.CommandText = "insert_appointment";
+
+            command.Parameters.AddRange(param);
+
+            connection.Open();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("Appointment has been scheduled.", "Scheduled Appointment", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Appointment has not been scheduled.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            connection.Close();
         }
 
+        public void insert_examination(int Examination_Number, string Examination_Date, string Examination_Time, string Vet_Name, int Pet_Number, 
+                                       string Pet_Name, string Pet_Type, string Resluts_Description, string Staff_Num)
+        {
+
+        }
 
         //==================//////////////////==================//
 
