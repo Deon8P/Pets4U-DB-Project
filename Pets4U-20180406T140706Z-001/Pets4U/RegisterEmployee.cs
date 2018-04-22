@@ -66,9 +66,9 @@ namespace Pets4U
             date = dateTimePicker1.Value.ToString();
             clinic_Number = Convert.ToInt32(comboBox3.SelectedValue.ToString());
             int code = comboBox2.SelectedIndex;
-  
-            date = date.Substring(0, 9).Replace('/', '-');
-
+            MessageBox.Show(date);
+            date = date.Substring(0, 10).Replace('/', '-');
+            MessageBox.Show(date);
 
             switch (code)
             {
