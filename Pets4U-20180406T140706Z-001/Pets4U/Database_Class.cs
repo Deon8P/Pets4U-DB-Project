@@ -297,6 +297,112 @@ namespace Pets4U
 
         //==================//_____Leonard//==================//
 
+       public void insert_pet_owner(int own_num, string own_LName, string own_FName, string own_street, string own_city, string own_state, int own_zip, int own_tel, string pet_name, int clinic_number)
+        {
+            MySqlParameter[] param = new MySqlParameter[10];
+
+            param[0] = new MySqlParameter("Owner_Number", MySqlDbType.Int32);
+            param[0].Value = own_num;
+
+            param[1] = new MySqlParameter("Owner_Lname", MySqlDbType.VarChar);
+            param[1].Value = own_LName;
+
+            param[2] = new MySqlParameter("Owner_Fname", MySqlDbType.VarChar);
+            param[2].Value = own_FName;
+
+            param[3] = new MySqlParameter("Owner_Street", MySqlDbType.VarChar);
+            param[3].Value = own_street;
+
+            param[4] = new MySqlParameter("Owner_City", MySqlDbType.VarChar);
+            param[4].Value = own_city;
+
+            param[5] = new MySqlParameter("Owner_State", MySqlDbType.VarChar);
+            param[5].Value = own_state;
+
+            param[6] = new MySqlParameter("Owner_Zip", MySqlDbType.Int32);
+            param[6].Value = own_zip;
+
+            param[7] = new MySqlParameter("Owner_Tel", MySqlDbType.Int32);
+            param[7].Value = own_tel;
+
+            param[8] = new MySqlParameter("Pet_Name", MySqlDbType.VarChar);
+            param[8].Value = pet_name;
+
+            param[9] = new MySqlParameter("Clinic_Number", MySqlDbType.Int32);
+            param[9].Value = clinic_number;
+
+            MySqlCommand sql_cmd = new MySqlCommand();
+            sql_cmd.Connection = connection;
+            sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            sql_cmd.CommandText = "insert_pet_owner";
+            sql_cmd.Parameters.AddRange(param);
+
+            connection.Open();
+
+            if (sql_cmd.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("The pet owner information has been successfully inserted.", "Pet Owner", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Pet owner information input error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            connection.Close();
+        }
+
+
+       public void insert_pet(int pet_num, string pet_name, string pet_type, string pet_description, string pet_bday, string  pet_reg_date, string pet_status, int own_num, int clinic_number)
+        {
+            MySqlParameter[] param = new MySqlParameter[9];
+
+            param[0] = new MySqlParameter("Pet_Number", MySqlDbType.Int32);
+            param[0].Value = pet_num;
+
+            param[1] = new MySqlParameter("Pet_Name", MySqlDbType.VarChar);
+            param[1].Value = pet_name;
+
+            param[2] = new MySqlParameter("Pet_Type", MySqlDbType.VarChar);
+            param[2].Value = pet_type;
+
+            param[3] = new MySqlParameter("Pet_Description", MySqlDbType.VarChar);
+            param[3].Value = pet_description;
+
+            param[4] = new MySqlParameter("Pet_Birth_Date", MySqlDbType.VarChar);
+            param[4].Value = pet_bday;
+
+            param[5] = new MySqlParameter("Pet_Reg_Date", MySqlDbType.VarChar);
+            param[5].Value = pet_reg_date;
+
+            param[6] = new MySqlParameter("Pet_Status", MySqlDbType.VarChar);
+            param[6].Value = pet_status;
+
+            param[7] = new MySqlParameter("Owner_Number", MySqlDbType.Int32);
+            param[7].Value = own_num;
+
+            param[8] = new MySqlParameter("Clinic_Number", MySqlDbType.Int32);
+            param[8].Value = clinic_number;
+
+           
+            MySqlCommand sql_cmd = new MySqlCommand();
+            sql_cmd.Connection = connection;
+            sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            sql_cmd.CommandText = "insert_pet";
+            sql_cmd.Parameters.AddRange(param);
+
+            connection.Open();
+
+            if (sql_cmd.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("The pet information has been successfully inserted.", "Pet", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Pet information input error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            connection.Close();
+        }
 
 
 

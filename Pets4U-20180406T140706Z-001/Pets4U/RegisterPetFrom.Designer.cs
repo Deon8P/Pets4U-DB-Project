@@ -327,12 +327,14 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(282, 332);
+            this.label14.Location = new System.Drawing.Point(257, 338);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(112, 32);
+            this.label14.Size = new System.Drawing.Size(149, 32);
             this.label14.TabIndex = 56;
-            this.label14.Text = "ID Number:";
+            this.label14.Text = "Owner Number:";
+            this.label14.UseMnemonic = false;
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // txtOwn_FName
             // 
@@ -409,12 +411,13 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(94, 427);
+            this.pictureBox5.Location = new System.Drawing.Point(94, 522);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(928, 481);
+            this.pictureBox5.Size = new System.Drawing.Size(928, 386);
             this.pictureBox5.TabIndex = 64;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // RegisterPetFrom
             // 
