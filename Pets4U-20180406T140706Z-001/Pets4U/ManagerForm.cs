@@ -25,12 +25,11 @@ namespace Pets4U
         public MySqlDataAdapter adapter;
         public DataSet ds;
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-                    }
+        bool flag = false;
 
         private void button13_Click(object sender, EventArgs e)
         {
+            flag = true;
             ExaminationFom ExamForm = new ExaminationFom();
             ExamForm.ShowDialog();
             this.Close();
@@ -196,6 +195,21 @@ namespace Pets4U
             {
                 connection.Close();
             }
+        }
+
+        private void ManagerForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(flag == false)
+            {
+                LoginForm login = new LoginForm();
+                login.ShowDialog();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            flag = false;
+            this.Close();
         }
     }
 }

@@ -45,9 +45,18 @@ namespace Pets4U
 
             if (database.EmployeelogIn(txtEmpNum.Text, txtPass.Text, Convert.ToInt32(cmbClinickNum.SelectedValue.ToString())))
             {
-                SecretariesForm SecForm = new SecretariesForm();
-                SecForm.ShowDialog();
-                this.Close();
+                if (txtEmpNum.Text.Substring(3, 1).Equals("S"))
+                {
+                    SecretariesForm SecForm = new SecretariesForm();
+                    SecForm.ShowDialog();
+                    this.Close();
+                }
+                if(txtEmpNum.Text.Substring(3, 1).Equals("V"))
+                {
+                    ManagerForm manager = new ManagerForm();
+                    manager.ShowDialog();
+                    this.Close();
+                }
             }
         }
 
