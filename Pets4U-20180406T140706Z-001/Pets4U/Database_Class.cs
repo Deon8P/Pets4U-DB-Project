@@ -292,6 +292,7 @@ namespace Pets4U
             return login;
         }
 
+
         //==================//////////////////==================//
 
 
@@ -368,10 +369,10 @@ namespace Pets4U
             param[3] = new MySqlParameter("Pet_Description", MySqlDbType.VarChar);
             param[3].Value = pet_description;
 
-            param[4] = new MySqlParameter("Pet_Birth_Date", MySqlDbType.VarChar);
+            param[4] = new MySqlParameter("Pet_Birth_Date", MySqlDbType.Date);
             param[4].Value = pet_bday;
 
-            param[5] = new MySqlParameter("Pet_Reg_Date", MySqlDbType.VarChar);
+            param[5] = new MySqlParameter("Pet_Reg_Date", MySqlDbType.Date);
             param[5].Value = pet_reg_date;
 
             param[6] = new MySqlParameter("Pet_Status", MySqlDbType.VarChar);

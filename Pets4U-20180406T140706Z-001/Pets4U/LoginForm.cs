@@ -75,6 +75,7 @@ namespace Pets4U
                 cmbClinickNum.DisplayMember = "Clinic_Number";
                 cmbClinickNum.ValueMember = "Clinic_Number";
                 cmbClinickNum.DataSource = ds.Tables["clinic"];
+                cmbClinickNum.SelectedIndex = -1;
             }
             catch(System.Exception exc)
             {
