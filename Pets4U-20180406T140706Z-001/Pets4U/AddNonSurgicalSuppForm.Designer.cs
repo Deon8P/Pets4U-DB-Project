@@ -40,18 +40,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtItem_num = new System.Windows.Forms.TextBox();
             this.txtItemName = new System.Windows.Forms.TextBox();
             this.txtItemDescription = new System.Windows.Forms.TextBox();
             this.cmbQuantity = new System.Windows.Forms.ComboBox();
             this.cmbReorderLevel = new System.Windows.Forms.ComboBox();
-            this.cmbReorderQuantity = new System.Windows.Forms.ComboBox();
             this.txtItemCost = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.txtClinicNumber = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -189,24 +189,12 @@
             this.label4.TabIndex = 72;
             this.label4.Text = "Reorder Level:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(36, 462);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 32);
-            this.label6.TabIndex = 73;
-            this.label6.Text = "Reorder Quantity:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(100, 513);
+            this.label5.Location = new System.Drawing.Point(100, 468);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 32);
@@ -293,40 +281,9 @@
             this.cmbReorderLevel.Size = new System.Drawing.Size(202, 21);
             this.cmbReorderLevel.TabIndex = 82;
             // 
-            // cmbReorderQuantity
-            // 
-            this.cmbReorderQuantity.AutoCompleteCustomSource.AddRange(new string[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbReorderQuantity.FormattingEnabled = true;
-            this.cmbReorderQuantity.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbReorderQuantity.Location = new System.Drawing.Point(251, 474);
-            this.cmbReorderQuantity.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbReorderQuantity.Name = "cmbReorderQuantity";
-            this.cmbReorderQuantity.Size = new System.Drawing.Size(202, 21);
-            this.cmbReorderQuantity.TabIndex = 83;
-            // 
             // txtItemCost
             // 
-            this.txtItemCost.Location = new System.Drawing.Point(251, 525);
+            this.txtItemCost.Location = new System.Drawing.Point(251, 480);
             this.txtItemCost.Margin = new System.Windows.Forms.Padding(2);
             this.txtItemCost.Name = "txtItemCost";
             this.txtItemCost.Size = new System.Drawing.Size(202, 20);
@@ -369,23 +326,40 @@
             this.pictureBox6.TabIndex = 87;
             this.pictureBox6.TabStop = false;
             // 
+            // txtClinicNumber
+            // 
+            this.txtClinicNumber.Location = new System.Drawing.Point(251, 535);
+            this.txtClinicNumber.Name = "txtClinicNumber";
+            this.txtClinicNumber.Size = new System.Drawing.Size(202, 20);
+            this.txtClinicNumber.TabIndex = 88;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(71, 525);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 30);
+            this.label6.TabIndex = 89;
+            this.label6.Text = "Clinic Number:";
+            // 
             // AddNonSurgicalSuppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1370, 686);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtClinicNumber);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtItemCost);
-            this.Controls.Add(this.cmbReorderQuantity);
             this.Controls.Add(this.cmbReorderLevel);
             this.Controls.Add(this.cmbQuantity);
             this.Controls.Add(this.txtItemDescription);
             this.Controls.Add(this.txtItemName);
             this.Controls.Add(this.txtItem_num);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -428,17 +402,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtItem_num;
         private System.Windows.Forms.TextBox txtItemName;
         private System.Windows.Forms.TextBox txtItemDescription;
         private System.Windows.Forms.ComboBox cmbQuantity;
         private System.Windows.Forms.ComboBox cmbReorderLevel;
-        private System.Windows.Forms.ComboBox cmbReorderQuantity;
         private System.Windows.Forms.TextBox txtItemCost;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.TextBox txtClinicNumber;
+        private System.Windows.Forms.Label label6;
     }
 }

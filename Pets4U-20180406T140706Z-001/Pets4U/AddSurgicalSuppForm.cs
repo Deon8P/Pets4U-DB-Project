@@ -44,14 +44,20 @@ namespace Pets4U
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Database_Class db = new Database_Class();
+
             string item_name, item_description;
-            int item_num, reorder_level, reoreder_quantity, quantity;
+            int item_num, clinic_num;
             double item_cost;
+
+            int reorder_lvl = 0;
+            int quantity = 0;
 
             item_name = txtItemName.Text;
             item_description = txtItemDescription.Text;
 
             item_num = Convert.ToInt32(txtItemNumber.Text);
+            clinic_num = Convert.ToInt32(txtClinicNumber.Text);
 
 
             if (cmbQuantity.SelectedItem != null)
@@ -61,19 +67,14 @@ namespace Pets4U
 
             if (cmbReorderLevel.SelectedItem != null)
             {
-                reorder_level = int.Parse(cmbReorderLevel.SelectedItem.ToString());
-            }
-
-            if (cmbReorderQuantity.SelectedItem != null)
-            {
-                reoreder_quantity = int.Parse(cmbReorderQuantity.SelectedItem.ToString());
+                reorder_lvl = int.Parse(cmbReorderLevel.SelectedItem.ToString());
             }
 
             item_cost = Convert.ToDouble(txtItemCost.Text);
 
             //call method
             ///////////////////////////////////////////////////////////////////
-
+            db.insert_surgical_supplies(item_num, clinic_num, item_name, item_description, quantity, reorder_lvl, item_cost);
             ///////////////////////////////////////////////////////////////////
         }
 

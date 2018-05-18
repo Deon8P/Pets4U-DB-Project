@@ -405,6 +405,158 @@ namespace Pets4U
             connection.Close();
         }
 
+        public void insert_surgical_supplies(int supply_num, int clinic_num, string supply_name, string supply_description, int quantity_of_stock, int reorder_level, double supply_cost)
+        {
+            MySqlParameter[] param = new MySqlParameter[7];
+
+            param[0] = new MySqlParameter("Supply_Number", MySqlDbType.Int32);
+            param[0].Value = supply_num;
+
+            param[1] = new MySqlParameter("Clinic_Number", MySqlDbType.Int32);
+            param[1].Value = clinic_num;
+
+            param[2] = new MySqlParameter("Supply_Name", MySqlDbType.VarChar);
+            param[2].Value = supply_name;
+
+            param[3] = new MySqlParameter("Supply_Description", MySqlDbType.VarChar);
+            param[3].Value = supply_description;
+
+            param[4] = new MySqlParameter("Quantity_Of_Dtock", MySqlDbType.Int32);
+            param[4].Value = quantity_of_stock;
+
+            param[5] = new MySqlParameter("Reorder_Level", MySqlDbType.Int32);
+            param[5].Value = reorder_level;
+
+            param[6] = new MySqlParameter("Supply_Cost", MySqlDbType.Double);
+            param[6].Value = supply_cost;
+
+
+
+            MySqlCommand sql_cmd = new MySqlCommand();
+            sql_cmd.Connection = connection;
+            sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            sql_cmd.CommandText = "insert_surgical_supplies";
+            sql_cmd.Parameters.AddRange(param);
+
+            connection.Open();
+
+            if (sql_cmd.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("The surgical supplies information has been successfully inserted.", "Surgical Supplies", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Information input error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            connection.Close();
+        }
+
+
+        public void insert_non_surgical_supplies(int supply_num, string supply_name, string supply_description, int quantity_of_stock, int reorder_level, double supply_cost, int clinic_num)
+        {
+            MySqlParameter[] param = new MySqlParameter[7];
+
+            param[0] = new MySqlParameter("Supply_Number", MySqlDbType.Int32);
+            param[0].Value = supply_num;
+
+            param[1] = new MySqlParameter("Supply_Name", MySqlDbType.VarChar);
+            param[1].Value = supply_name;
+
+            param[2] = new MySqlParameter("Supply_Description", MySqlDbType.VarChar);
+            param[2].Value = supply_description;
+
+            param[3] = new MySqlParameter("Quantity_Of_Dtock", MySqlDbType.Int32);
+            param[3].Value = quantity_of_stock;
+
+            param[4] = new MySqlParameter("Reorder_Level", MySqlDbType.Int32);
+            param[4].Value = reorder_level;
+
+            param[5] = new MySqlParameter("Supply_Cost", MySqlDbType.Double);
+            param[5].Value = supply_cost;
+
+            param[6] = new MySqlParameter("Clinic_Number", MySqlDbType.Int32);
+            param[6].Value = clinic_num;
+
+
+
+            MySqlCommand sql_cmd = new MySqlCommand();
+            sql_cmd.Connection = connection;
+            sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            sql_cmd.CommandText = "insert_non_surgical_supplies";
+            sql_cmd.Parameters.AddRange(param);
+
+            connection.Open();
+
+            if (sql_cmd.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("The non-surgical supplies information has been successfully inserted.", "Non-Surgical Supplies", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Information input error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            connection.Close();
+        }
+
+
+        public void insert_pharma_supplies(int drug_num, int clinic_number, string drug_name, string drug_description, double drug_dosage, string method_of_admin, int quantity_in_stock, int reorder_level, int drug_quantity, double drug_cost)
+        {
+            MySqlParameter[] param = new MySqlParameter[10];
+
+            param[0] = new MySqlParameter("Drug_Number", MySqlDbType.Int32);
+            param[0].Value = drug_num;
+
+            param[1] = new MySqlParameter("Clinic_Number", MySqlDbType.Int32);
+            param[1].Value = clinic_number;
+
+            param[2] = new MySqlParameter("Drug_Name", MySqlDbType.VarChar);
+            param[2].Value = drug_name;
+
+            param[3] = new MySqlParameter("Drug_Description", MySqlDbType.VarChar);
+            param[3].Value = drug_description;
+
+            param[4] = new MySqlParameter("Drug_Dosage", MySqlDbType.Double);
+            param[4].Value = drug_dosage;
+
+            param[5] = new MySqlParameter("Method_Of_Admin", MySqlDbType.VarChar);
+            param[5].Value = method_of_admin;
+
+            param[6] = new MySqlParameter("Quantity_In_Stock", MySqlDbType.Int32);
+            param[6].Value = quantity_in_stock;
+
+            param[7] = new MySqlParameter("Reorder_Level", MySqlDbType.Int32);
+            param[7].Value = reorder_level;
+
+            param[8] = new MySqlParameter("Drug_Quantity", MySqlDbType.Int32);
+            param[8].Value = drug_quantity;
+
+            param[9] = new MySqlParameter("Drug_Cost", MySqlDbType.Double);
+            param[9].Value = drug_cost;
+
+
+
+            MySqlCommand sql_cmd = new MySqlCommand();
+            sql_cmd.Connection = connection;
+            sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            sql_cmd.CommandText = "insert_pharma_supplies";
+            sql_cmd.Parameters.AddRange(param);
+
+            connection.Open();
+
+            if (sql_cmd.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("The pharmacutical supplies information has been successfully inserted.", "Pharmacutical Supplies", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Information input error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            connection.Close();
+        }
+
 
 
         //==================//////////////////==================//

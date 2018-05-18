@@ -50,11 +50,13 @@
             this.txtDrugDescription = new System.Windows.Forms.TextBox();
             this.txtDosage = new System.Windows.Forms.TextBox();
             this.txtMethodAdministration = new System.Windows.Forms.TextBox();
-            this.txtQuantityStock = new System.Windows.Forms.TextBox();
-            this.txtReorderLvl = new System.Windows.Forms.TextBox();
-            this.txtReorderQuantity = new System.Windows.Forms.TextBox();
             this.txtDrugCost = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtClinicNumber = new System.Windows.Forms.TextBox();
+            this.cmbQuantity_In_Stock = new System.Windows.Forms.ComboBox();
+            this.cmbReorder_lvl = new System.Windows.Forms.ComboBox();
+            this.cmb_Drug_Quantity = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -218,12 +220,12 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(86, 554);
+            this.label7.Location = new System.Drawing.Point(113, 555);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(166, 32);
+            this.label7.Size = new System.Drawing.Size(143, 32);
             this.label7.TabIndex = 72;
-            this.label7.Text = "Reorder Quantity:";
+            this.label7.Text = "Drug Quantity:";
             // 
             // label8
             // 
@@ -293,31 +295,6 @@
             this.txtMethodAdministration.Size = new System.Drawing.Size(202, 20);
             this.txtMethodAdministration.TabIndex = 79;
             // 
-            // txtQuantityStock
-            // 
-            this.txtQuantityStock.Location = new System.Drawing.Point(299, 462);
-            this.txtQuantityStock.Margin = new System.Windows.Forms.Padding(2);
-            this.txtQuantityStock.Name = "txtQuantityStock";
-            this.txtQuantityStock.Size = new System.Drawing.Size(202, 20);
-            this.txtQuantityStock.TabIndex = 80;
-            this.txtQuantityStock.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // txtReorderLvl
-            // 
-            this.txtReorderLvl.Location = new System.Drawing.Point(299, 517);
-            this.txtReorderLvl.Margin = new System.Windows.Forms.Padding(2);
-            this.txtReorderLvl.Name = "txtReorderLvl";
-            this.txtReorderLvl.Size = new System.Drawing.Size(202, 20);
-            this.txtReorderLvl.TabIndex = 81;
-            // 
-            // txtReorderQuantity
-            // 
-            this.txtReorderQuantity.Location = new System.Drawing.Point(299, 566);
-            this.txtReorderQuantity.Margin = new System.Windows.Forms.Padding(2);
-            this.txtReorderQuantity.Name = "txtReorderQuantity";
-            this.txtReorderQuantity.Size = new System.Drawing.Size(202, 20);
-            this.txtReorderQuantity.TabIndex = 82;
-            // 
             // txtDrugCost
             // 
             this.txtDrugCost.Location = new System.Drawing.Point(299, 618);
@@ -336,17 +313,60 @@
             this.pictureBox5.TabIndex = 84;
             this.pictureBox5.TabStop = false;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(131, 657);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(133, 30);
+            this.label11.TabIndex = 86;
+            this.label11.Text = "Clinic Number:";
+            // 
+            // txtClinicNumber
+            // 
+            this.txtClinicNumber.Location = new System.Drawing.Point(299, 667);
+            this.txtClinicNumber.Name = "txtClinicNumber";
+            this.txtClinicNumber.Size = new System.Drawing.Size(202, 20);
+            this.txtClinicNumber.TabIndex = 87;
+            // 
+            // cmbQuantity_In_Stock
+            // 
+            this.cmbQuantity_In_Stock.FormattingEnabled = true;
+            this.cmbQuantity_In_Stock.Location = new System.Drawing.Point(299, 459);
+            this.cmbQuantity_In_Stock.Name = "cmbQuantity_In_Stock";
+            this.cmbQuantity_In_Stock.Size = new System.Drawing.Size(202, 21);
+            this.cmbQuantity_In_Stock.TabIndex = 88;
+            // 
+            // cmbReorder_lvl
+            // 
+            this.cmbReorder_lvl.FormattingEnabled = true;
+            this.cmbReorder_lvl.Location = new System.Drawing.Point(299, 516);
+            this.cmbReorder_lvl.Name = "cmbReorder_lvl";
+            this.cmbReorder_lvl.Size = new System.Drawing.Size(202, 21);
+            this.cmbReorder_lvl.TabIndex = 89;
+            // 
+            // cmb_Drug_Quantity
+            // 
+            this.cmb_Drug_Quantity.FormattingEnabled = true;
+            this.cmb_Drug_Quantity.Location = new System.Drawing.Point(299, 565);
+            this.cmb_Drug_Quantity.Name = "cmb_Drug_Quantity";
+            this.cmb_Drug_Quantity.Size = new System.Drawing.Size(202, 21);
+            this.cmb_Drug_Quantity.TabIndex = 90;
+            // 
             // AddPharmacticalSuppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1028, 749);
+            this.Controls.Add(this.cmb_Drug_Quantity);
+            this.Controls.Add(this.cmbReorder_lvl);
+            this.Controls.Add(this.cmbQuantity_In_Stock);
+            this.Controls.Add(this.txtClinicNumber);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.txtDrugCost);
-            this.Controls.Add(this.txtReorderQuantity);
-            this.Controls.Add(this.txtReorderLvl);
-            this.Controls.Add(this.txtQuantityStock);
             this.Controls.Add(this.txtMethodAdministration);
             this.Controls.Add(this.txtDosage);
             this.Controls.Add(this.txtDrugDescription);
@@ -406,10 +426,12 @@
         private System.Windows.Forms.TextBox txtDrugDescription;
         private System.Windows.Forms.TextBox txtDosage;
         private System.Windows.Forms.TextBox txtMethodAdministration;
-        private System.Windows.Forms.TextBox txtQuantityStock;
-        private System.Windows.Forms.TextBox txtReorderLvl;
-        private System.Windows.Forms.TextBox txtReorderQuantity;
         private System.Windows.Forms.TextBox txtDrugCost;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtClinicNumber;
+        private System.Windows.Forms.ComboBox cmbQuantity_In_Stock;
+        private System.Windows.Forms.ComboBox cmbReorder_lvl;
+        private System.Windows.Forms.ComboBox cmb_Drug_Quantity;
     }
 }
