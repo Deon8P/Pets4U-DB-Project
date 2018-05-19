@@ -58,7 +58,7 @@ namespace Pets4U
                 pet_number = int.Parse(cmbPetNum.SelectedItem.ToString());
             }
 
-            examNum = staff_number + ran.Next(111, 999);
+            examNum = staff_number + pet_number + ran.Next(111, 999);
 
 
 

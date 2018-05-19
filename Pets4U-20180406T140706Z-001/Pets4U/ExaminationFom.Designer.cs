@@ -53,7 +53,6 @@
             this.cmbStaffNum = new System.Windows.Forms.ComboBox();
             this.txtTime = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.cmbPetNum = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -67,7 +66,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-5, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1601, 111);
             this.pictureBox1.TabIndex = 5;
@@ -77,7 +76,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(-5, 102);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(642, 13);
             this.pictureBox2.TabIndex = 35;
@@ -87,7 +86,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(628, 102);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(642, 13);
             this.pictureBox3.TabIndex = 36;
@@ -97,7 +96,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(1246, 102);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(642, 13);
             this.pictureBox4.TabIndex = 37;
@@ -111,7 +110,7 @@
             this.button5.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Location = new System.Drawing.Point(1257, 33);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(125, 37);
             this.button5.TabIndex = 43;
@@ -218,7 +217,7 @@
             // txtVetFName
             // 
             this.txtVetFName.Location = new System.Drawing.Point(316, 382);
-            this.txtVetFName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtVetFName.Margin = new System.Windows.Forms.Padding(2);
             this.txtVetFName.Name = "txtVetFName";
             this.txtVetFName.Size = new System.Drawing.Size(202, 20);
             this.txtVetFName.TabIndex = 83;
@@ -226,7 +225,7 @@
             // txtPet_name
             // 
             this.txtPet_name.Location = new System.Drawing.Point(316, 478);
-            this.txtPet_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPet_name.Margin = new System.Windows.Forms.Padding(2);
             this.txtPet_name.Name = "txtPet_name";
             this.txtPet_name.Size = new System.Drawing.Size(202, 20);
             this.txtPet_name.TabIndex = 86;
@@ -234,7 +233,7 @@
             // txtTypePet
             // 
             this.txtTypePet.Location = new System.Drawing.Point(316, 531);
-            this.txtTypePet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTypePet.Margin = new System.Windows.Forms.Padding(2);
             this.txtTypePet.Name = "txtTypePet";
             this.txtTypePet.Size = new System.Drawing.Size(202, 20);
             this.txtTypePet.TabIndex = 87;
@@ -242,7 +241,7 @@
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(851, 263);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(532, 279);
             this.richTextBox1.TabIndex = 88;
@@ -256,7 +255,7 @@
             this.button7.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.Location = new System.Drawing.Point(1028, 607);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(176, 38);
             this.button7.TabIndex = 89;
@@ -268,7 +267,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(392, 415);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(455, 431);
             this.pictureBox5.TabIndex = 90;
@@ -278,7 +277,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(1254, 540);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(268, 372);
             this.pictureBox6.TabIndex = 91;
@@ -317,14 +316,6 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 94;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(0, 0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 95;
-            // 
             // cmbPetNum
             // 
             this.cmbPetNum.FormattingEnabled = true;
@@ -340,7 +331,6 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.cmbPetNum);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.cmbStaffNum);
             this.Controls.Add(this.label4);
@@ -365,7 +355,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ExaminationFom";
             this.Text = "ExaminationFom";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -407,7 +397,6 @@
         private System.Windows.Forms.ComboBox cmbStaffNum;
         private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox cmbPetNum;
     }
 }
