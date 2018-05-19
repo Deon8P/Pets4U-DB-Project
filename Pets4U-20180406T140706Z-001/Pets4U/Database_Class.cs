@@ -189,11 +189,7 @@ namespace Pets4U
             connection.Close();
         }
 
-        public void insert_examination(int Examination_Number, string Examination_Date, string Examination_Time, string Vet_Name, int Pet_Number, 
-                                       string Pet_Name, string Pet_Type, string Resluts_Description, string Staff_Num)
-        {
 
-        }
 
         //==================//////////////////==================//
 
@@ -682,6 +678,129 @@ namespace Pets4U
             }
 
             connection.Close();
+        }
+
+        public void insert_examination(int examination_number, string examination_date, string examination_time, string vet_name, int pet_number,
+                              string pet_name, string pet_type, string resluts_description, int staff_num)
+        {
+
+            MySqlParameter[] param = new MySqlParameter[9];
+
+            param[0] = new MySqlParameter("Examination_Number", MySqlDbType.Int32);
+            param[0].Value = examination_number;
+
+            param[1] = new MySqlParameter("Examination_Date", MySqlDbType.Date);
+            param[1].Value = examination_date;
+
+            param[2] = new MySqlParameter("Examination_Time", MySqlDbType.Time);
+            param[2].Value = examination_time;
+
+            param[3] = new MySqlParameter("Vet_Name", MySqlDbType.VarChar);
+            param[3].Value = vet_name;
+
+            param[4] = new MySqlParameter("Pet_Number", MySqlDbType.Int32);
+            param[4].Value = pet_number;
+
+            param[5] = new MySqlParameter("Pet_Name", MySqlDbType.VarChar);
+            param[5].Value = pet_name;
+
+            param[6] = new MySqlParameter("Pet_Type", MySqlDbType.VarChar);
+            param[6].Value = pet_type;
+
+            param[7] = new MySqlParameter("Results_Description", MySqlDbType.VarChar);
+            param[7].Value = resluts_description;
+
+            param[8] = new MySqlParameter("Staff_Num", MySqlDbType.Int32);
+            param[8].Value = staff_num;
+
+
+            MySqlCommand sql_cmd = new MySqlCommand();
+            sql_cmd.Connection = connection;
+            sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            sql_cmd.CommandText = "insert_examination";
+            sql_cmd.Parameters.AddRange(param);
+
+            connection.Open();
+
+            if (sql_cmd.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("The examination information has been successfully inserted.", "Examination", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Information input error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            connection.Close();
+
+        }
+
+
+        public void invoices(int invoice_number, string invoice_date, int owner_number, string owner_firstname, string owner_street,
+         string owner_city, string owner_state, int owner_zip, double owner_cost, double total_cost, string date_paid, string payment_method, int treatment_num)
+        {
+
+            MySqlParameter[] param = new MySqlParameter[9];
+
+            param[0] = new MySqlParameter("Invoice_Number", MySqlDbType.Int32);
+            param[0].Value = invoice_number;
+
+            param[1] = new MySqlParameter("Invoice_Date", MySqlDbType.Date);
+            param[1].Value = invoice_date;
+
+            param[2] = new MySqlParameter("Owner_Number", MySqlDbType.Int32);
+            param[2].Value = owner_number;
+
+            param[3] = new MySqlParameter("Owner_Fname", MySqlDbType.VarChar);
+            param[3].Value = owner_firstname;
+
+            param[4] = new MySqlParameter("Owner_Street", MySqlDbType.VarChar);
+            param[4].Value = owner_street;
+
+            param[5] = new MySqlParameter("Owner_City", MySqlDbType.VarChar);
+            param[5].Value = owner_city;
+
+            param[6] = new MySqlParameter("Owner_State", MySqlDbType.VarChar);
+            param[6].Value = owner_state;
+
+            param[7] = new MySqlParameter("Owner_Zip", MySqlDbType.Int32);
+            param[7].Value = owner_zip;
+
+            param[8] = new MySqlParameter("Owner_Cost", MySqlDbType.Double);
+            param[8].Value = owner_cost;
+
+            param[9] = new MySqlParameter("Total_Cost", MySqlDbType.Double);
+            param[9].Value = total_cost;
+
+            param[10] = new MySqlParameter("Date_Paid", MySqlDbType.Date);
+            param[10].Value = date_paid;
+
+            param[11] = new MySqlParameter("Payment_Method", MySqlDbType.VarChar);
+            param[11].Value = payment_method;
+
+            param[12] = new MySqlParameter("Treatment_Num", MySqlDbType.Int32);
+            param[12].Value = treatment_num;
+
+
+            MySqlCommand sql_cmd = new MySqlCommand();
+            sql_cmd.Connection = connection;
+            sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            sql_cmd.CommandText = "insert_invoices";
+            sql_cmd.Parameters.AddRange(param);
+
+            connection.Open();
+
+            if (sql_cmd.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("The invoice information has been successfully inserted.", "Invoice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Information input error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            connection.Close();
+
         }
 
 
