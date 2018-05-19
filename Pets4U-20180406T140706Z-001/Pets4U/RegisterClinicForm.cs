@@ -22,7 +22,7 @@ namespace Pets4U
         private void RegisterClinicForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             LoginForm LoginForm = new LoginForm();
-            LoginForm.ShowDialog();
+            LoginForm.Show();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
