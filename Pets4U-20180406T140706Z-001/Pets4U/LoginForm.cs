@@ -43,20 +43,27 @@ namespace Pets4U
         {
             flag = true;
 
-            if (database.EmployeelogIn(txtEmpNum.Text, txtPass.Text, Convert.ToInt32(cmbClinickNum.SelectedValue.ToString())))
+            if((txtEmpNum.Text.Equals("")) || (txtPass.Text.Equals("")) || (cmbClinickNum.SelectedValue == null))
+                MessageBox.Show("Invalid Login Details");
+            else
             {
-                if (txtEmpNum.Text.Substring(3, 1).Equals("S"))
+                if (database.EmployeelogIn(txtEmpNum.Text, txtPass.Text, Convert.ToInt32(cmbClinickNum.SelectedValue.ToString())))
                 {
-                    SecretariesForm SecForm = new SecretariesForm();
-                    SecForm.ShowDialog();
-                    this.Close();
+                    if (txtEmpNum.Text.Substring(3, 1).Equals("S"))
+                    {
+                        SecretariesForm SecForm = new SecretariesForm();
+                        SecForm.ShowDialog();
+                        this.Close();
+                    }
+                    else if (txtEmpNum.Text.Substring(3, 1).Equals("V"))
+                    {
+                        ManagerForm manager = new ManagerForm();
+                        manager.ShowDialog();
+                        this.Close();
+                    }
                 }
-                if(txtEmpNum.Text.Substring(3, 1).Equals("V"))
-                {
-                    ManagerForm manager = new ManagerForm();
-                    manager.ShowDialog();
-                    this.Close();
-                }
+                else
+                    MessageBox.Show("Invalid login details");               
             }
         }
 
