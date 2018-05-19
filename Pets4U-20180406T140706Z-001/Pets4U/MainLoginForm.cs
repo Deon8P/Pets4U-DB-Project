@@ -21,7 +21,8 @@ namespace Pets4U
         {
             LoginForm lform = new LoginForm();
             lform.ShowDialog();
-            this.Close();
+
+            this.Hide();
         }
     }
 }

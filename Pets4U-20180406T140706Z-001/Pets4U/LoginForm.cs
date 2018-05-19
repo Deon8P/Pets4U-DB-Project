@@ -28,15 +28,15 @@ namespace Pets4U
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
             flag = true;
             RegisterEmployee registerEmployee = new RegisterEmployee();
-            registerEmployee.ShowDialog();
-            this.Close();
+            registerEmployee.Show();
+            Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -52,14 +52,14 @@ namespace Pets4U
                     if (txtEmpNum.Text.Substring(3, 1).Equals("S"))
                     {
                         SecretariesForm SecForm = new SecretariesForm();
-                        SecForm.ShowDialog();
-                        this.Close();
+                        SecForm.Show();
+                        Close();
                     }
                     else if (txtEmpNum.Text.Substring(3, 1).Equals("V"))
                     {
                         ManagerForm manager = new ManagerForm();
-                        manager.ShowDialog();
-                        this.Close();
+                        manager.Show();
+                        Close();
                     }
                 }
                 else
@@ -71,8 +71,8 @@ namespace Pets4U
         {
             flag = true;
             RegisterClinicForm regClinic = new RegisterClinicForm();
-            regClinic.ShowDialog();
-            this.Close();
+            regClinic.Show();
+            Close();
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
@@ -108,7 +108,7 @@ namespace Pets4U
             if (flag == false)
             {
                 MainLoginForm MainForm = new MainLoginForm();
-                MainForm.ShowDialog();
+                MainForm.Show();
             }
         }
     }

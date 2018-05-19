@@ -31,7 +31,7 @@ namespace Pets4U
         {
             flag = true;
             ExaminationFom ExamForm = new ExaminationFom();
-            ExamForm.ShowDialog();
+            ExamForm.Show();
             this.Close();
         }
 
@@ -202,7 +202,7 @@ namespace Pets4U
             if(flag == false)
             {
                 LoginForm login = new LoginForm();
-                login.ShowDialog();
+                login.Show();
             }
         }
 

@@ -35,7 +35,7 @@ namespace Pets4U
         {
             flag = true;
             RegisterPetFrom RegPetForm = new RegisterPetFrom();
-            RegPetForm.ShowDialog();
+            RegPetForm.Show();
             this.Close();
         }
 
@@ -43,7 +43,7 @@ namespace Pets4U
         {
             flag = true;
             BookPenForm BookForm = new BookPenForm();
-            BookForm.ShowDialog();
+            BookForm.Show();
             this.Close();
         }
 
@@ -51,7 +51,7 @@ namespace Pets4U
         {
             flag = true;
             AddSurgicalSuppForm AddSurSupp = new AddSurgicalSuppForm();
-            AddSurSupp.ShowDialog();
+            AddSurSupp.Show();
             this.Close();
         }
 
@@ -59,7 +59,7 @@ namespace Pets4U
         {
             flag = true;
             AddNonSurgicalSuppForm NonSurSuppForm = new AddNonSurgicalSuppForm();
-            NonSurSuppForm.ShowDialog();
+            NonSurSuppForm.Show();
             this.Close();
         }
 
@@ -67,7 +67,7 @@ namespace Pets4U
         {
             flag = true;
             AddPharmacticalSuppForm PharmSuppForm = new AddPharmacticalSuppForm();
-            PharmSuppForm.ShowDialog();
+            PharmSuppForm.Show();
             this.Close();
         }
 
@@ -75,7 +75,7 @@ namespace Pets4U
         {
             flag = true;
             AppointmentForm AppForm = new AppointmentForm();
-            AppForm.ShowDialog();
+            AppForm.Show();
             this.Close();
         }
 
@@ -83,7 +83,7 @@ namespace Pets4U
         {
             flag = true;
             InvoiceForm InvoiceFForm = new InvoiceForm();
-            InvoiceFForm.ShowDialog();
+            InvoiceFForm.Show();
             this.Close();
         }
 
@@ -92,7 +92,7 @@ namespace Pets4U
             if (flag == false)
             {
                 LoginForm loginForm = new LoginForm();
-                loginForm.ShowDialog();
+                loginForm.Show();
             }
         }
 
