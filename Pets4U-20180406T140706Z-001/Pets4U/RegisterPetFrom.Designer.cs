@@ -334,7 +334,6 @@
             this.label14.TabIndex = 56;
             this.label14.Text = "Owner Number:";
             this.label14.UseMnemonic = false;
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // txtOwn_FName
             // 
@@ -417,7 +416,6 @@
             this.pictureBox5.Size = new System.Drawing.Size(928, 386);
             this.pictureBox5.TabIndex = 64;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // RegisterPetFrom
             // 

@@ -138,7 +138,7 @@ namespace Pets4U
                 dataGridView1.DataSource = ds;
                 dataGridView1.DataMember = "pet";
 
-                lblDisplayGW.Text = "pet";
+                lblDisplayGW.Text = "Registered Pets";
             }
             catch (Exception exc)
             {
@@ -246,7 +246,7 @@ namespace Pets4U
                 dataGridView1.DataSource = ds;
                 dataGridView1.DataMember = "pharma_supplies";
 
-                lblDisplayGW.Text = "Pharmasutical Supplies";
+                lblDisplayGW.Text = "Pharmacetical Supplies";
             }
             catch (Exception exc)
             {
