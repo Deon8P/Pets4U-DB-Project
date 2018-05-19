@@ -132,7 +132,7 @@ namespace Pets4U
         }
 
         public void insert_appointment(int Appointment_Number, int Owner_Num, string Owner_Lname, string Owner_Fname, string Owner_Tel, 
-                                       int Pet_Number, string Pet_Name, string Pet_Type, string Appointment_Date, string Appointment_Time, int Clinic_Number)
+                                       int Pet_Number, string Pet_Name, string Pet_Type, DateTime Appointment_Date, string Appointment_Time, int Clinic_Number)
         {
             MySqlParameter[] param = new MySqlParameter[11];
 
@@ -249,7 +249,7 @@ namespace Pets4U
             return true;
         }
 
-        public bool EmployeelogIn(string emp_num, string password, int ClinicNum)
+        public bool EmployeelogIn(string emp_num, string password, string ClinicNum)
         {
             bool login = false;
 
@@ -269,7 +269,7 @@ namespace Pets4U
                     string emp_password = reader[1].ToString();
                     string clinic_num = reader[2].ToString();
 
-                    if (emp_number.Equals(emp_num) && emp_password.Equals(password))//&& (clinic_num == ClinicNum)
+                    if (emp_number.Equals(emp_num) && emp_password.Equals(password))// && clinic_num.Equals(ClinicNum))
                     {
                         login = true;
                         break;

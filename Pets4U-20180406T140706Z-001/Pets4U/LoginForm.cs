@@ -47,7 +47,7 @@ namespace Pets4U
                 MessageBox.Show("Invalid Login Details");
             else
             {
-                if (database.EmployeelogIn(txtEmpNum.Text, txtPass.Text, Convert.ToInt32(cmbClinickNum.SelectedValue.ToString())))
+                if (database.EmployeelogIn(txtEmpNum.Text, txtPass.Text, cmbClinickNum.SelectedValue.ToString()) == true)
                 {
                     if (txtEmpNum.Text.Substring(3, 1).Equals("S"))
                     {

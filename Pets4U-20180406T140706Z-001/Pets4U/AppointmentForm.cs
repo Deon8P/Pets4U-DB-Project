@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
@@ -17,30 +18,63 @@ namespace Pets4U
             InitializeComponent();
         }
 
+        Database_Class database = new Database_Class();
+        public MySqlConnection connection;
+        public MySqlDataAdapter adapter;
+        public DataSet ds;
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-            int appoint_num, own_num, tel_num, pet_num;
-            string own_fname, own_lname, pet_name, pet_type;
-            DateTime appoint_time;
+            int appoint_num, own_num, pet_num, clinicNum;
+            string own_fname, own_lname, pet_name, pet_type, appoint_time, tel_num;
             DateTime date;
 
             appoint_num = Convert.ToInt32(txtAppointmentNum.Text);
             own_num = Convert.ToInt32(txtOwn_num.Text);
-            tel_num = Convert.ToInt32(txtTel.Text);
+            tel_num = txtTel.Text;
             pet_num = Convert.ToInt32(txtPet_number.Text);
-
+            clinicNum = Convert.ToInt32(cmbClinicNumber.SelectedValue.ToString());
             own_fname = txtOwn_FName.Text;
             own_lname = txtOwn_LName.Text;
             pet_name = txtPet_name.Text;
             pet_type = txtPet_type.Text;
 
-            appoint_time = Convert.ToDateTime(txtTime.Text);
+            appoint_time = comboBox1.SelectedItem.ToString(); ;
 
             date = dateTimePicker1.Value;
 
             //call method
-            
+            database.insert_appointment(appoint_num, own_num, own_lname, own_fname, tel_num, pet_num, pet_name, pet_type, date, appoint_time, clinicNum);
 
+        }
+
+        private void AppointmentForm_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                connection = database.connection;
+                connection.Open();
+
+                adapter = new MySqlDataAdapter("SELECT Clinic_Number FROM clinic", connection);
+
+                ds = new DataSet();
+
+                adapter.Fill(ds, "clinic");
+
+                cmbClinicNumber.DisplayMember = "Clinic_Number";
+                cmbClinicNumber.ValueMember = "Clinic_Number";
+                cmbClinicNumber.DataSource = ds.Tables["clinic"];
+                cmbClinicNumber.SelectedIndex = -1;
+            }
+            catch (System.Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
     }
 }

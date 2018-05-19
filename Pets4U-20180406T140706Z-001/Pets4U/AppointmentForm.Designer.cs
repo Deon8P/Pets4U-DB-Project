@@ -52,11 +52,13 @@
             this.txtPet_number = new System.Windows.Forms.TextBox();
             this.txtPet_name = new System.Windows.Forms.TextBox();
             this.txtPet_type = new System.Windows.Forms.TextBox();
-            this.txtTime = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtAppointmentNum = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbClinicNumber = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -135,7 +137,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(200, 312);
+            this.label1.Location = new System.Drawing.Point(199, 280);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 40);
             this.label1.TabIndex = 69;
@@ -146,7 +148,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(171, 372);
+            this.label2.Location = new System.Drawing.Point(170, 340);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(218, 40);
             this.label2.TabIndex = 70;
@@ -157,7 +159,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(171, 432);
+            this.label3.Location = new System.Drawing.Point(170, 400);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(214, 40);
             this.label3.TabIndex = 71;
@@ -168,7 +170,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(83, 486);
+            this.label4.Location = new System.Drawing.Point(82, 454);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(293, 40);
             this.label4.TabIndex = 72;
@@ -179,7 +181,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(224, 540);
+            this.label5.Location = new System.Drawing.Point(223, 508);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 40);
             this.label5.TabIndex = 73;
@@ -190,7 +192,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(251, 608);
+            this.label6.Location = new System.Drawing.Point(250, 576);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 40);
             this.label6.TabIndex = 74;
@@ -201,7 +203,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(224, 664);
+            this.label7.Location = new System.Drawing.Point(223, 632);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(147, 40);
             this.label7.TabIndex = 75;
@@ -212,7 +214,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(123, 717);
+            this.label8.Location = new System.Drawing.Point(122, 685);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(249, 40);
             this.label8.TabIndex = 76;
@@ -223,7 +225,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(117, 772);
+            this.label11.Location = new System.Drawing.Point(116, 740);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(254, 40);
             this.label11.TabIndex = 77;
@@ -231,7 +233,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(437, 731);
+            this.dateTimePicker1.Location = new System.Drawing.Point(436, 699);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(268, 22);
@@ -239,7 +241,7 @@
             // 
             // txtOwn_num
             // 
-            this.txtOwn_num.Location = new System.Drawing.Point(437, 327);
+            this.txtOwn_num.Location = new System.Drawing.Point(436, 295);
             this.txtOwn_num.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtOwn_num.Name = "txtOwn_num";
             this.txtOwn_num.Size = new System.Drawing.Size(268, 22);
@@ -247,7 +249,7 @@
             // 
             // txtOwn_FName
             // 
-            this.txtOwn_FName.Location = new System.Drawing.Point(437, 388);
+            this.txtOwn_FName.Location = new System.Drawing.Point(436, 356);
             this.txtOwn_FName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtOwn_FName.Name = "txtOwn_FName";
             this.txtOwn_FName.Size = new System.Drawing.Size(268, 22);
@@ -255,7 +257,7 @@
             // 
             // txtOwn_LName
             // 
-            this.txtOwn_LName.Location = new System.Drawing.Point(437, 446);
+            this.txtOwn_LName.Location = new System.Drawing.Point(436, 414);
             this.txtOwn_LName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtOwn_LName.Name = "txtOwn_LName";
             this.txtOwn_LName.Size = new System.Drawing.Size(268, 22);
@@ -263,7 +265,7 @@
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(437, 504);
+            this.txtTel.Location = new System.Drawing.Point(436, 472);
             this.txtTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(268, 22);
@@ -271,7 +273,7 @@
             // 
             // txtPet_number
             // 
-            this.txtPet_number.Location = new System.Drawing.Point(437, 555);
+            this.txtPet_number.Location = new System.Drawing.Point(436, 523);
             this.txtPet_number.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPet_number.Name = "txtPet_number";
             this.txtPet_number.Size = new System.Drawing.Size(268, 22);
@@ -279,7 +281,7 @@
             // 
             // txtPet_name
             // 
-            this.txtPet_name.Location = new System.Drawing.Point(437, 622);
+            this.txtPet_name.Location = new System.Drawing.Point(436, 590);
             this.txtPet_name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPet_name.Name = "txtPet_name";
             this.txtPet_name.Size = new System.Drawing.Size(268, 22);
@@ -287,19 +289,11 @@
             // 
             // txtPet_type
             // 
-            this.txtPet_type.Location = new System.Drawing.Point(437, 679);
+            this.txtPet_type.Location = new System.Drawing.Point(436, 647);
             this.txtPet_type.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPet_type.Name = "txtPet_type";
             this.txtPet_type.Size = new System.Drawing.Size(268, 22);
             this.txtPet_type.TabIndex = 86;
-            // 
-            // txtTime
-            // 
-            this.txtTime.Location = new System.Drawing.Point(437, 788);
-            this.txtTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(268, 22);
-            this.txtTime.TabIndex = 87;
             // 
             // button1
             // 
@@ -329,7 +323,7 @@
             // 
             // txtAppointmentNum
             // 
-            this.txtAppointmentNum.Location = new System.Drawing.Point(438, 278);
+            this.txtAppointmentNum.Location = new System.Drawing.Point(437, 246);
             this.txtAppointmentNum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAppointmentNum.Name = "txtAppointmentNum";
             this.txtAppointmentNum.Size = new System.Drawing.Size(268, 22);
@@ -340,11 +334,56 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(120, 263);
+            this.label10.Location = new System.Drawing.Point(119, 231);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(269, 40);
             this.label10.TabIndex = 90;
             this.label10.Text = "Appointment_Number :";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00"});
+            this.comboBox1.Location = new System.Drawing.Point(436, 754);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(269, 24);
+            this.comboBox1.TabIndex = 92;
+            // 
+            // cmbClinicNumber
+            // 
+            this.cmbClinicNumber.FormattingEnabled = true;
+            this.cmbClinicNumber.Items.AddRange(new object[] {
+            "09:00",
+            "10:00",
+            "11:00",
+            "12:00",
+            "13:00",
+            "14:00",
+            "15:00",
+            "16:00"});
+            this.cmbClinicNumber.Location = new System.Drawing.Point(436, 794);
+            this.cmbClinicNumber.Name = "cmbClinicNumber";
+            this.cmbClinicNumber.Size = new System.Drawing.Size(269, 24);
+            this.cmbClinicNumber.TabIndex = 94;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(187, 780);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(183, 40);
+            this.label12.TabIndex = 93;
+            this.label12.Text = "Clinic Number :";
             // 
             // AppointmentForm
             // 
@@ -352,10 +391,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.Controls.Add(this.cmbClinicNumber);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtAppointmentNum);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtTime);
             this.Controls.Add(this.txtPet_type);
             this.Controls.Add(this.txtPet_name);
             this.Controls.Add(this.txtPet_number);
@@ -384,6 +425,7 @@
             this.Name = "AppointmentForm";
             this.Text = "AppointmentForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AppointmentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -419,10 +461,12 @@
         private System.Windows.Forms.TextBox txtPet_number;
         private System.Windows.Forms.TextBox txtPet_name;
         private System.Windows.Forms.TextBox txtPet_type;
-        private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox txtAppointmentNum;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbClinicNumber;
+        private System.Windows.Forms.Label label12;
     }
 }
