@@ -17,12 +17,17 @@ namespace Pets4U
             InitializeComponent();
         }
 
+
         private void LoginButton_Click(object sender, EventArgs e)
         {
             LoginForm lform = new LoginForm();
-            lform.ShowDialog();
-
+            lform.Show();
             this.Hide();
+        }
+
+        private void MainLoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

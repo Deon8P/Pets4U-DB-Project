@@ -53,13 +53,13 @@ namespace Pets4U
                     {
                         SecretariesForm SecForm = new SecretariesForm();
                         SecForm.Show();
-                        Close();
+                        this.Close();
                     }
                     else if (txtEmpNum.Text.Substring(3, 1).Equals("V"))
                     {
                         ManagerForm manager = new ManagerForm();
                         manager.Show();
-                        Close();
+                        this.Close();
                     }
                 }
                 else
@@ -72,7 +72,7 @@ namespace Pets4U
             flag = true;
             RegisterClinicForm regClinic = new RegisterClinicForm();
             regClinic.Show();
-            Close();
+            this.Close();
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
