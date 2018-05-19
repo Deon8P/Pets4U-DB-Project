@@ -44,5 +44,10 @@ namespace Pets4U
 
             this.Close();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

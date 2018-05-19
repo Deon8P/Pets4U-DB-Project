@@ -31,30 +31,35 @@ namespace Pets4U
 
         private void btnProcess_Click(object sender, EventArgs e)
         {
-            columnQ = "Quantity_Of_Stock";
-
-            if (table.Equals("pharma_supplies"))
-                columnQ = "Quantity_In_Stock";
-
-            amount = Convert.ToInt32(textBox1.Text);
-
-            getamount = database.getAmount(table, cmbItemName.SelectedValue.ToString(), columnQ, columnN);
-
-            if (getamount == 0)
+            if (!textBox1.Text.Equals("") || cmbItemName.SelectedValue != null)
             {
-                MessageBox.Show("There are no supplies left");
-                clear();
-            }
-            else if (amount > getamount)
-            {
-                MessageBox.Show("There are only " + getamount + " item(s) left");
-                clear();
+                columnQ = "Quantity_Of_Stock";
+
+                if (table.Equals("pharma_supplies"))
+                    columnQ = "Quantity_In_Stock";
+
+                amount = Convert.ToInt32(textBox1.Text);
+
+                getamount = database.getAmount(table, cmbItemName.SelectedValue.ToString(), columnQ, columnN);
+
+                if (getamount == 0)
+                {
+                    MessageBox.Show("There are no supplies left");
+                    clear();
+                }
+                else if (amount > getamount)
+                {
+                    MessageBox.Show("There are only " + getamount + " item(s) left");
+                    clear();
+                }
+                else
+                {
+                    database.UpdateSupplies(table, (getamount - amount), cmbItemName.SelectedValue.ToString(), columnQ, columnN);
+                    this.Close();
+                }
             }
             else
-            {
-                database.UpdateSupplies(table, (getamount - amount), cmbItemName.SelectedValue.ToString(), columnQ, columnN);
-                this.Close();
-            }
+                MessageBox.Show("please fill in values");
         }
 
         private void SupplyUpdateForm_Load(object sender, EventArgs e)

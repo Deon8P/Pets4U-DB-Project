@@ -51,6 +51,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.mtxtTel = new System.Windows.Forms.MaskedTextBox();
             this.mtxtFax = new System.Windows.Forms.MaskedTextBox();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -279,12 +280,24 @@
             this.mtxtFax.Size = new System.Drawing.Size(269, 22);
             this.mtxtFax.TabIndex = 69;
             // 
+            // btnBack
+            // 
+            this.btnBack.ForeColor = System.Drawing.Color.Black;
+            this.btnBack.Location = new System.Drawing.Point(1599, 34);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(118, 37);
+            this.btnBack.TabIndex = 70;
+            this.btnBack.Text = "BACK";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // RegisterClinicForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1371, 922);
+            this.ClientSize = new System.Drawing.Size(1924, 922);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.mtxtFax);
             this.Controls.Add(this.mtxtTel);
             this.Controls.Add(this.pictureBox5);
@@ -349,6 +362,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.MaskedTextBox mtxtTel;
         private System.Windows.Forms.MaskedTextBox mtxtFax;
+        private System.Windows.Forms.Button btnBack;
     }
 }
 
