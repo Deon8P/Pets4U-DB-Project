@@ -100,7 +100,6 @@ namespace Pets4U
             if (!txtItemName.Text.Equals(null) || !txtItemDescription.Equals(null) || !txtItemNumber.Equals(null) || !txtItemCost.Equals(null) || cmbQuantity.SelectedItem != null || cmbReorderLevel.SelectedItem != null || cmbReorderQuantity.SelectedItem != null || cmbClinicNum.SelectedValue != null)
             {
                 db.insert_surgical_supplies(item_num, clinic_num, item_name, item_description, quantity, reorder_lvl, reorder_quantity, item_cost);
-                this.Close();
             }
             else
             {
@@ -113,6 +112,23 @@ namespace Pets4U
         {
             SecretariesForm form = new SecretariesForm();
             form.Show();
+        }
+
+        public void clear()
+        {
+            txtItemCost.Clear();
+            txtItemDescription.Clear();
+            txtItemName.Clear();
+            txtItemNumber.Clear();
+            cmbClinicNum.SelectedIndex = -1;
+            cmbQuantity.SelectedIndex = -1;
+            cmbReorderLevel.SelectedIndex = -1;
+            cmbReorderQuantity.SelectedIndex = -1;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

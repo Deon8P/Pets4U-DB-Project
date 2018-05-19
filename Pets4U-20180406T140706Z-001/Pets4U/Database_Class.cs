@@ -421,7 +421,7 @@ namespace Pets4U
             param[3] = new MySqlParameter("Supply_Description", MySqlDbType.VarChar);
             param[3].Value = supply_description;
 
-            param[4] = new MySqlParameter("Quantity_Of_Stock", MySqlDbType.Int32);
+            param[4] = new MySqlParameter("Quantity_In_Stock", MySqlDbType.Int32);
             param[4].Value = quantity_of_stock;
 
             param[5] = new MySqlParameter("Reorder_Level", MySqlDbType.Int32);

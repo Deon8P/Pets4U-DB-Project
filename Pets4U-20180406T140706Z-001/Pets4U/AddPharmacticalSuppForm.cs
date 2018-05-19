@@ -55,11 +55,6 @@ namespace Pets4U
 
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Database_Class db = new Database_Class();
@@ -95,9 +90,9 @@ namespace Pets4U
                 reorder_quantity = int.Parse(cmb_Drug_Quantity.SelectedItem.ToString());
             }
 
-            if (cmbClinicNumber.SelectedItem != null)
+            if (cmbClinicNumber.SelectedValue != null)
             {
-                clinic_number = int.Parse(cmbClinicNumber.SelectedItem.ToString());
+                clinic_number = int.Parse(cmbClinicNumber.SelectedValue.ToString());
             }
 
 
@@ -105,15 +100,41 @@ namespace Pets4U
             drug_cost = Convert.ToDouble(txtDrugCost.Text);
 
 
-            if (!txtDrugName.Text.Equals(null) || !txtDrugDescription.Text.Equals(null) || !txtMethodAdministration.Text.Equals(null) || cmbQuantity_In_Stock.SelectedItem != null || cmbReorder_lvl.SelectedItem != null || cmbClinicNumber.SelectedItem != null || cmb_Drug_Quantity != null || !txtDosage.Text.Equals(null) || !txtDrugCost.Text.Equals(null))
+            if (!txtDrugName.Text.Equals(null) || !txtDrugDescription.Text.Equals(null) || !txtMethodAdministration.Text.Equals(null) || cmbQuantity_In_Stock.SelectedItem != null || cmbReorder_lvl.SelectedItem != null || cmbClinicNumber.SelectedValue != null || cmb_Drug_Quantity != null || !txtDosage.Text.Equals(null) || !txtDrugCost.Text.Equals(null))
             {
                 db.insert_pharma_supplies(drug_num, clinic_number, drug_name, drug_description, dosage, method_admin, quantity_stock, reorder_lvl, reorder_quantity, drug_cost);
+                clear();
             }
             else
             {
                 MessageBox.Show("Please enter all required information", "Pharmacutical Supplies", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void AddPharmacticalSuppForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SecretariesForm form = new SecretariesForm();
+            form.Show();
+        }
+
+        public void clear()
+        {
+            txtDosage.Clear();
+            txtDrugCost.Clear();
+            txtDrugDescription.Clear();
+            txtDrugName.Clear();
+            txtDrugNum.Clear();
+            txtMethodAdministration.Clear();
+            cmbClinicNumber.SelectedIndex = -1;
+            cmbQuantity_In_Stock.SelectedIndex = -1;
+            cmbReorder_lvl.SelectedIndex = -1;
+            cmb_Drug_Quantity.SelectedIndex = -1;
         }
     }
 }

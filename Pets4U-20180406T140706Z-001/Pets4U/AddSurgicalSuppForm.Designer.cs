@@ -114,6 +114,7 @@
             this.button5.TabIndex = 64;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label9
             // 
@@ -329,6 +330,17 @@
             // cmbReorderQuantity
             // 
             this.cmbReorderQuantity.FormattingEnabled = true;
+            this.cmbReorderQuantity.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.cmbReorderQuantity.Location = new System.Drawing.Point(347, 566);
             this.cmbReorderQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.cmbReorderQuantity.Name = "cmbReorderQuantity";

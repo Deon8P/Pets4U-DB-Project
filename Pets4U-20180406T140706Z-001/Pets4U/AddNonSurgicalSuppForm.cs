@@ -55,8 +55,6 @@ namespace Pets4U
 
         private void button5_Click(object sender, EventArgs e)
         {
-            SecretariesForm SecForm = new SecretariesForm();
-            SecForm.ShowDialog();
             this.Close();
         }
 
@@ -107,13 +105,31 @@ namespace Pets4U
             if (!txtItemName.Text.Equals(null) || !txtItemDescription.Equals(null) || !txtItem_num.Equals(null) || !txtItemCost.Equals(null) || cmbQuantity.SelectedItem != null || cmbReorderLevel.SelectedItem != null || cmbReorderQuantity.SelectedItem != null || cmbClinicNum.SelectedValue != null)
             {
                 db.insert_non_surgical_supplies(item_num, item_name, item_description, quantity, reorder_level, reorder_quantity, item_cost, clinic_number);
+                clear();
             }
             else
             {
                 MessageBox.Show("Please enter all required information", "Non-Surgical Supplies", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-        }  
+        }
 
+        public void clear()
+        {
+            txtItemCost.Clear();
+            txtItemDescription.Clear();
+            txtItemName.Clear();
+            txtItem_num.Clear();
+            cmbClinicNum.SelectedIndex = -1;
+            cmbQuantity.SelectedIndex = -1;
+            cmbReorderLevel.SelectedIndex = -1;
+            cmbReorderQuantity.SelectedIndex = -1;
+        }
+
+        private void AddNonSurgicalSuppForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SecretariesForm SecForm = new SecretariesForm();
+            SecForm.Show();
+        }
     }
 }
