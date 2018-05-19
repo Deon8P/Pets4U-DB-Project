@@ -153,7 +153,6 @@
             this.label1.Size = new System.Drawing.Size(111, 32);
             this.label1.TabIndex = 68;
             this.label1.Text = "Item Name:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -316,7 +315,6 @@
             this.pictureBox5.Size = new System.Drawing.Size(796, 513);
             this.pictureBox5.TabIndex = 86;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 

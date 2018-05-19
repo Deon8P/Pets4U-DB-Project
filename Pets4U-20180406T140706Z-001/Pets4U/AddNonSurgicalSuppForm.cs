@@ -53,16 +53,6 @@ namespace Pets4U
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             SecretariesForm SecForm = new SecretariesForm();
@@ -76,13 +66,13 @@ namespace Pets4U
 
             string item_name, item_description;
 
-            int item_num; 
+            int item_num = 0; 
             int clinic_number = 0;
             int quantity = 0;
             int reorder_level = 0;
             int reorder_quantity = 0;
 
-            double item_cost;
+            double item_cost = 0;
 
             item_name = txtItemName.Text;
             item_description = txtItemDescription.Text;
@@ -105,16 +95,16 @@ namespace Pets4U
                 reorder_quantity = int.Parse(cmbReorderQuantity.SelectedItem.ToString());
             }
 
-            if (cmbClinicNum.SelectedItem != null)
+            if (cmbClinicNum.SelectedValue != null)
             {
-                clinic_number = int.Parse(cmbClinicNum.SelectedItem.ToString());
+                clinic_number = int.Parse(cmbClinicNum.SelectedValue.ToString());
             }
 
 
             item_cost = Convert.ToDouble(txtItemCost.Text);
 
           
-            if (!txtItemName.Text.Equals(null) || !txtItemDescription.Equals(null) || !txtItem_num.Equals(null) || !txtItemCost.Equals(null) || cmbQuantity.SelectedItem != null || cmbReorderLevel.SelectedItem != null || cmbReorderQuantity.SelectedItem != null || cmbClinicNum.SelectedItem != null || cmbClinicNum.SelectedItem != null)
+            if (!txtItemName.Text.Equals(null) || !txtItemDescription.Equals(null) || !txtItem_num.Equals(null) || !txtItemCost.Equals(null) || cmbQuantity.SelectedItem != null || cmbReorderLevel.SelectedItem != null || cmbReorderQuantity.SelectedItem != null || cmbClinicNum.SelectedValue != null)
             {
                 db.insert_non_surgical_supplies(item_num, item_name, item_description, quantity, reorder_level, reorder_quantity, item_cost, clinic_number);
             }
@@ -123,15 +113,7 @@ namespace Pets4U
                 MessageBox.Show("Please enter all required information", "Non-Surgical Supplies", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            
-
-
-
         }  
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

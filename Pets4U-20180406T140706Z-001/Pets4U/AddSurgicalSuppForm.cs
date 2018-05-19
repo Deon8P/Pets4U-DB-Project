@@ -25,11 +25,6 @@ namespace Pets4U
         public DataSet ds;
         public string query;
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void AddSurgicalSuppForm_Load(object sender, EventArgs e)
         {
             try
@@ -59,28 +54,13 @@ namespace Pets4U
 
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Database_Class db = new Database_Class();
 
             string item_name, item_description;
-            int item_num;
-            double item_cost;
+            int item_num = 0;
+            double item_cost = 0;
 
             int clinic_num = 0;
             int reorder_lvl = 0;
@@ -109,17 +89,18 @@ namespace Pets4U
                 reorder_quantity = int.Parse(cmbReorderQuantity.SelectedItem.ToString());
             }
 
-            if (cmbClinicNum.SelectedItem != null)
+            if (cmbClinicNum.SelectedValue != null)
             {
-                clinic_num = int.Parse(cmbClinicNum.SelectedItem.ToString());
+                clinic_num = int.Parse(cmbClinicNum.SelectedValue.ToString());
             }
 
             item_cost = Convert.ToDouble(txtItemCost.Text);
 
           
-            if (!txtItemName.Text.Equals(null) || !txtItemDescription.Equals(null) || !txtItemNumber.Equals(null) || !txtItemCost.Equals(null) || cmbQuantity.SelectedItem != null || cmbReorderLevel.SelectedItem != null || cmbReorderQuantity.SelectedItem != null || cmbClinicNum.SelectedItem != null || cmbClinicNum.SelectedItem != null)
+            if (!txtItemName.Text.Equals(null) || !txtItemDescription.Equals(null) || !txtItemNumber.Equals(null) || !txtItemCost.Equals(null) || cmbQuantity.SelectedItem != null || cmbReorderLevel.SelectedItem != null || cmbReorderQuantity.SelectedItem != null || cmbClinicNum.SelectedValue != null)
             {
                 db.insert_surgical_supplies(item_num, clinic_num, item_name, item_description, quantity, reorder_lvl, reorder_quantity, item_cost);
+                this.Close();
             }
             else
             {
@@ -128,14 +109,10 @@ namespace Pets4U
            
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void AddSurgicalSuppForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-
-        }
-
-        private void cmbReorderQuantity_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            SecretariesForm form = new SecretariesForm();
+            form.Show();
         }
     }
 }
