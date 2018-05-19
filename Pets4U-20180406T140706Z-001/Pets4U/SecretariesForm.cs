@@ -237,16 +237,16 @@ namespace Pets4U
             {
                 connection = database.connection;
                 connection.Open();
-                adapter = new MySqlDataAdapter("SELECT * FROM pharm_supplies", connection);
+                adapter = new MySqlDataAdapter("SELECT * FROM pharma_supplies", connection);
 
                 ds = new DataSet();
 
-                adapter.Fill(ds, "pharm_supplies");
+                adapter.Fill(ds, "pharma_supplies");
 
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "pharm_supplies";
+                dataGridView1.DataMember = "pharma_supplies";
 
-                lblDisplayGW.Text = "Pharm Supplies";
+                lblDisplayGW.Text = "Pharmasutical Supplies";
             }
             catch (Exception exc)
             {
