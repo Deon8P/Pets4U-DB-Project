@@ -41,8 +41,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label6 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.rtbComments = new System.Windows.Forms.RichTextBox();
             this.txtPNum = new System.Windows.Forms.TextBox();
@@ -193,39 +191,20 @@
             this.dateTimePicker1.TabIndex = 71;
             this.dateTimePicker1.Value = new System.DateTime(2018, 4, 4, 12, 41, 20, 0);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(1476, 261);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(249, 40);
-            this.label6.TabIndex = 72;
-            this.label6.Text = "Treatments Required:";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(1483, 304);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(325, 160);
-            this.richTextBox1.TabIndex = 73;
-            this.richTextBox1.Text = "";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(1476, 473);
+            this.label7.Location = new System.Drawing.Point(719, 261);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(352, 40);
+            this.label7.Size = new System.Drawing.Size(345, 40);
             this.label7.TabIndex = 74;
-            this.label7.Text = "Additional Comments For Care:";
+            this.label7.Text = "Treatment and care Comments";
             // 
             // rtbComments
             // 
-            this.rtbComments.Location = new System.Drawing.Point(1483, 516);
+            this.rtbComments.Location = new System.Drawing.Point(726, 304);
             this.rtbComments.Name = "rtbComments";
             this.rtbComments.Size = new System.Drawing.Size(325, 160);
             this.rtbComments.TabIndex = 75;
@@ -380,8 +359,6 @@
             this.Controls.Add(this.txtPNum);
             this.Controls.Add(this.rtbComments);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -428,8 +405,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RichTextBox rtbComments;
         private System.Windows.Forms.TextBox txtPNum;
