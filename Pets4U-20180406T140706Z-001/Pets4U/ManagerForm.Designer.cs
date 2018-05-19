@@ -374,6 +374,7 @@
             this.button14.TabIndex = 70;
             this.button14.Text = "View Financial Data";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // pictureBox8
             // 
