@@ -20,6 +20,8 @@ namespace Pets4U
 
         Database_Class database = new Database_Class();
 
+        public string penStatus;
+
         public MySqlConnection connection;
         public MySqlDataAdapter adapter;
         public DataSet ds;
@@ -57,7 +59,7 @@ namespace Pets4U
                 cmbPenNumber.DisplayMember = "Pen_Number";
                 cmbPenNumber.ValueMember = "Pen_Number";
                 cmbPenNumber.DataSource = ds.Tables["pens"];
-                cmbPenNumber.SelectedIndex = -1;
+                //cmbPenNumber.SelectedIndex = -1;
             }
             catch (System.Exception exc)
             {
@@ -97,24 +99,34 @@ namespace Pets4U
             }
         }
 
+        public string PenStat()
+        {
+            return penStatus = database.getStatus(Convert.ToInt32(cmbPenNumber.SelectedValue.ToString()));
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             int penNumber, penCap, petNumber, clinicNumber;
-            string penStatus, petComments;
+            string petComments;
             DateTime DateIN, DateOUT;
 
             penNumber = Convert.ToInt32(cmbPenNumber.SelectedValue.ToString());
             penCap = 4;
-            //penStatus 
             petNumber = Convert.ToInt32(txtPNum.Text);
             petComments = rtbComments.Text;
             DateIN = dateTimePicker1.Value;
             DateOUT = dateTimePicker2.Value;
-            //clinicNumber = Convert.ToInt32(cmbClinicNum.SelectedValue.ToString());
+            clinicNumber = Convert.ToInt32(cmbClinicNumber.SelectedValue.ToString());
 
-            //database.BookPen(penNumber, penCap, penStatus, petNumber, petComments, DateIN, DateOUT, clinicNumber);
+            database.BookPen(penNumber, penCap, penStatus, petNumber, petComments, DateIN, DateOUT, clinicNumber);
 
             this.Close();
+        }
+
+        private void cmbPenNumber_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            PenStat();
+            txtStat.Text = penStatus;   
         }
     }
 

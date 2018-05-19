@@ -70,7 +70,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(2135, 137);
@@ -114,7 +114,7 @@
             this.BookingReportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BookingReportBtn.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookingReportBtn.ForeColor = System.Drawing.Color.Black;
-            this.BookingReportBtn.Location = new System.Drawing.Point(150, 14);
+            this.BookingReportBtn.Location = new System.Drawing.Point(52, 14);
             this.BookingReportBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BookingReportBtn.Name = "BookingReportBtn";
             this.BookingReportBtn.Size = new System.Drawing.Size(320, 47);
@@ -130,7 +130,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(150, 66);
+            this.button1.Location = new System.Drawing.Point(52, 65);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(320, 47);
@@ -162,12 +162,12 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(492, 12);
+            this.button3.Location = new System.Drawing.Point(405, 12);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(196, 47);
+            this.button3.Size = new System.Drawing.Size(283, 47);
             this.button3.TabIndex = 39;
-            this.button3.Text = "View Booked Pens";
+            this.button3.Text = "View Fully Booked Pens";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -178,10 +178,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(492, 66);
+            this.button4.Location = new System.Drawing.Point(405, 66);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(196, 47);
+            this.button4.Size = new System.Drawing.Size(283, 47);
             this.button4.TabIndex = 40;
             this.button4.Text = "Book Pens";
             this.button4.UseVisualStyleBackColor = false;

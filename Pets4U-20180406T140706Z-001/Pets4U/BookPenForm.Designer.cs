@@ -57,6 +57,8 @@
             this.cmbClinicNumber = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtStat = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -144,7 +146,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(212, 352);
+            this.label2.Location = new System.Drawing.Point(212, 331);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 40);
             this.label2.TabIndex = 67;
@@ -155,7 +157,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(211, 412);
+            this.label3.Location = new System.Drawing.Point(207, 371);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(152, 40);
             this.label3.TabIndex = 68;
@@ -166,7 +168,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(216, 473);
+            this.label4.Location = new System.Drawing.Point(216, 411);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 40);
             this.label4.TabIndex = 69;
@@ -177,7 +179,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(262, 527);
+            this.label5.Location = new System.Drawing.Point(262, 451);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 40);
             this.label5.TabIndex = 70;
@@ -185,7 +187,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(402, 545);
+            this.dateTimePicker1.Location = new System.Drawing.Point(402, 464);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(268, 22);
             this.dateTimePicker1.TabIndex = 71;
@@ -231,21 +233,21 @@
             // 
             // txtPNum
             // 
-            this.txtPNum.Location = new System.Drawing.Point(402, 367);
+            this.txtPNum.Location = new System.Drawing.Point(402, 349);
             this.txtPNum.Name = "txtPNum";
             this.txtPNum.Size = new System.Drawing.Size(268, 22);
             this.txtPNum.TabIndex = 78;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(402, 427);
+            this.textBox3.Location = new System.Drawing.Point(402, 389);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(268, 22);
             this.textBox3.TabIndex = 79;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(402, 488);
+            this.textBox4.Location = new System.Drawing.Point(402, 429);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(268, 22);
             this.textBox4.TabIndex = 80;
@@ -284,10 +286,11 @@
             this.cmbPenNumber.Name = "cmbPenNumber";
             this.cmbPenNumber.Size = new System.Drawing.Size(268, 24);
             this.cmbPenNumber.TabIndex = 84;
+            this.cmbPenNumber.SelectedIndexChanged += new System.EventHandler(this.cmbPenNumber_SelectedIndexChanged);
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(402, 590);
+            this.dateTimePicker2.Location = new System.Drawing.Point(402, 504);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(268, 22);
             this.dateTimePicker2.TabIndex = 86;
@@ -298,7 +301,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(244, 572);
+            this.label1.Location = new System.Drawing.Point(244, 491);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 40);
             this.label1.TabIndex = 85;
@@ -330,7 +333,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(428, 646);
+            this.button1.Location = new System.Drawing.Point(438, 597);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 45);
             this.button1.TabIndex = 89;
@@ -338,12 +341,33 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // txtStat
+            // 
+            this.txtStat.Enabled = false;
+            this.txtStat.Location = new System.Drawing.Point(402, 549);
+            this.txtStat.Name = "txtStat";
+            this.txtStat.Size = new System.Drawing.Size(268, 22);
+            this.txtStat.TabIndex = 91;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(212, 531);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(138, 40);
+            this.label11.TabIndex = 90;
+            this.label11.Text = "Pen Status:";
+            // 
             // BookPenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.txtStat);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbClinicNumber);
             this.Controls.Add(this.label8);
@@ -420,5 +444,7 @@
         private System.Windows.Forms.ComboBox cmbClinicNumber;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtStat;
+        private System.Windows.Forms.Label label11;
     }
 }

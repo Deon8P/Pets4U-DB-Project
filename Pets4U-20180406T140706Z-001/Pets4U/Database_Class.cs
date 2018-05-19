@@ -361,28 +361,28 @@ namespace Pets4U
             {
                 MySqlParameter[] param = new MySqlParameter[8];
 
-                param[0] = new MySqlParameter("Owner_Number", MySqlDbType.Int32);
+                param[0] = new MySqlParameter("Pen_Number", MySqlDbType.Int32);
                 param[0].Value = penNum;
 
-                param[1] = new MySqlParameter("Owner_Lname", MySqlDbType.Int32);
+                param[1] = new MySqlParameter("Capacity", MySqlDbType.Int32);
                 param[1].Value = penCap;
 
-                param[2] = new MySqlParameter("Owner_Fname", MySqlDbType.VarChar);
+                param[2] = new MySqlParameter("Pen_Status", MySqlDbType.VarChar);
                 param[2].Value = penStatus;
 
-                param[3] = new MySqlParameter("Owner_Street", MySqlDbType.Int32);
+                param[3] = new MySqlParameter("Pet_Number", MySqlDbType.Int32);
                 param[3].Value = petNum;
 
-                param[4] = new MySqlParameter("Owner_City", MySqlDbType.VarChar);
+                param[4] = new MySqlParameter("Pet_Comments", MySqlDbType.VarChar);
                 param[4].Value = petComments;
 
-                param[5] = new MySqlParameter("Owner_State", MySqlDbType.Date);
+                param[5] = new MySqlParameter("Date_In", MySqlDbType.Date);
                 param[5].Value = DateIn;
 
-                param[6] = new MySqlParameter("Owner_Zip", MySqlDbType.Date);
+                param[6] = new MySqlParameter("Date_Out", MySqlDbType.Date);
                 param[6].Value = DateOut;
 
-                param[7] = new MySqlParameter("Owner_Tel", MySqlDbType.Int32);
+                param[7] = new MySqlParameter("Clinic_Number", MySqlDbType.Int32);
                 param[7].Value = clinickNum;
 
                 MySqlCommand sql_cmd = new MySqlCommand();
@@ -414,12 +414,45 @@ namespace Pets4U
             }
         }
 
-            //==================//////////////////==================//
+        public string getStatus(int penNum)
+        {
+            string status = "";
+            try
+            {
+                connection.Open();
+
+                string query = "Select Pen_Status From pens WHERE Pen_Number = " + penNum;
+
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    status = reader[0].ToString();
+                    break;
+                }
+
+                reader.Close();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return status;
+        }
+
+        //==================//////////////////==================//
 
 
-            //==================//_____Leonard//==================//
+        //==================//_____Leonard//==================//
 
-            public void insert_pet_owner(int own_num, string own_LName, string own_FName, string own_street, string own_city, string own_state, int own_zip, string own_tel, string pet_name, int clinic_number)
+        public void insert_pet_owner(int own_num, string own_LName, string own_FName, string own_street, string own_city, string own_state, int own_zip, string own_tel, string pet_name, int clinic_number)
         {
             MySqlParameter[] param = new MySqlParameter[10];
 
