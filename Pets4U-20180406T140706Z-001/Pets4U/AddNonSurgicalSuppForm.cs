@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
@@ -17,9 +18,39 @@ namespace Pets4U
             InitializeComponent();
         }
 
+        Database_Class database = new Database_Class();
+
+        public MySqlConnection connection;
+        public MySqlDataAdapter adapter;
+        public DataSet ds;
+        public string query;
+
         private void AddNonSurgicalSuppForm_Load(object sender, EventArgs e)
         {
+            try
+            {
+                connection = database.connection;
+                connection.Open();
 
+                adapter = new MySqlDataAdapter("SELECT Clinic_Number FROM clinic", connection);
+
+                ds = new DataSet();
+
+                adapter.Fill(ds, "clinic");
+
+                cmbClinicNum.DisplayMember = "Clinic_Number";
+                cmbClinicNum.ValueMember = "Clinic_Number";
+                cmbClinicNum.DataSource = ds.Tables["clinic"];
+                cmbClinicNum.SelectedIndex = -1;
+            }
+            catch (System.Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -45,9 +76,11 @@ namespace Pets4U
 
             string item_name, item_description;
 
-            int item_num, clinic_number;
+            int item_num; 
+            int clinic_number = 0;
             int quantity = 0;
             int reorder_level = 0;
+            int reorder_quantity = 0;
 
             double item_cost;
 
@@ -56,9 +89,7 @@ namespace Pets4U
 
             item_num = Convert.ToInt32(txtItem_num.Text);
 
-            clinic_number = Convert.ToInt32(txtClinicNumber.Text);
-            
-
+           
             if (cmbQuantity.SelectedItem != null)
             {
                 quantity = int.Parse(cmbQuantity.SelectedItem.ToString());
@@ -69,14 +100,30 @@ namespace Pets4U
                 reorder_level = int.Parse(cmbReorderLevel.SelectedItem.ToString());
             }
 
+            if (cmbReorderQuantity.SelectedItem != null)
+            {
+                reorder_quantity = int.Parse(cmbReorderQuantity.SelectedItem.ToString());
+            }
+
+            if (cmbClinicNum.SelectedItem != null)
+            {
+                clinic_number = int.Parse(cmbClinicNum.SelectedItem.ToString());
+            }
+
 
             item_cost = Convert.ToDouble(txtItemCost.Text);
 
-            //call method
-            ///////////////////////////////////////////////////////////////////
-            db.insert_non_surgical_supplies(item_num, item_name, item_description, quantity, reorder_level, item_cost, clinic_number);
+          
+            if (!txtItemName.Text.Equals(null) || !txtItemDescription.Equals(null) || !txtItem_num.Equals(null) || !txtItemCost.Equals(null) || cmbQuantity.SelectedItem != null || cmbReorderLevel.SelectedItem != null || cmbReorderQuantity.SelectedItem != null || cmbClinicNum.SelectedItem != null || cmbClinicNum.SelectedItem != null)
+            {
+                db.insert_non_surgical_supplies(item_num, item_name, item_description, quantity, reorder_level, reorder_quantity, item_cost, clinic_number);
+            }
+            else
+            {
+                MessageBox.Show("Please enter all required information", "Non-Surgical Supplies", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
-            ///////////////////////////////////////////////////////////////////
+            
 
 
 

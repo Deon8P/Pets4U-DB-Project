@@ -405,9 +405,9 @@ namespace Pets4U
             connection.Close();
         }
 
-        public void insert_surgical_supplies(int supply_num, int clinic_num, string supply_name, string supply_description, int quantity_of_stock, int reorder_level, double supply_cost)
+        public void insert_surgical_supplies(int supply_num, int clinic_num, string supply_name, string supply_description, int quantity_of_stock, int reorder_level,int reorder_quantity, double supply_cost)
         {
-            MySqlParameter[] param = new MySqlParameter[7];
+            MySqlParameter[] param = new MySqlParameter[8];
 
             param[0] = new MySqlParameter("Supply_Number", MySqlDbType.Int32);
             param[0].Value = supply_num;
@@ -427,8 +427,11 @@ namespace Pets4U
             param[5] = new MySqlParameter("Reorder_Level", MySqlDbType.Int32);
             param[5].Value = reorder_level;
 
-            param[6] = new MySqlParameter("Supply_Cost", MySqlDbType.Double);
-            param[6].Value = supply_cost;
+            param[6] = new MySqlParameter("Reorder_Quantity", MySqlDbType.Int32);
+            param[6].Value = reorder_quantity;
+
+            param[7] = new MySqlParameter("Supply_Cost", MySqlDbType.Double);
+            param[7].Value = supply_cost;
 
 
 
@@ -453,9 +456,9 @@ namespace Pets4U
         }
 
 
-        public void insert_non_surgical_supplies(int supply_num, string supply_name, string supply_description, int quantity_of_stock, int reorder_level, double supply_cost, int clinic_num)
+        public void insert_non_surgical_supplies(int supply_num, string supply_name, string supply_description, int quantity_of_stock, int reorder_level, int reorder_quantity, double supply_cost, int clinic_num)
         {
-            MySqlParameter[] param = new MySqlParameter[7];
+            MySqlParameter[] param = new MySqlParameter[8];
 
             param[0] = new MySqlParameter("Supply_Number", MySqlDbType.Int32);
             param[0].Value = supply_num;
@@ -472,11 +475,14 @@ namespace Pets4U
             param[4] = new MySqlParameter("Reorder_Level", MySqlDbType.Int32);
             param[4].Value = reorder_level;
 
-            param[5] = new MySqlParameter("Supply_Cost", MySqlDbType.Double);
-            param[5].Value = supply_cost;
+            param[5] = new MySqlParameter("Reorder_Quantity", MySqlDbType.Int32);
+            param[5].Value = reorder_quantity;
 
-            param[6] = new MySqlParameter("Clinic_Number", MySqlDbType.Int32);
-            param[6].Value = clinic_num;
+            param[6] = new MySqlParameter("Supply_Cost", MySqlDbType.Double);
+            param[6].Value = supply_cost;
+
+            param[7] = new MySqlParameter("Clinic_Number", MySqlDbType.Int32);
+            param[7].Value = clinic_num;
 
 
 
@@ -501,7 +507,7 @@ namespace Pets4U
         }
 
 
-        public void insert_pharma_supplies(int drug_num, int clinic_number, string drug_name, string drug_description, double drug_dosage, string method_of_admin, int quantity_in_stock, int reorder_level, int drug_quantity, double drug_cost)
+        public void insert_pharma_supplies(int drug_num, int clinic_number, string drug_name, string drug_description, double drug_dosage, string method_of_admin, int quantity_in_stock, int reorder_level, int reorder_quantity, double drug_cost)
         {
             MySqlParameter[] param = new MySqlParameter[10];
 
@@ -529,8 +535,8 @@ namespace Pets4U
             param[7] = new MySqlParameter("Reorder_Level", MySqlDbType.Int32);
             param[7].Value = reorder_level;
 
-            param[8] = new MySqlParameter("Drug_Quantity", MySqlDbType.Int32);
-            param[8].Value = drug_quantity;
+            param[8] = new MySqlParameter("Reorder_Quantity", MySqlDbType.Int32);
+            param[8].Value = reorder_quantity;
 
             param[9] = new MySqlParameter("Drug_Cost", MySqlDbType.Double);
             param[9].Value = drug_cost;

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
@@ -18,11 +18,40 @@ namespace Pets4U
             InitializeComponent();
         }
 
-      
+        Database_Class database = new Database_Class();
+
+        public MySqlConnection connection;
+        public MySqlDataAdapter adapter;
+        public DataSet ds;
+        public string query;
+
 
         private void AddPharmacticalSuppForm_Load(object sender, EventArgs e)
         {
-          
+            try
+            {
+                connection = database.connection;
+                connection.Open();
+
+                adapter = new MySqlDataAdapter("SELECT Clinic_Number FROM clinic", connection);
+
+                ds = new DataSet();
+
+                adapter.Fill(ds, "clinic");
+
+                cmbClinicNumber.DisplayMember = "Clinic_Number";
+                cmbClinicNumber.ValueMember = "Clinic_Number";
+                cmbClinicNumber.DataSource = ds.Tables["clinic"];
+                cmbClinicNumber.SelectedIndex = -1;
+            }
+            catch (System.Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
 
         }
 
@@ -35,11 +64,11 @@ namespace Pets4U
         {
             Database_Class db = new Database_Class();
 
-            int drug_num,clinic_number;
-
+            int drug_num;
+            int clinic_number = 0;
             int quantity_stock = 0;
             int reorder_lvl = 0;
-            int drug_quantity = 0;
+            int reorder_quantity = 0;
 
 
             string drug_name, drug_description, method_admin;
@@ -63,18 +92,28 @@ namespace Pets4U
 
             if (cmb_Drug_Quantity.SelectedItem != null)
             {
-                drug_quantity = int.Parse(cmb_Drug_Quantity.SelectedItem.ToString());
+                reorder_quantity = int.Parse(cmb_Drug_Quantity.SelectedItem.ToString());
+            }
+
+            if (cmbClinicNumber.SelectedItem != null)
+            {
+                clinic_number = int.Parse(cmbClinicNumber.SelectedItem.ToString());
             }
 
 
             dosage = Convert.ToDouble(txtDosage.Text);
             drug_cost = Convert.ToDouble(txtDrugCost.Text);
-            clinic_number = Convert.ToInt32(txtClinicNumber.Text);
 
 
-            db.insert_pharma_supplies(drug_num, clinic_number, drug_name, drug_description, dosage, method_admin, quantity_stock, reorder_lvl, drug_quantity, drug_cost);
-
-
+            if (!txtDrugName.Text.Equals(null) || !txtDrugDescription.Text.Equals(null) || !txtMethodAdministration.Text.Equals(null) || cmbQuantity_In_Stock.SelectedItem != null || cmbReorder_lvl.SelectedItem != null || cmbClinicNumber.SelectedItem != null || cmb_Drug_Quantity != null || !txtDosage.Text.Equals(null) || !txtDrugCost.Text.Equals(null))
+            {
+                db.insert_pharma_supplies(drug_num, clinic_number, drug_name, drug_description, dosage, method_admin, quantity_stock, reorder_lvl, reorder_quantity, drug_cost);
+            }
+            else
+            {
+                MessageBox.Show("Please enter all required information", "Pharmacutical Supplies", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
     }
 }

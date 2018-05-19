@@ -50,8 +50,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.txtClinicNumber = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.cmbClinicNum = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbReorderQuantity = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -194,7 +196,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(100, 468);
+            this.label5.Location = new System.Drawing.Point(100, 507);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 32);
@@ -283,10 +285,10 @@
             // 
             // txtItemCost
             // 
-            this.txtItemCost.Location = new System.Drawing.Point(251, 480);
+            this.txtItemCost.Location = new System.Drawing.Point(247, 518);
             this.txtItemCost.Margin = new System.Windows.Forms.Padding(2);
             this.txtItemCost.Name = "txtItemCost";
-            this.txtItemCost.Size = new System.Drawing.Size(202, 20);
+            this.txtItemCost.Size = new System.Drawing.Size(206, 20);
             this.txtItemCost.TabIndex = 84;
             // 
             // button1
@@ -296,7 +298,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(287, 583);
+            this.button1.Location = new System.Drawing.Point(286, 605);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 37);
@@ -326,22 +328,47 @@
             this.pictureBox6.TabIndex = 87;
             this.pictureBox6.TabStop = false;
             // 
-            // txtClinicNumber
-            // 
-            this.txtClinicNumber.Location = new System.Drawing.Point(251, 535);
-            this.txtClinicNumber.Name = "txtClinicNumber";
-            this.txtClinicNumber.Size = new System.Drawing.Size(202, 20);
-            this.txtClinicNumber.TabIndex = 88;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(71, 525);
+            this.label6.Location = new System.Drawing.Point(71, 557);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 30);
             this.label6.TabIndex = 89;
             this.label6.Text = "Clinic Number:";
+            // 
+            // cmbClinicNum
+            // 
+            this.cmbClinicNum.FormattingEnabled = true;
+            this.cmbClinicNum.Location = new System.Drawing.Point(247, 566);
+            this.cmbClinicNum.Name = "cmbClinicNum";
+            this.cmbClinicNum.Size = new System.Drawing.Size(206, 21);
+            this.cmbClinicNum.TabIndex = 90;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(48, 464);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(156, 30);
+            this.label7.TabIndex = 91;
+            this.label7.Text = "Reorder Quantity:";
+            // 
+            // cmbReorderQuantity
+            // 
+            this.cmbReorderQuantity.FormattingEnabled = true;
+            this.cmbReorderQuantity.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cmbReorderQuantity.Location = new System.Drawing.Point(251, 473);
+            this.cmbReorderQuantity.Name = "cmbReorderQuantity";
+            this.cmbReorderQuantity.Size = new System.Drawing.Size(202, 21);
+            this.cmbReorderQuantity.TabIndex = 92;
             // 
             // AddNonSurgicalSuppForm
             // 
@@ -349,8 +376,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1370, 686);
+            this.Controls.Add(this.cmbReorderQuantity);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cmbClinicNum);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtClinicNumber);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtItemCost);
@@ -412,7 +441,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox txtClinicNumber;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbClinicNum;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbReorderQuantity;
     }
 }
