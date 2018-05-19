@@ -389,7 +389,7 @@ namespace Pets4U
 
                 sql_cmd.Connection = connection;
                 sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                sql_cmd.CommandText = "Book_Pen";
+                sql_cmd.CommandText = "insert_pens";
 
                 sql_cmd.Parameters.AddRange(param);
 
