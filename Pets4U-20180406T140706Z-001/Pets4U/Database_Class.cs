@@ -15,9 +15,7 @@ namespace Pets4U
         public MySqlConnection connection = new MySqlConnection("datasource=den1.mysql2.gear.host; port=3306; Initial Catalog='petclientdb1';username='petclientdb1';password='Ty7H~_KGS4Zf';");
         //==================//_____Deon_____//==================//
 
-        
-
-        public void insert_staff(string Staff_Number, string Staff_Lname, string Staff_Fname, string Staff_Street, string Staff_City,
+                public void insert_staff(string Staff_Number, string Staff_Lname, string Staff_Fname, string Staff_Street, string Staff_City,
                                  string Staff_State, int Staff_Zip, string Staff_Tel, string Staff_Birth_Date, string Staff_Sex,
                                  string Staff_ID, string Staff_Position, double Staff_Annual_Salary, string Staff_Password, int Clinic_Number)
         {
@@ -292,6 +290,70 @@ namespace Pets4U
             return login;
         }
 
+        public int getAmount(string tableName, string itemType, string columnQ, string columnN)
+        {
+            int amount = 0;
+
+            try
+            {
+                connection.Open();
+
+                string query = "Select " + columnQ + " From " + tableName + " WHERE " + columnN +" = '" + itemType + "'";
+
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    amount = Convert.ToInt32(reader[0].ToString());
+                    break;
+                }
+
+                reader.Close();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return amount;
+
+        }
+
+        public void UpdateSupplies(string table, int amount, string itemName, string columnQ, string columnN)
+        {
+             MySqlCommand cmd;
+             MySqlDataAdapter adapter;
+
+            try
+            {
+                connection.Open();
+
+                adapter = new MySqlDataAdapter();
+
+                cmd = new MySqlCommand("UPDATE " + table + " SET " + columnQ + " = " + amount + " WHERE " + columnN + " = '" + itemName + "'", connection);
+
+                adapter.UpdateCommand = cmd;
+
+                if (adapter.UpdateCommand.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Supplies Updated.", "Supplies", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Supplies not updated.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+        }
 
         //==================//////////////////==================//
 

@@ -137,6 +137,12 @@
     <Compile Include="SecretariesForm.Designer.cs">
       <DependentUpon>SecretariesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SupplyUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplyUpdateForm.Designer.cs">
+      <DependentUpon>SupplyUpdateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TreatmentReportForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SecretariesForm.resx">
       <DependentUpon>SecretariesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplyUpdateForm.resx">
+      <DependentUpon>SupplyUpdateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TreatmentReportForm.resx">
       <DependentUpon>TreatmentReportForm.cs</DependentUpon>

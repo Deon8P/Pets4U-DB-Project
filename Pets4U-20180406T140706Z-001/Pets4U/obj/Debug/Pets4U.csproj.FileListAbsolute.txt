@@ -116,3 +116,4 @@ C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\
 C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.SecretariesForm.resources
 C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.TreatmentReportForm.resources
 C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.csproj.GenerateResource.Cache
+C:\Users\brand\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.SupplyUpdateForm.resources

@@ -211,5 +211,23 @@ namespace Pets4U
             flag = false;
             this.Close();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SupplyUpdateForm update = new SupplyUpdateForm("surgical_supplies");
+            update.ShowDialog();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            SupplyUpdateForm update = new SupplyUpdateForm("non_surgical_supplies");
+            update.ShowDialog();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            SupplyUpdateForm update = new SupplyUpdateForm("pharma_supplies");
+            update.ShowDialog();
+        }
     }
 }
