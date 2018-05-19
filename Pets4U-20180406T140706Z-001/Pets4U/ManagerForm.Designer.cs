@@ -45,7 +45,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.BookingReportBtn = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.lblDisplayGW = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -292,21 +291,6 @@
             this.button11.Text = "Update Pharmacetical Supplies";
             this.button11.UseVisualStyleBackColor = false;
             // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.Black;
-            this.button12.Location = new System.Drawing.Point(1555, 102);
-            this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(196, 47);
-            this.button12.TabIndex = 62;
-            this.button12.Text = "Update Employees";
-            this.button12.UseVisualStyleBackColor = false;
-            // 
             // lblDisplayGW
             // 
             this.lblDisplayGW.AutoSize = true;
@@ -412,7 +396,6 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblDisplayGW);
-            this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -467,7 +450,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BookingReportBtn;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Label lblDisplayGW;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox5;
