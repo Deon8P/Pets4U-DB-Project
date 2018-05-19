@@ -355,12 +355,71 @@ namespace Pets4U
             }
         }
 
-        //==================//////////////////==================//
+        public void BookPen(int penNum, int penCap, string penStatus, int petNum, string petComments, DateTime DateIn, DateTime DateOut, int clinickNum)
+        {
+            try
+            {
+                MySqlParameter[] param = new MySqlParameter[8];
+
+                param[0] = new MySqlParameter("Owner_Number", MySqlDbType.Int32);
+                param[0].Value = penNum;
+
+                param[1] = new MySqlParameter("Owner_Lname", MySqlDbType.Int32);
+                param[1].Value = penCap;
+
+                param[2] = new MySqlParameter("Owner_Fname", MySqlDbType.VarChar);
+                param[2].Value = penStatus;
+
+                param[3] = new MySqlParameter("Owner_Street", MySqlDbType.Int32);
+                param[3].Value = petNum;
+
+                param[4] = new MySqlParameter("Owner_City", MySqlDbType.VarChar);
+                param[4].Value = petComments;
+
+                param[5] = new MySqlParameter("Owner_State", MySqlDbType.Date);
+                param[5].Value = DateIn;
+
+                param[6] = new MySqlParameter("Owner_Zip", MySqlDbType.Date);
+                param[6].Value = DateOut;
+
+                param[7] = new MySqlParameter("Owner_Tel", MySqlDbType.Int32);
+                param[7].Value = clinickNum;
+
+                MySqlCommand sql_cmd = new MySqlCommand();
+
+                sql_cmd.Connection = connection;
+                sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                sql_cmd.CommandText = "Book_Pen";
+
+                sql_cmd.Parameters.AddRange(param);
+
+                connection.Open();
+
+                if (sql_cmd.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Pen was booked.", "Pet Owner", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Pen was not booked.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+            //==================//////////////////==================//
 
 
-        //==================//_____Leonard//==================//
+            //==================//_____Leonard//==================//
 
-       public void insert_pet_owner(int own_num, string own_LName, string own_FName, string own_street, string own_city, string own_state, int own_zip, string own_tel, string pet_name, int clinic_number)
+            public void insert_pet_owner(int own_num, string own_LName, string own_FName, string own_street, string own_city, string own_state, int own_zip, string own_tel, string pet_name, int clinic_number)
         {
             MySqlParameter[] param = new MySqlParameter[10];
 

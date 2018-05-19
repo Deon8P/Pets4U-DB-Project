@@ -44,14 +44,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.rtbComments = new System.Windows.Forms.RichTextBox();
+            this.txtPNum = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.cmbPenNumber = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbClinicNumber = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -104,7 +109,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(1795, 31);
+            this.button5.Location = new System.Drawing.Point(1552, 35);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(167, 45);
             this.button5.TabIndex = 63;
@@ -117,7 +122,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Sitka Banner", 25.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(319, 201);
+            this.label9.Location = new System.Drawing.Point(319, 172);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(298, 62);
             this.label9.TabIndex = 64;
@@ -172,11 +177,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(159, 532);
+            this.label5.Location = new System.Drawing.Point(262, 527);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(204, 40);
+            this.label5.Size = new System.Drawing.Size(101, 40);
             this.label5.TabIndex = 70;
-            this.label5.Text = "Pet Date Of Birth:";
+            this.label5.Text = "Date In:";
             // 
             // dateTimePicker1
             // 
@@ -191,7 +196,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(1153, 265);
+            this.label6.Location = new System.Drawing.Point(1476, 261);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(249, 40);
             this.label6.TabIndex = 72;
@@ -199,7 +204,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(1116, 314);
+            this.richTextBox1.Location = new System.Drawing.Point(1483, 304);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(325, 160);
             this.richTextBox1.TabIndex = 73;
@@ -210,33 +215,26 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(1469, 473);
+            this.label7.Location = new System.Drawing.Point(1476, 473);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(352, 40);
             this.label7.TabIndex = 74;
             this.label7.Text = "Additional Comments For Care:";
             // 
-            // richTextBox2
+            // rtbComments
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(1485, 532);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(325, 160);
-            this.richTextBox2.TabIndex = 75;
-            this.richTextBox2.Text = "";
+            this.rtbComments.Location = new System.Drawing.Point(1483, 516);
+            this.rtbComments.Name = "rtbComments";
+            this.rtbComments.Size = new System.Drawing.Size(325, 160);
+            this.rtbComments.TabIndex = 75;
+            this.rtbComments.Text = "";
             // 
-            // textBox6
+            // txtPNum
             // 
-            this.textBox6.Location = new System.Drawing.Point(402, 306);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(268, 22);
-            this.textBox6.TabIndex = 76;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(402, 367);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(268, 22);
-            this.textBox2.TabIndex = 78;
+            this.txtPNum.Location = new System.Drawing.Point(402, 367);
+            this.txtPNum.Name = "txtPNum";
+            this.txtPNum.Size = new System.Drawing.Size(268, 22);
+            this.txtPNum.TabIndex = 78;
             // 
             // textBox3
             // 
@@ -260,14 +258,13 @@
             this.pictureBox5.Size = new System.Drawing.Size(636, 536);
             this.pictureBox5.TabIndex = 81;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(-145, 615);
+            this.pictureBox6.Location = new System.Drawing.Point(-145, 618);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1105, 434);
+            this.pictureBox6.Size = new System.Drawing.Size(1105, 431);
             this.pictureBox6.TabIndex = 82;
             this.pictureBox6.TabStop = false;
             // 
@@ -280,18 +277,84 @@
             this.pictureBox7.TabIndex = 83;
             this.pictureBox7.TabStop = false;
             // 
+            // cmbPenNumber
+            // 
+            this.cmbPenNumber.FormattingEnabled = true;
+            this.cmbPenNumber.Location = new System.Drawing.Point(402, 304);
+            this.cmbPenNumber.Name = "cmbPenNumber";
+            this.cmbPenNumber.Size = new System.Drawing.Size(268, 24);
+            this.cmbPenNumber.TabIndex = 84;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(402, 590);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(268, 22);
+            this.dateTimePicker2.TabIndex = 86;
+            this.dateTimePicker2.Value = new System.DateTime(2018, 4, 4, 12, 41, 20, 0);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(244, 572);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 40);
+            this.label1.TabIndex = 85;
+            this.label1.Text = "Date Out:";
+            // 
+            // cmbClinicNumber
+            // 
+            this.cmbClinicNumber.FormattingEnabled = true;
+            this.cmbClinicNumber.Location = new System.Drawing.Point(402, 261);
+            this.cmbClinicNumber.Name = "cmbClinicNumber";
+            this.cmbClinicNumber.Size = new System.Drawing.Size(268, 24);
+            this.cmbClinicNumber.TabIndex = 88;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(186, 251);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(177, 40);
+            this.label8.TabIndex = 87;
+            this.label8.Text = "Clinic Number:";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(428, 646);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(167, 45);
+            this.button1.TabIndex = 89;
+            this.button1.Text = "Book Pen";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // BookPenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1924, 1043);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmbClinicNumber);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbPenNumber);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.txtPNum);
+            this.Controls.Add(this.rtbComments);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label6);
@@ -313,6 +376,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "BookPenForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BookPenForm_FormClosing);
+            this.Load += new System.EventHandler(this.BookPenForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -342,13 +407,18 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RichTextBox rtbComments;
+        private System.Windows.Forms.TextBox txtPNum;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.ComboBox cmbPenNumber;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbClinicNumber;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
     }
 }

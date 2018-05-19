@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
@@ -17,17 +18,105 @@ namespace Pets4U
             InitializeComponent();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
+        Database_Class database = new Database_Class();
 
-        }
+        public MySqlConnection connection;
+        public MySqlDataAdapter adapter;
+        public DataSet ds;
 
         private void button5_Click(object sender, EventArgs e)
         {
-            SecretariesForm SecForm = new SecretariesForm();
-            SecForm.ShowDialog();
             this.Close();
+        }
 
+        private void BookPenForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SecretariesForm form = new SecretariesForm();
+            form.Show();
+        }
+
+        private void BookPenForm_Load(object sender, EventArgs e)
+        {
+            cmbPen();
+            cmbClin();
+        }
+
+        public void cmbPen()
+        {
+            try
+            {
+                connection = database.connection;
+                connection.Open();
+
+                adapter = new MySqlDataAdapter("SELECT DISTINCT Pen_Number FROM pens WHERE Pen_Status = 'Open'", connection);
+
+                ds = new DataSet();
+
+                adapter.Fill(ds, "pens");
+
+                cmbPenNumber.DisplayMember = "Pen_Number";
+                cmbPenNumber.ValueMember = "Pen_Number";
+                cmbPenNumber.DataSource = ds.Tables["pens"];
+                cmbPenNumber.SelectedIndex = -1;
+            }
+            catch (System.Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public void cmbClin()
+        {
+            try
+            {
+                connection = database.connection;
+                connection.Open();
+
+                adapter = new MySqlDataAdapter("SELECT Clinic_Number FROM clinic", connection);
+
+                ds = new DataSet();
+
+                adapter.Fill(ds, "clinic");
+
+                cmbClinicNumber.DisplayMember = "Clinic_Number";
+                cmbClinicNumber.ValueMember = "Clinic_Number";
+                cmbClinicNumber.DataSource = ds.Tables["clinic"];
+                cmbClinicNumber.SelectedIndex = -1;
+            }
+            catch (System.Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int penNumber, penCap, petNumber, clinicNumber;
+            string penStatus, petComments;
+            DateTime DateIN, DateOUT;
+
+            penNumber = Convert.ToInt32(cmbPenNumber.SelectedValue.ToString());
+            penCap = 4;
+            //penStatus 
+            petNumber = Convert.ToInt32(txtPNum.Text);
+            petComments = rtbComments.Text;
+            DateIN = dateTimePicker1.Value;
+            DateOUT = dateTimePicker2.Value;
+            //clinicNumber = Convert.ToInt32(cmbClinicNum.SelectedValue.ToString());
+
+            //database.BookPen(penNumber, penCap, penStatus, petNumber, petComments, DateIN, DateOUT, clinicNumber);
+
+            this.Close();
         }
     }
+
+   
 }

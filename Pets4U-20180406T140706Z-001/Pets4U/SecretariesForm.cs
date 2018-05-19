@@ -50,8 +50,8 @@ namespace Pets4U
         private void button6_Click(object sender, EventArgs e)
         {
             flag = true;
-            AddSurgicalSuppForm AddSurSupp = new AddSurgicalSuppForm();
-            AddSurSupp.Show();
+            AddSurgicalSuppForm add = new AddSurgicalSuppForm();
+            add.Show();
             this.Close();
         }
 

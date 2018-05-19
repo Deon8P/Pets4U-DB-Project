@@ -30,23 +30,31 @@ namespace Pets4U
             string own_fname, own_lname, pet_name, pet_type, appoint_time, tel_num;
             DateTime date;
 
-            appoint_num = Convert.ToInt32(txtAppointmentNum.Text);
-            own_num = Convert.ToInt32(txtOwn_num.Text);
-            tel_num = txtTel.Text;
-            pet_num = Convert.ToInt32(txtPet_number.Text);
-            clinicNum = Convert.ToInt32(cmbClinicNumber.SelectedValue.ToString());
-            own_fname = txtOwn_FName.Text;
-            own_lname = txtOwn_LName.Text;
-            pet_name = txtPet_name.Text;
-            pet_type = txtPet_type.Text;
+            if (!txtAppointmentNum.Text.Equals("") || !txtOwn_FName.Text.Equals("") || !txtOwn_LName.Text.Equals("") ||
+                !txtOwn_num.Text.Equals("") || !txtPet_name.Text.Equals("") || !txtPet_number.Text.Equals("") ||
+                !txtPet_type.Text.Equals("") || !txtTel.Text.Equals("") || cmbClinicNumber.SelectedValue != null ||
+                comboBox1.SelectedIndex != -1)
+            {
+                appoint_num = Convert.ToInt32(txtAppointmentNum.Text);
+                own_num = Convert.ToInt32(txtOwn_num.Text);
+                tel_num = txtTel.Text;
+                pet_num = Convert.ToInt32(txtPet_number.Text);
+                clinicNum = Convert.ToInt32(cmbClinicNumber.SelectedValue.ToString());
+                own_fname = txtOwn_FName.Text;
+                own_lname = txtOwn_LName.Text;
+                pet_name = txtPet_name.Text;
+                pet_type = txtPet_type.Text;
 
-            appoint_time = comboBox1.SelectedItem.ToString(); ;
+                appoint_time = comboBox1.SelectedItem.ToString(); ;
 
-            date = dateTimePicker1.Value;
+                date = dateTimePicker1.Value;
 
-            //call method
-            database.insert_appointment(appoint_num, own_num, own_lname, own_fname, tel_num, pet_num, pet_name, pet_type, date, appoint_time, clinicNum);
-
+                //call method
+                database.insert_appointment(appoint_num, own_num, own_lname, own_fname, tel_num, pet_num, pet_name, pet_type, date, appoint_time, clinicNum);
+                this.Close();
+            }
+            else
+                MessageBox.Show("Some Info is still needed");
         }
 
         private void AppointmentForm_Load(object sender, EventArgs e)
@@ -75,6 +83,17 @@ namespace Pets4U
             {
                 connection.Close();
             }
+        }
+
+        private void AppointmentForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SecretariesForm form = new SecretariesForm();
+            form.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
