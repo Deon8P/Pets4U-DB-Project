@@ -114,10 +114,10 @@
             this.BookingReportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BookingReportBtn.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookingReportBtn.ForeColor = System.Drawing.Color.Black;
-            this.BookingReportBtn.Location = new System.Drawing.Point(263, 12);
+            this.BookingReportBtn.Location = new System.Drawing.Point(150, 14);
             this.BookingReportBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BookingReportBtn.Name = "BookingReportBtn";
-            this.BookingReportBtn.Size = new System.Drawing.Size(196, 47);
+            this.BookingReportBtn.Size = new System.Drawing.Size(320, 47);
             this.BookingReportBtn.TabIndex = 36;
             this.BookingReportBtn.Text = "View Registered Pets";
             this.BookingReportBtn.UseVisualStyleBackColor = false;
@@ -130,12 +130,12 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(263, 66);
+            this.button1.Location = new System.Drawing.Point(150, 66);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 47);
+            this.button1.Size = new System.Drawing.Size(320, 47);
             this.button1.TabIndex = 37;
-            this.button1.Text = "Register New Pet";
+            this.button1.Text = "Register New Owner and Pet";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -220,9 +220,8 @@
             this.lblDisplayGW.ForeColor = System.Drawing.Color.Black;
             this.lblDisplayGW.Location = new System.Drawing.Point(36, 270);
             this.lblDisplayGW.Name = "lblDisplayGW";
-            this.lblDisplayGW.Size = new System.Drawing.Size(224, 40);
+            this.lblDisplayGW.Size = new System.Drawing.Size(0, 40);
             this.lblDisplayGW.TabIndex = 43;
-            this.lblDisplayGW.Text = "Depend wat jy view";
             // 
             // button6
             // 
@@ -423,7 +422,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1827, 750);
+            this.ClientSize = new System.Drawing.Size(1924, 750);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);

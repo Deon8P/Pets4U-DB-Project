@@ -301,9 +301,8 @@
             this.lblDisplayGW.ForeColor = System.Drawing.Color.Black;
             this.lblDisplayGW.Location = new System.Drawing.Point(27, 313);
             this.lblDisplayGW.Name = "lblDisplayGW";
-            this.lblDisplayGW.Size = new System.Drawing.Size(224, 40);
+            this.lblDisplayGW.Size = new System.Drawing.Size(0, 40);
             this.lblDisplayGW.TabIndex = 63;
-            this.lblDisplayGW.Text = "Depend wat jy view";
             // 
             // dataGridView1
             // 

@@ -17,21 +17,6 @@ namespace Pets4U
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             int appoint_num, own_num, tel_num, pet_num;
@@ -39,7 +24,7 @@ namespace Pets4U
             DateTime appoint_time;
             DateTime date;
 
-            appoint_num = Convert.ToInt32(txtAppoint_num.Text);
+            appoint_num = Convert.ToInt32(txtAppointmentNum.Text);
             own_num = Convert.ToInt32(txtOwn_num.Text);
             tel_num = Convert.ToInt32(txtTel.Text);
             pet_num = Convert.ToInt32(txtPet_number.Text);
@@ -53,15 +38,8 @@ namespace Pets4U
 
             date = dateTimePicker1.Value;
 
-
-
-
             //call method
-            /////////////////////////////////////////////////////////////
-
-            /////////////////////////////////////////////////////////////
-
-
+            
 
         }
     }
