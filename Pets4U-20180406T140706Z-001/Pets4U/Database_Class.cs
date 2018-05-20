@@ -245,6 +245,64 @@ namespace Pets4U
 
         }
 
+        public void insert_pet_treatments(string examination_number, int Pet_Number, string Examination_Date, string Pet_Name, string Pet_Type,
+                             string Treatment_Number, int Quantity, string Start_Date, string End_Date, string Comments)
+        {
+
+            MySqlParameter[] param = new MySqlParameter[10];
+
+            param[0] = new MySqlParameter("Examination_Number", MySqlDbType.VarChar);
+            param[0].Value = examination_number;
+
+            param[1] = new MySqlParameter("Pet_Number", MySqlDbType.Int32);
+            param[1].Value = Pet_Number;
+
+            param[2] = new MySqlParameter("Examination_Date", MySqlDbType.Date);
+            param[2].Value = Examination_Date;
+
+            param[3] = new MySqlParameter("Pet_Name", MySqlDbType.VarChar);
+            param[3].Value = Pet_Name;
+
+            param[4] = new MySqlParameter("Pet_Type", MySqlDbType.VarChar);
+            param[4].Value = Pet_Type;
+
+            param[5] = new MySqlParameter("Treatment_Number", MySqlDbType.VarChar);
+            param[5].Value = Treatment_Number;
+
+            param[6] = new MySqlParameter("Quantity", MySqlDbType.Int32);
+            param[6].Value = Quantity;
+
+            param[7] = new MySqlParameter("Start_Date", MySqlDbType.Date);
+            param[7].Value = Start_Date;
+
+            param[8] = new MySqlParameter("End_Date", MySqlDbType.Date);
+            param[8].Value = End_Date;
+
+            param[9] = new MySqlParameter("Comments", MySqlDbType.VarChar);
+            param[9].Value = Comments;
+
+
+            MySqlCommand sql_cmd = new MySqlCommand();
+            sql_cmd.Connection = connection;
+            sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            sql_cmd.CommandText = "insert_pet_treatments";
+            sql_cmd.Parameters.AddRange(param);
+
+            connection.Open();
+
+            if (sql_cmd.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("The treatment information has been successfully recorded.", "Treatment", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Information input error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            connection.Close();
+
+        }
+
         //==================//////////////////==================//
 
 

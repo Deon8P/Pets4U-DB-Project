@@ -58,7 +58,7 @@ namespace Pets4U
                 }
                 catch (Exception exc)
                 {
-                    MessageBox.Show(exc.ToString());
+                    MessageBox.Show(exc.Message);
                 }
                 finally
                 {
@@ -74,7 +74,7 @@ namespace Pets4U
                 }
                 catch (Exception exc)
                 {
-                    MessageBox.Show(exc.ToString());
+                    MessageBox.Show(exc.Message);
                 }
                 finally
                 {
@@ -186,7 +186,7 @@ namespace Pets4U
 
                 if (cmbPetNum.SelectedIndex >= 0)
                 {
-                    DialogResult result = MessageBox.Show("Are you sure you wish to retrieve the name of pet " + cmbPetNum.SelectedValue.ToString() + "?", "Retrieve Pet Name", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("Are you sure you want to retrieve the name and type of pet " + cmbPetNum.SelectedValue.ToString() + "?", "Retrieve Pet Name", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
                         try
@@ -242,12 +242,12 @@ namespace Pets4U
         {
             if (richTextBox1.TextLength != 0 && txtTime.Text != "00:00" && cmbPetNum.SelectedIndex >= 0 && cmbStaffNum.SelectedIndex >= 0)
             {
-                btnCreateTreatment.Enabled = true;
+                btnCreateExamination.Enabled = true;
                 lblReqD.Text = richTextBox1.TextLength.ToString();
             }
             else
             {
-                btnCreateTreatment.Enabled = false;
+                btnCreateExamination.Enabled = false;
                 lblReqD.Visible = true;
                 lblReqD.Text = "*";
             }
@@ -333,6 +333,11 @@ namespace Pets4U
             {
                 txtVetFName.Enabled = false;
             }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

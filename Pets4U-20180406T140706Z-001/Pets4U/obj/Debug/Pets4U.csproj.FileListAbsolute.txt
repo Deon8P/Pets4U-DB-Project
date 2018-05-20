@@ -118,3 +118,5 @@ C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\
 C:\Users\brand\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.SupplyUpdateForm.resources
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.SupplyUpdateForm.resources
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.ExaminationForm.resources
+C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\bin\Debug\Bunifu_UI_v1.4.dll
+C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\bin\Debug\Bunifu_UI_v1.5.3.dll
