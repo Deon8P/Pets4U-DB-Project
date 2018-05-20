@@ -55,6 +55,7 @@
             this.lblPetName = new System.Windows.Forms.Label();
             this.lblTypeOfPet = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.lblReqD = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -219,16 +220,20 @@
             // 
             // txtVetFName
             // 
+            this.txtVetFName.Enabled = false;
             this.txtVetFName.Location = new System.Drawing.Point(316, 382);
             this.txtVetFName.Margin = new System.Windows.Forms.Padding(2);
             this.txtVetFName.Name = "txtVetFName";
             this.txtVetFName.Size = new System.Drawing.Size(202, 20);
             this.txtVetFName.TabIndex = 83;
+            this.txtVetFName.TextChanged += new System.EventHandler(this.txtVetFName_TextChanged);
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Enabled = false;
             this.richTextBox1.Location = new System.Drawing.Point(718, 260);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox1.MaxLength = 500;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(532, 279);
             this.richTextBox1.TabIndex = 88;
@@ -250,7 +255,10 @@
             this.btnCreateTreatment.TabIndex = 89;
             this.btnCreateTreatment.Text = "Create Treatment Report";
             this.btnCreateTreatment.UseVisualStyleBackColor = false;
+            this.btnCreateTreatment.TextChanged += new System.EventHandler(this.btnCreateTreatment_TextChanged);
             this.btnCreateTreatment.Click += new System.EventHandler(this.button7_Click);
+            this.btnCreateTreatment.Validating += new System.ComponentModel.CancelEventHandler(this.btnCreateTreatment_Validating);
+            this.btnCreateTreatment.Validated += new System.EventHandler(this.btnCreateTreatment_Validated);
             // 
             // pictureBox6
             // 
@@ -275,6 +283,7 @@
             // 
             // cmbStaffNum
             // 
+            this.cmbStaffNum.Enabled = false;
             this.cmbStaffNum.FormattingEnabled = true;
             this.cmbStaffNum.Location = new System.Drawing.Point(316, 585);
             this.cmbStaffNum.MaxDropDownItems = 100;
@@ -282,6 +291,7 @@
             this.cmbStaffNum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cmbStaffNum.Size = new System.Drawing.Size(202, 21);
             this.cmbStaffNum.TabIndex = 93;
+            this.cmbStaffNum.SelectedIndexChanged += new System.EventHandler(this.cmbStaffNum_SelectedIndexChanged);
             // 
             // dateTimePicker1
             // 
@@ -292,6 +302,7 @@
             // 
             // cmbPetNum
             // 
+            this.cmbPetNum.Enabled = false;
             this.cmbPetNum.FormattingEnabled = true;
             this.cmbPetNum.Location = new System.Drawing.Point(316, 425);
             this.cmbPetNum.MaxDropDownItems = 100;
@@ -304,7 +315,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(390, 451);
+            this.pictureBox5.Location = new System.Drawing.Point(303, 451);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(455, 431);
@@ -314,12 +325,17 @@
             // 
             // txtTime
             // 
+            this.txtTime.ForeColor = System.Drawing.Color.Red;
             this.txtTime.Location = new System.Drawing.Point(316, 334);
             this.txtTime.Mask = "00:00";
             this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(66, 20);
+            this.txtTime.Size = new System.Drawing.Size(65, 20);
             this.txtTime.TabIndex = 97;
+            this.txtTime.Text = "0000";
             this.txtTime.ValidatingType = typeof(System.DateTime);
+            this.txtTime.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtTime_MaskInputRejected);
+            this.txtTime.TextChanged += new System.EventHandler(this.txtTime_TextChanged);
+            this.txtTime.Leave += new System.EventHandler(this.txtTime_Leave);
             // 
             // lblPetName
             // 
@@ -360,12 +376,25 @@
             this.label10.TabIndex = 100;
             this.label10.Text = "24/hr";
             // 
+            // lblReqD
+            // 
+            this.lblReqD.AutoSize = true;
+            this.lblReqD.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReqD.ForeColor = System.Drawing.Color.Red;
+            this.lblReqD.Location = new System.Drawing.Point(1060, 209);
+            this.lblReqD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblReqD.Name = "lblReqD";
+            this.lblReqD.Size = new System.Drawing.Size(25, 32);
+            this.lblReqD.TabIndex = 101;
+            this.lblReqD.Text = "*";
+            // 
             // ExaminationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1315, 885);
+            this.Controls.Add(this.lblReqD);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.lblTypeOfPet);
             this.Controls.Add(this.lblPetName);
@@ -436,5 +465,6 @@
         private System.Windows.Forms.Label lblPetName;
         private System.Windows.Forms.Label lblTypeOfPet;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblReqD;
     }
 }

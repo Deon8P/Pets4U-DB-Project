@@ -49,7 +49,6 @@ namespace Pets4U
 
             examDate = dateTimePicker1.Value.ToString();
             examDate = examDate.Substring(0, 10).Replace('/', '-');
-            MessageBox.Show(examDate.ToString());
 
             if (cmbStaffNum.SelectedItem != null)
             {
@@ -210,6 +209,8 @@ namespace Pets4U
                         finally
                         {
                             connection.Close();
+
+                            cmbStaffNum.Enabled = true;
                         }
                     }
                     else
@@ -239,13 +240,98 @@ namespace Pets4U
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-            if (richTextBox1.Text != null && richTextBox1.Text.Length <= 500)
+            if (richTextBox1.TextLength != 0 && txtTime.Text != "00:00" && cmbPetNum.SelectedIndex >= 0 && cmbStaffNum.SelectedIndex >= 0)
             {
                 btnCreateTreatment.Enabled = true;
+                lblReqD.Text = richTextBox1.TextLength.ToString();
             }
             else
             {
                 btnCreateTreatment.Enabled = false;
+                lblReqD.Visible = true;
+                lblReqD.Text = "*";
+            }
+        }
+
+        private void txtTime_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void txtTime_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtTime.Text != "00:00")
+                {
+                    if (Convert.ToInt32(txtTime.Text.Substring(0, 2)) > 24 || Convert.ToInt32(txtTime.Text.Substring(3, 2)) > 59)
+                    {
+                        txtTime.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        txtTime.ForeColor = Color.Black;
+                    }
+                }
+                else
+                {
+                    txtTime.ForeColor = Color.Red;
+                }
+            }
+            catch (FormatException exc)
+            {
+                txtTime.Text = "00:00";
+            }
+        }
+
+        private void btnCreateTreatment_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreateTreatment_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreateTreatment_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void cmbStaffNum_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbStaffNum.SelectedIndex >= 0)
+            {
+                richTextBox1.Enabled = true;
+            }
+            else
+            {
+                richTextBox1.Enabled = false;
+            }
+        }
+
+        private void txtVetFName_TextChanged(object sender, EventArgs e)
+        {
+            if (txtVetFName.TextLength > 0)
+            {
+                cmbPetNum.Enabled = true;
+            }
+            else
+            {
+                cmbPetNum.Enabled = false;
+            }
+        }
+
+        private void txtTime_TextChanged(object sender, EventArgs e)
+        {
+            if (txtVetFName.Text != "00:00")
+            {
+                txtVetFName.Enabled = true;
+            }
+            else
+            {
+                txtVetFName.Enabled = false;
             }
         }
     }
