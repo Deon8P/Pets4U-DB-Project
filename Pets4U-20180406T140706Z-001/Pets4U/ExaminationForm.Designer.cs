@@ -44,7 +44,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtVetFName = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnCreateTreatment = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbStaffNum = new System.Windows.Forms.ComboBox();
@@ -235,21 +235,22 @@
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
-            // button7
+            // btnCreateTreatment
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(718, 585);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(176, 38);
-            this.button7.TabIndex = 89;
-            this.button7.Text = "Create Treatment Report";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnCreateTreatment.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnCreateTreatment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCreateTreatment.Enabled = false;
+            this.btnCreateTreatment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateTreatment.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateTreatment.ForeColor = System.Drawing.Color.Black;
+            this.btnCreateTreatment.Location = new System.Drawing.Point(718, 585);
+            this.btnCreateTreatment.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCreateTreatment.Name = "btnCreateTreatment";
+            this.btnCreateTreatment.Size = new System.Drawing.Size(176, 38);
+            this.btnCreateTreatment.TabIndex = 89;
+            this.btnCreateTreatment.Text = "Create Treatment Report";
+            this.btnCreateTreatment.UseVisualStyleBackColor = false;
+            this.btnCreateTreatment.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox6
             // 
@@ -373,7 +374,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.cmbStaffNum);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btnCreateTreatment);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.txtVetFName);
             this.Controls.Add(this.label8);
@@ -424,7 +425,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtVetFName;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnCreateTreatment;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbStaffNum;

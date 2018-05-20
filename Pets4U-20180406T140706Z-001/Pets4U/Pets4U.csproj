@@ -81,11 +81,11 @@
       <DependentUpon>BookPenForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Database_Class.cs" />
-    <Compile Include="ExaminationFom.cs">
+    <Compile Include="ExaminationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExaminationFom.Designer.cs">
-      <DependentUpon>ExaminationFom.cs</DependentUpon>
+    <Compile Include="ExaminationForm.Designer.cs">
+      <DependentUpon>ExaminationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="InvoiceForm.cs">
       <SubType>Form</SubType>
@@ -164,8 +164,8 @@
     <EmbeddedResource Include="BookPenForm.resx">
       <DependentUpon>BookPenForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExaminationFom.resx">
-      <DependentUpon>ExaminationFom.cs</DependentUpon>
+    <EmbeddedResource Include="ExaminationForm.resx">
+      <DependentUpon>ExaminationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InvoiceForm.resx">
       <DependentUpon>InvoiceForm.cs</DependentUpon>

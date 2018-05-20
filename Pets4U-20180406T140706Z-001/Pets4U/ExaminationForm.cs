@@ -239,7 +239,14 @@ namespace Pets4U
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-
+            if (richTextBox1.Text != null && richTextBox1.Text.Length <= 500)
+            {
+                btnCreateTreatment.Enabled = true;
+            }
+            else
+            {
+                btnCreateTreatment.Enabled = false;
+            }
         }
     }
 }
