@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data;
+using System.Data;
 using MySql.Data.MySqlClient;
 
 
@@ -441,6 +442,137 @@ namespace Pets4U
             }
 
             return status;
+        }
+
+        public void delOwner(int Number, string name)
+        {
+            try
+            {
+                connection.Open();
+
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM pet_owner WHERE Owner_Number = " + Number + 
+                    " and Owner_Fname = '" + name + "'", connection);
+
+                adapter.DeleteCommand = cmd;
+
+                if (adapter.DeleteCommand.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Owner Deleted", "Pet Owner", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Owner Not Deleted", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public void delPet(int Number, string name)
+        {
+            try
+            {
+                connection.Open();
+
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM pet WHERE Pet_Number = " + Number +
+                    " and Pet_Name = '" + name + "'", connection);
+
+                adapter.DeleteCommand = cmd;
+
+                if (adapter.DeleteCommand.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Pet Deleted", "Pet", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Pet Not Deleted", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public void delPens(int Number)
+        {
+            try
+            {
+                connection.Open();
+
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM pens WHERE Pet_Number = " + Number ,connection);
+
+                adapter.DeleteCommand = cmd;
+
+                if (adapter.DeleteCommand.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Pen Deleted", "Pen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Pen Not Deleted", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public void delAppoint(int Number, string name)
+        {
+            try
+            {
+                connection.Open();
+
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM appointment WHERE Owner_Num = " + Number +
+                    " and Owner_Fname = '" + name + "'", connection);
+
+                adapter.DeleteCommand = cmd;
+
+                if (adapter.DeleteCommand.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Appointment Deleted", "Pet Appointment", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Appointment Not Deleted", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
 
         //==================//////////////////==================//

@@ -234,5 +234,11 @@ namespace Pets4U
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DeletePetsForm delete = new DeletePetsForm();
+            delete.ShowDialog();
+        }
     }
 }
