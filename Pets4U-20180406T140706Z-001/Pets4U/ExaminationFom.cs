@@ -49,15 +49,38 @@ namespace Pets4U
 
             examDate = dateTimePicker1.Value.ToString();
             examDate = examDate.Substring(0, 10).Replace('/', '-');
+            MessageBox.Show(examDate.ToString());
 
             if (cmbStaffNum.SelectedItem != null)
             {
-                staff_number = cmbStaffNum.SelectedItem.ToString();
+                try
+                {
+                    staff_number = cmbStaffNum.SelectedValue.ToString();
+                }
+                catch (Exception exc)
+                {
+                    MessageBox.Show(exc.ToString());
+                }
+                finally
+                {
+                    cmbStaffNum.SelectedIndex = -1;
+                }
             }
 
             if (cmbPetNum.SelectedItem != null)
             {
-                pet_number = int.Parse(cmbPetNum.SelectedItem.ToString());
+                try
+                {
+                    pet_number = Convert.ToInt32(cmbPetNum.SelectedValue);
+                }
+                catch (Exception exc)
+                {
+                    MessageBox.Show(exc.ToString());
+                }
+                finally
+                {
+                    cmbPetNum.SelectedIndex = -1;
+                }
             }
 
             examNum = staff_number + pet_number + ran.Next(1111, 9999);
@@ -88,6 +111,7 @@ namespace Pets4U
 
         private void ExaminationFom_Load(object sender, EventArgs e)
         {
+            richTextBox1.Text = "";
             try
             {
                 connection = database.connection;
@@ -190,6 +214,7 @@ namespace Pets4U
                     }
                     else
                     {
+                        cmbPetNum.SelectedIndex = -1;
                         lblPetName.Text = "Please select a \"Pet number\".";
                         lblTypeOfPet.Text = "Please select a \"Pet number\".";
                     }
@@ -203,6 +228,16 @@ namespace Pets4U
         }
 
         private void lblTypeOfPet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

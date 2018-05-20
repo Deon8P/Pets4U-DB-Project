@@ -54,6 +54,7 @@
             this.txtTime = new System.Windows.Forms.MaskedTextBox();
             this.lblPetName = new System.Windows.Forms.Label();
             this.lblTypeOfPet = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -116,6 +117,7 @@
             this.button5.TabIndex = 43;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label9
             // 
@@ -231,6 +233,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(532, 279);
             this.richTextBox1.TabIndex = 88;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button7
             // 
@@ -294,7 +297,6 @@
             this.cmbPetNum.Name = "cmbPetNum";
             this.cmbPetNum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cmbPetNum.Size = new System.Drawing.Size(202, 21);
-            this.cmbPetNum.Sorted = true;
             this.cmbPetNum.TabIndex = 96;
             this.cmbPetNum.SelectedIndexChanged += new System.EventHandler(this.cmbPetNum_SelectedIndexChanged);
             // 
@@ -345,12 +347,25 @@
             this.lblTypeOfPet.Text = "Please select a \"Pet number\".";
             this.lblTypeOfPet.Click += new System.EventHandler(this.lblTypeOfPet_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Sitka Banner", 9.749999F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(386, 333);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(37, 19);
+            this.label10.TabIndex = 100;
+            this.label10.Text = "24/hr";
+            // 
             // ExaminationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1315, 885);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.lblTypeOfPet);
             this.Controls.Add(this.lblPetName);
             this.Controls.Add(this.txtTime);
@@ -419,5 +434,6 @@
         private System.Windows.Forms.MaskedTextBox txtTime;
         private System.Windows.Forms.Label lblPetName;
         private System.Windows.Forms.Label lblTypeOfPet;
+        private System.Windows.Forms.Label label10;
     }
 }

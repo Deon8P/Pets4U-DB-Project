@@ -202,7 +202,7 @@ namespace Pets4U
             param[1] = new MySqlParameter("Examination_Date", MySqlDbType.Date);
             param[1].Value = examination_date;
 
-            param[2] = new MySqlParameter("Examination_Time", MySqlDbType.Time);
+            param[2] = new MySqlParameter("Examination_Time", MySqlDbType.VarChar);
             param[2].Value = examination_time;
 
             param[3] = new MySqlParameter("Vet_Name", MySqlDbType.VarChar);
@@ -220,7 +220,7 @@ namespace Pets4U
             param[7] = new MySqlParameter("Results_Description", MySqlDbType.VarChar);
             param[7].Value = resluts_description;
 
-            param[8] = new MySqlParameter("Staff_Num", MySqlDbType.VarChar);
+            param[8] = new MySqlParameter("Staff_Number", MySqlDbType.VarChar);
             param[8].Value = staff_num;
 
 
