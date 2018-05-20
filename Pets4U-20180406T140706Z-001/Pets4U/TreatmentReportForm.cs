@@ -16,5 +16,15 @@ namespace Pets4U
         {
             InitializeComponent();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TreatmentReportForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

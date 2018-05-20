@@ -30,7 +30,6 @@ C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-0
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.AddSurgicalSuppForm.resources
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.AppointmentForm.resources
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.BookPenForm.resources
-C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.ExaminationFom.resources
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.InvoiceForm.resources
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.LoginForm.resources
 C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.MainLoginForm.resources
@@ -117,3 +116,5 @@ C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\
 C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.TreatmentReportForm.resources
 C:\Users\Leonard\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.csproj.GenerateResource.Cache
 C:\Users\brand\Documents\GitHub\Pets4U-DB-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.SupplyUpdateForm.resources
+C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.SupplyUpdateForm.resources
+C:\Users\Deon\Documents\GitHub\Pets4U-Database-Project\Pets4U-20180406T140706Z-001\Pets4U\obj\Debug\Pets4U.ExaminationForm.resources

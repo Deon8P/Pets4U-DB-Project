@@ -13,6 +13,7 @@ namespace Pets4U
     class Database_Class
     {
         public MySqlConnection connection = new MySqlConnection("datasource=den1.mysql2.gear.host; port=3306; Initial Catalog='petclientdb1';username='petclientdb1';password='Ty7H~_KGS4Zf';");
+        
         //==================//_____Deon_____//==================//
 
                 public void insert_staff(string Staff_Number, string Staff_Lname, string Staff_Fname, string Staff_Street, string Staff_City,
@@ -189,7 +190,60 @@ namespace Pets4U
             connection.Close();
         }
 
+        public void insert_examination(string examination_number, string examination_date, string examination_time, string vet_name, int pet_number,
+                              string pet_name, string pet_type, string resluts_description, string staff_num)
+        {
 
+            MySqlParameter[] param = new MySqlParameter[9];
+
+            param[0] = new MySqlParameter("Examination_Number", MySqlDbType.VarChar);
+            param[0].Value = examination_number;
+
+            param[1] = new MySqlParameter("Examination_Date", MySqlDbType.Date);
+            param[1].Value = examination_date;
+
+            param[2] = new MySqlParameter("Examination_Time", MySqlDbType.Time);
+            param[2].Value = examination_time;
+
+            param[3] = new MySqlParameter("Vet_Name", MySqlDbType.VarChar);
+            param[3].Value = vet_name;
+
+            param[4] = new MySqlParameter("Pet_Number", MySqlDbType.Int32);
+            param[4].Value = pet_number;
+
+            param[5] = new MySqlParameter("Pet_Name", MySqlDbType.VarChar);
+            param[5].Value = pet_name;
+
+            param[6] = new MySqlParameter("Pet_Type", MySqlDbType.VarChar);
+            param[6].Value = pet_type;
+
+            param[7] = new MySqlParameter("Results_Description", MySqlDbType.VarChar);
+            param[7].Value = resluts_description;
+
+            param[8] = new MySqlParameter("Staff_Num", MySqlDbType.VarChar);
+            param[8].Value = staff_num;
+
+
+            MySqlCommand sql_cmd = new MySqlCommand();
+            sql_cmd.Connection = connection;
+            sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            sql_cmd.CommandText = "insert_examination";
+            sql_cmd.Parameters.AddRange(param);
+
+            connection.Open();
+
+            if (sql_cmd.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("The examination information has been successfully inserted.", "Examination", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Information input error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            connection.Close();
+
+        }
 
         //==================//////////////////==================//
 
@@ -713,60 +767,7 @@ namespace Pets4U
             connection.Close();
         }
 
-        public void insert_examination(int examination_number, string examination_date, string examination_time, string vet_name, int pet_number,
-                              string pet_name, string pet_type, string resluts_description, int staff_num)
-        {
-
-            MySqlParameter[] param = new MySqlParameter[9];
-
-            param[0] = new MySqlParameter("Examination_Number", MySqlDbType.Int32);
-            param[0].Value = examination_number;
-
-            param[1] = new MySqlParameter("Examination_Date", MySqlDbType.Date);
-            param[1].Value = examination_date;
-
-            param[2] = new MySqlParameter("Examination_Time", MySqlDbType.Time);
-            param[2].Value = examination_time;
-
-            param[3] = new MySqlParameter("Vet_Name", MySqlDbType.VarChar);
-            param[3].Value = vet_name;
-
-            param[4] = new MySqlParameter("Pet_Number", MySqlDbType.Int32);
-            param[4].Value = pet_number;
-
-            param[5] = new MySqlParameter("Pet_Name", MySqlDbType.VarChar);
-            param[5].Value = pet_name;
-
-            param[6] = new MySqlParameter("Pet_Type", MySqlDbType.VarChar);
-            param[6].Value = pet_type;
-
-            param[7] = new MySqlParameter("Results_Description", MySqlDbType.VarChar);
-            param[7].Value = resluts_description;
-
-            param[8] = new MySqlParameter("Staff_Num", MySqlDbType.Int32);
-            param[8].Value = staff_num;
-
-
-            MySqlCommand sql_cmd = new MySqlCommand();
-            sql_cmd.Connection = connection;
-            sql_cmd.CommandType = System.Data.CommandType.StoredProcedure;
-            sql_cmd.CommandText = "insert_examination";
-            sql_cmd.Parameters.AddRange(param);
-
-            connection.Open();
-
-            if (sql_cmd.ExecuteNonQuery() == 1)
-            {
-                MessageBox.Show("The examination information has been successfully inserted.", "Examination", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Information input error.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-
-            connection.Close();
-
-        }
+        
 
 
         public void invoices(int invoice_number, string invoice_date, int owner_number, string owner_firstname, string owner_street,

@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
-    public partial class ExaminationFom : Form
+    public partial class ExaminationForm : Form
     {
-        public ExaminationFom()
+        public ExaminationForm()
         {
             InitializeComponent();
         }
@@ -21,25 +21,27 @@ namespace Pets4U
         Database_Class database = new Database_Class();
 
         public MySqlConnection connection;
+        public MySqlCommand cmd;
         public MySqlDataAdapter adapter;
         public DataSet ds;
         public string query;
+        public bool loadedState = false;
 
         private void button7_Click(object sender, EventArgs e)
         {
             Database_Class db = new Database_Class();
-
+            
             string vetname, petName, petType, desctiption;
-            int examNum;
-            int staff_number = 0;
+            string examNum;
+            string staff_number = "TestValue";
             int pet_number = 0;
             string examDate, examTime;
 
             Random ran = new Random();
 
             vetname = txtVetFName.Text;
-            petName = txtPet_name.Text;
-            petType = txtTypePet.Text;
+            petName = lblPetName.Text;
+            petType = lblTypeOfPet.Text;
             examTime = txtTime.Text;
             desctiption = richTextBox1.Text;
 
@@ -50,7 +52,7 @@ namespace Pets4U
 
             if (cmbStaffNum.SelectedItem != null)
             {
-                staff_number = int.Parse(cmbStaffNum.SelectedItem.ToString());
+                staff_number = cmbStaffNum.SelectedItem.ToString();
             }
 
             if (cmbPetNum.SelectedItem != null)
@@ -58,7 +60,7 @@ namespace Pets4U
                 pet_number = int.Parse(cmbPetNum.SelectedItem.ToString());
             }
 
-            examNum = staff_number + pet_number + ran.Next(111, 999);
+            examNum = staff_number + pet_number + ran.Next(1111, 9999);
 
 
 
@@ -122,8 +124,8 @@ namespace Pets4U
 
                 adapter.Fill(ds, "pet");
 
-                cmbPetNum.DisplayMember = "Pet_Number";
                 cmbPetNum.ValueMember = "Pet_Number";
+                cmbPetNum.DisplayMember = "Pet_Number";
                 cmbPetNum.DataSource = ds.Tables["pet"];
                 cmbPetNum.SelectedIndex = -1;
             }
@@ -135,6 +137,73 @@ namespace Pets4U
             {
                 connection.Close();
             }
+
+            loadedState = true;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbPetNum_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (loadedState == true)
+            {
+
+                if (cmbPetNum.SelectedIndex >= 0)
+                {
+                    DialogResult result = MessageBox.Show("Are you sure you wish to retrieve the name of pet " + cmbPetNum.SelectedValue.ToString() + "?", "Retrieve Pet Name", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            connection = database.connection;
+                            connection.Open();
+
+                            cmd = new MySqlCommand("SELECT Pet_Name FROM pet WHERE Pet_Number = " + cmbPetNum.SelectedValue.ToString() + " ", connection);
+
+                            lblPetName.Text = cmd.ExecuteScalar().ToString();
+
+                            cmd = new MySqlCommand("SELECT Pet_Type FROM pet WHERE Pet_Number = " + cmbPetNum.SelectedValue.ToString() + " ", connection);
+
+                            lblTypeOfPet.Text = cmd.ExecuteScalar().ToString();
+                        }
+                        catch (System.Exception exc)
+                        {
+                            MessageBox.Show(exc.Message);
+                        }
+                        finally
+                        {
+                            connection.Close();
+                        }
+                    }
+                    else
+                    {
+                        lblPetName.Text = "Please select a \"Pet number\".";
+                        lblTypeOfPet.Text = "Please select a \"Pet number\".";
+                    }
+                }
+            }
+        }
+
+        private void txtTypePet_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTypeOfPet_Click(object sender, EventArgs e)
+        {
 
         }
     }

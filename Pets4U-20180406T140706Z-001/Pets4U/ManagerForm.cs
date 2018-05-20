@@ -30,7 +30,7 @@ namespace Pets4U
         private void button13_Click(object sender, EventArgs e)
         {
             flag = true;
-            ExaminationFom ExamForm = new ExaminationFom();
+            ExaminationForm ExamForm = new ExaminationForm();
             ExamForm.Show();
             this.Close();
         }

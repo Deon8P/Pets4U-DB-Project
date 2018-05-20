@@ -1,6 +1,6 @@
 ﻿namespace Pets4U
 {
-    partial class ExaminationFom
+    partial class ExaminationForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExaminationFom));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExaminationForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -43,23 +43,23 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtVetFName = new System.Windows.Forms.TextBox();
-            this.txtPet_name = new System.Windows.Forms.TextBox();
-            this.txtTypePet = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbStaffNum = new System.Windows.Forms.ComboBox();
-            this.txtTime = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cmbPetNum = new System.Windows.Forms.ComboBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.txtTime = new System.Windows.Forms.MaskedTextBox();
+            this.lblPetName = new System.Windows.Forms.Label();
+            this.lblTypeOfPet = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -109,7 +109,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(1257, 33);
+            this.button5.Location = new System.Drawing.Point(1125, 44);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(125, 37);
@@ -152,6 +152,7 @@
             this.label2.Size = new System.Drawing.Size(199, 32);
             this.label2.TabIndex = 71;
             this.label2.Text = "Time Of Examination:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -207,7 +208,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(933, 226);
+            this.label8.Location = new System.Drawing.Point(712, 209);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(344, 32);
@@ -222,25 +223,9 @@
             this.txtVetFName.Size = new System.Drawing.Size(202, 20);
             this.txtVetFName.TabIndex = 83;
             // 
-            // txtPet_name
-            // 
-            this.txtPet_name.Location = new System.Drawing.Point(316, 478);
-            this.txtPet_name.Margin = new System.Windows.Forms.Padding(2);
-            this.txtPet_name.Name = "txtPet_name";
-            this.txtPet_name.Size = new System.Drawing.Size(202, 20);
-            this.txtPet_name.TabIndex = 86;
-            // 
-            // txtTypePet
-            // 
-            this.txtTypePet.Location = new System.Drawing.Point(316, 531);
-            this.txtTypePet.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTypePet.Name = "txtTypePet";
-            this.txtTypePet.Size = new System.Drawing.Size(202, 20);
-            this.txtTypePet.TabIndex = 87;
-            // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(851, 263);
+            this.richTextBox1.Location = new System.Drawing.Point(718, 260);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(532, 279);
@@ -254,7 +239,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(1028, 607);
+            this.button7.Location = new System.Drawing.Point(718, 585);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(176, 38);
@@ -263,25 +248,16 @@
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(392, 415);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(455, 431);
-            this.pictureBox5.TabIndex = 90;
-            this.pictureBox5.TabStop = false;
-            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1254, 540);
+            this.pictureBox6.Location = new System.Drawing.Point(982, 531);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(268, 372);
             this.pictureBox6.TabIndex = 91;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label4
             // 
@@ -297,17 +273,11 @@
             // 
             this.cmbStaffNum.FormattingEnabled = true;
             this.cmbStaffNum.Location = new System.Drawing.Point(316, 585);
+            this.cmbStaffNum.MaxDropDownItems = 100;
             this.cmbStaffNum.Name = "cmbStaffNum";
+            this.cmbStaffNum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cmbStaffNum.Size = new System.Drawing.Size(202, 21);
             this.cmbStaffNum.TabIndex = 93;
-            // 
-            // txtTime
-            // 
-            this.txtTime.Location = new System.Drawing.Point(316, 335);
-            this.txtTime.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTime.Name = "txtTime";
-            this.txtTime.Size = new System.Drawing.Size(69, 20);
-            this.txtTime.TabIndex = 82;
             // 
             // dateTimePicker1
             // 
@@ -320,26 +290,77 @@
             // 
             this.cmbPetNum.FormattingEnabled = true;
             this.cmbPetNum.Location = new System.Drawing.Point(316, 425);
+            this.cmbPetNum.MaxDropDownItems = 100;
             this.cmbPetNum.Name = "cmbPetNum";
+            this.cmbPetNum.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cmbPetNum.Size = new System.Drawing.Size(202, 21);
+            this.cmbPetNum.Sorted = true;
             this.cmbPetNum.TabIndex = 96;
+            this.cmbPetNum.SelectedIndexChanged += new System.EventHandler(this.cmbPetNum_SelectedIndexChanged);
             // 
-            // ExaminationFom
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(390, 451);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(455, 431);
+            this.pictureBox5.TabIndex = 90;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // txtTime
+            // 
+            this.txtTime.Location = new System.Drawing.Point(316, 334);
+            this.txtTime.Mask = "00:00";
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(66, 20);
+            this.txtTime.TabIndex = 97;
+            this.txtTime.ValidatingType = typeof(System.DateTime);
+            // 
+            // lblPetName
+            // 
+            this.lblPetName.AutoSize = true;
+            this.lblPetName.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblPetName.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPetName.ForeColor = System.Drawing.Color.Black;
+            this.lblPetName.Location = new System.Drawing.Point(312, 476);
+            this.lblPetName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPetName.Name = "lblPetName";
+            this.lblPetName.Size = new System.Drawing.Size(237, 30);
+            this.lblPetName.TabIndex = 98;
+            this.lblPetName.Text = "Please select a \"Pet number\".";
+            // 
+            // lblTypeOfPet
+            // 
+            this.lblTypeOfPet.AutoSize = true;
+            this.lblTypeOfPet.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lblTypeOfPet.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTypeOfPet.ForeColor = System.Drawing.Color.Black;
+            this.lblTypeOfPet.Location = new System.Drawing.Point(312, 528);
+            this.lblTypeOfPet.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTypeOfPet.Name = "lblTypeOfPet";
+            this.lblTypeOfPet.Size = new System.Drawing.Size(237, 30);
+            this.lblTypeOfPet.TabIndex = 99;
+            this.lblTypeOfPet.Text = "Please select a \"Pet number\".";
+            this.lblTypeOfPet.Click += new System.EventHandler(this.lblTypeOfPet_Click);
+            // 
+            // ExaminationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1315, 885);
+            this.Controls.Add(this.lblTypeOfPet);
+            this.Controls.Add(this.lblPetName);
+            this.Controls.Add(this.txtTime);
             this.Controls.Add(this.cmbPetNum);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.cmbStaffNum);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.txtTypePet);
-            this.Controls.Add(this.txtPet_name);
             this.Controls.Add(this.txtVetFName);
-            this.Controls.Add(this.txtTime);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -356,16 +377,16 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "ExaminationFom";
-            this.Text = "ExaminationFom";
+            this.Name = "ExaminationForm";
+            this.Text = "ExaminationForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ExaminationFom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,16 +408,16 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtVetFName;
-        private System.Windows.Forms.TextBox txtPet_name;
-        private System.Windows.Forms.TextBox txtTypePet;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbStaffNum;
-        private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox cmbPetNum;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.MaskedTextBox txtTime;
+        private System.Windows.Forms.Label lblPetName;
+        private System.Windows.Forms.Label lblTypeOfPet;
     }
 }
