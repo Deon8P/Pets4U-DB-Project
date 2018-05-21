@@ -93,6 +93,12 @@
     <Compile Include="InvoiceForm.Designer.cs">
       <DependentUpon>InvoiceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="InvoiceSlipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceSlipForm.Designer.cs">
+      <DependentUpon>InvoiceSlipForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InvoiceForm.resx">
       <DependentUpon>InvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceSlipForm.resx">
+      <DependentUpon>InvoiceSlipForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

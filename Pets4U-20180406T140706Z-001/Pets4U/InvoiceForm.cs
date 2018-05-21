@@ -16,5 +16,21 @@ namespace Pets4U
         {
             InitializeComponent();
         }
+
+        private void btnProcess_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void InvoiceForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            InvoiceSlipForm invoice = new InvoiceSlipForm();
+            invoice.Show();
+        }
+
+        private void InvoiceForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

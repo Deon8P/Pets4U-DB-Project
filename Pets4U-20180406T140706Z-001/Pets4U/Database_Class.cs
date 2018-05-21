@@ -770,50 +770,48 @@ namespace Pets4U
         
 
 
-        public void invoices(int invoice_number, string invoice_date, int owner_number, string owner_firstname, string owner_street,
+        public void invoices(string invoice_date, int owner_number, string owner_firstname, string owner_street,
          string owner_city, string owner_state, int owner_zip, double owner_cost, double total_cost, string date_paid, string payment_method, int treatment_num)
         {
 
-            MySqlParameter[] param = new MySqlParameter[9];
+            MySqlParameter[] param = new MySqlParameter[8];
+            
 
-            param[0] = new MySqlParameter("Invoice_Number", MySqlDbType.Int32);
-            param[0].Value = invoice_number;
+            param[0] = new MySqlParameter("Invoice_Date", MySqlDbType.Date);
+            param[0].Value = invoice_date;
 
-            param[1] = new MySqlParameter("Invoice_Date", MySqlDbType.Date);
-            param[1].Value = invoice_date;
+            param[1] = new MySqlParameter("Owner_Number", MySqlDbType.Int32);
+            param[1].Value = owner_number;
 
-            param[2] = new MySqlParameter("Owner_Number", MySqlDbType.Int32);
-            param[2].Value = owner_number;
+            param[2] = new MySqlParameter("Owner_Fname", MySqlDbType.VarChar);
+            param[2].Value = owner_firstname;
 
-            param[3] = new MySqlParameter("Owner_Fname", MySqlDbType.VarChar);
-            param[3].Value = owner_firstname;
+            param[3] = new MySqlParameter("Owner_Street", MySqlDbType.VarChar);
+            param[3].Value = owner_street;
 
-            param[4] = new MySqlParameter("Owner_Street", MySqlDbType.VarChar);
-            param[4].Value = owner_street;
+            param[4] = new MySqlParameter("Owner_City", MySqlDbType.VarChar);
+            param[4].Value = owner_city;
 
-            param[5] = new MySqlParameter("Owner_City", MySqlDbType.VarChar);
-            param[5].Value = owner_city;
+            param[5] = new MySqlParameter("Owner_State", MySqlDbType.VarChar);
+            param[5].Value = owner_state;
 
-            param[6] = new MySqlParameter("Owner_State", MySqlDbType.VarChar);
-            param[6].Value = owner_state;
+            param[6] = new MySqlParameter("Owner_Zip", MySqlDbType.Int32);
+            param[6].Value = owner_zip;
 
-            param[7] = new MySqlParameter("Owner_Zip", MySqlDbType.Int32);
-            param[7].Value = owner_zip;
+            param[7] = new MySqlParameter("Owner_Cost", MySqlDbType.Double);
+            param[7].Value = owner_cost;
 
-            param[8] = new MySqlParameter("Owner_Cost", MySqlDbType.Double);
-            param[8].Value = owner_cost;
+            param[8] = new MySqlParameter("Total_Cost", MySqlDbType.Double);
+            param[8].Value = total_cost;
 
-            param[9] = new MySqlParameter("Total_Cost", MySqlDbType.Double);
-            param[9].Value = total_cost;
+            param[9] = new MySqlParameter("Date_Paid", MySqlDbType.Date);
+            param[9].Value = date_paid;
 
-            param[10] = new MySqlParameter("Date_Paid", MySqlDbType.Date);
-            param[10].Value = date_paid;
+            param[10] = new MySqlParameter("Payment_Method", MySqlDbType.VarChar);
+            param[10].Value = payment_method;
 
-            param[11] = new MySqlParameter("Payment_Method", MySqlDbType.VarChar);
-            param[11].Value = payment_method;
-
-            param[12] = new MySqlParameter("Treatment_Num", MySqlDbType.Int32);
-            param[12].Value = treatment_num;
+            param[11] = new MySqlParameter("Treatment_Num", MySqlDbType.Int32);
+            param[11].Value = treatment_num;
 
 
             MySqlCommand sql_cmd = new MySqlCommand();
@@ -826,7 +824,7 @@ namespace Pets4U
 
             if (sql_cmd.ExecuteNonQuery() == 1)
             {
-                MessageBox.Show("The invoice information has been successfully inserted.", "Invoice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("The invoice information has been successfully recorded.", "Invoice", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
