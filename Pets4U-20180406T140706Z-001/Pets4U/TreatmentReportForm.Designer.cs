@@ -312,7 +312,7 @@
             this.btnCreateTreatment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateTreatment.Font = new System.Drawing.Font("Sitka Banner", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateTreatment.ForeColor = System.Drawing.Color.Black;
-            this.btnCreateTreatment.Location = new System.Drawing.Point(736, 719);
+            this.btnCreateTreatment.Location = new System.Drawing.Point(736, 721);
             this.btnCreateTreatment.Margin = new System.Windows.Forms.Padding(2);
             this.btnCreateTreatment.Name = "btnCreateTreatment";
             this.btnCreateTreatment.Size = new System.Drawing.Size(232, 37);
