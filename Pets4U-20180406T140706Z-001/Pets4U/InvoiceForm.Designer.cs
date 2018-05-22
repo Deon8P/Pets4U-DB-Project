@@ -35,7 +35,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,24 +42,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtInvoice_number = new System.Windows.Forms.TextBox();
-            this.txtDate = new System.Windows.Forms.TextBox();
-            this.txtOwner_num = new System.Windows.Forms.TextBox();
-            this.txtOwner_FName = new System.Windows.Forms.TextBox();
-            this.txtOwnerLName = new System.Windows.Forms.TextBox();
-            this.txtOwner_address = new System.Windows.Forms.TextBox();
-            this.txtPet_num = new System.Windows.Forms.TextBox();
-            this.txtPet_name = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.cmbPaymentMethod = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnProcess = new System.Windows.Forms.Button();
+            this.calInvoiceDate = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblOwnerFName = new System.Windows.Forms.Label();
+            this.lblOwnerLName = new System.Windows.Forms.Label();
+            this.lblOwnerAddress = new System.Windows.Forms.Label();
+            this.lblPetNumber = new System.Windows.Forms.Label();
+            this.lblPetName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -135,23 +130,12 @@
             this.label9.TabIndex = 68;
             this.label9.Text = "Invoice";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(127, 251);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(191, 40);
-            this.label10.TabIndex = 69;
-            this.label10.Text = "Invoice Number:";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(165, 311);
+            this.label1.Location = new System.Drawing.Point(185, 229);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 40);
             this.label1.TabIndex = 70;
@@ -162,7 +146,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(131, 374);
+            this.label2.Location = new System.Drawing.Point(151, 292);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(188, 40);
             this.label2.TabIndex = 71;
@@ -173,7 +157,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(100, 441);
+            this.label3.Location = new System.Drawing.Point(120, 359);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(218, 40);
             this.label3.TabIndex = 72;
@@ -184,7 +168,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(104, 505);
+            this.label4.Location = new System.Drawing.Point(124, 423);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(214, 40);
             this.label4.TabIndex = 73;
@@ -195,7 +179,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(127, 572);
+            this.label5.Location = new System.Drawing.Point(147, 490);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(187, 40);
             this.label5.TabIndex = 74;
@@ -206,7 +190,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(163, 629);
+            this.label6.Location = new System.Drawing.Point(183, 547);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(151, 40);
             this.label6.TabIndex = 75;
@@ -217,124 +201,18 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(189, 689);
+            this.label7.Location = new System.Drawing.Point(209, 607);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(125, 40);
             this.label7.TabIndex = 76;
             this.label7.Text = "Pet Name:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(1589, 158);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(203, 40);
-            this.label8.TabIndex = 77;
-            this.label8.Text = "Treatment Given:";
-            // 
-            // txtInvoice_number
-            // 
-            this.txtInvoice_number.Location = new System.Drawing.Point(348, 266);
-            this.txtInvoice_number.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtInvoice_number.Name = "txtInvoice_number";
-            this.txtInvoice_number.Size = new System.Drawing.Size(268, 22);
-            this.txtInvoice_number.TabIndex = 80;
-            // 
-            // txtDate
-            // 
-            this.txtDate.Location = new System.Drawing.Point(348, 326);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(268, 22);
-            this.txtDate.TabIndex = 81;
-            // 
-            // txtOwner_num
-            // 
-            this.txtOwner_num.Location = new System.Drawing.Point(348, 389);
-            this.txtOwner_num.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtOwner_num.Name = "txtOwner_num";
-            this.txtOwner_num.Size = new System.Drawing.Size(268, 22);
-            this.txtOwner_num.TabIndex = 82;
-            // 
-            // txtOwner_FName
-            // 
-            this.txtOwner_FName.Location = new System.Drawing.Point(348, 455);
-            this.txtOwner_FName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtOwner_FName.Name = "txtOwner_FName";
-            this.txtOwner_FName.Size = new System.Drawing.Size(268, 22);
-            this.txtOwner_FName.TabIndex = 83;
-            // 
-            // txtOwnerLName
-            // 
-            this.txtOwnerLName.Location = new System.Drawing.Point(348, 519);
-            this.txtOwnerLName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtOwnerLName.Name = "txtOwnerLName";
-            this.txtOwnerLName.Size = new System.Drawing.Size(268, 22);
-            this.txtOwnerLName.TabIndex = 84;
-            // 
-            // txtOwner_address
-            // 
-            this.txtOwner_address.Location = new System.Drawing.Point(348, 587);
-            this.txtOwner_address.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtOwner_address.Name = "txtOwner_address";
-            this.txtOwner_address.Size = new System.Drawing.Size(268, 22);
-            this.txtOwner_address.TabIndex = 85;
-            // 
-            // txtPet_num
-            // 
-            this.txtPet_num.Location = new System.Drawing.Point(348, 644);
-            this.txtPet_num.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPet_num.Name = "txtPet_num";
-            this.txtPet_num.Size = new System.Drawing.Size(268, 22);
-            this.txtPet_num.TabIndex = 86;
-            // 
-            // txtPet_name
-            // 
-            this.txtPet_name.Location = new System.Drawing.Point(348, 704);
-            this.txtPet_name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPet_name.Name = "txtPet_name";
-            this.txtPet_name.Size = new System.Drawing.Size(268, 22);
-            this.txtPet_name.TabIndex = 87;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(1509, 217);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(347, 154);
-            this.richTextBox1.TabIndex = 88;
-            this.richTextBox1.Text = "";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(1627, 411);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(133, 40);
-            this.label11.TabIndex = 89;
-            this.label11.Text = "Total Cost:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(1451, 494);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(494, 40);
-            this.label12.TabIndex = 90;
-            this.label12.Text = "Display Cost per teatment met die Total cost.";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(113, 751);
+            this.label13.Location = new System.Drawing.Point(133, 669);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(205, 40);
             this.label13.TabIndex = 91;
@@ -347,7 +225,7 @@
             "Cash",
             "Check",
             "Credit"});
-            this.cmbPaymentMethod.Location = new System.Drawing.Point(348, 766);
+            this.cmbPaymentMethod.Location = new System.Drawing.Point(368, 684);
             this.cmbPaymentMethod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbPaymentMethod.Name = "cmbPaymentMethod";
             this.cmbPaymentMethod.Size = new System.Drawing.Size(268, 24);
@@ -358,7 +236,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(181, 809);
+            this.label14.Location = new System.Drawing.Point(201, 727);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(126, 40);
             this.label14.TabIndex = 93;
@@ -366,7 +244,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(348, 822);
+            this.dateTimePicker1.Location = new System.Drawing.Point(368, 740);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(268, 22);
@@ -375,7 +253,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1041, 519);
+            this.pictureBox5.Location = new System.Drawing.Point(1273, 423);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(525, 644);
@@ -385,35 +263,112 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(524, 519);
+            this.pictureBox6.Location = new System.Drawing.Point(774, 490);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(523, 522);
+            this.pictureBox6.Size = new System.Drawing.Size(504, 522);
             this.pictureBox6.TabIndex = 96;
             this.pictureBox6.TabStop = false;
+            // 
+            // btnProcess
+            // 
+            this.btnProcess.Location = new System.Drawing.Point(368, 810);
+            this.btnProcess.Name = "btnProcess";
+            this.btnProcess.Size = new System.Drawing.Size(119, 29);
+            this.btnProcess.TabIndex = 97;
+            this.btnProcess.Text = "Process";
+            this.btnProcess.UseVisualStyleBackColor = true;
+            this.btnProcess.Click += new System.EventHandler(this.btnProcess_Click);
+            // 
+            // calInvoiceDate
+            // 
+            this.calInvoiceDate.Location = new System.Drawing.Point(368, 247);
+            this.calInvoiceDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.calInvoiceDate.Name = "calInvoiceDate";
+            this.calInvoiceDate.Size = new System.Drawing.Size(268, 22);
+            this.calInvoiceDate.TabIndex = 98;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(368, 307);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(268, 24);
+            this.comboBox1.TabIndex = 99;
+            // 
+            // lblOwnerFName
+            // 
+            this.lblOwnerFName.AutoSize = true;
+            this.lblOwnerFName.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwnerFName.ForeColor = System.Drawing.Color.Black;
+            this.lblOwnerFName.Location = new System.Drawing.Point(361, 359);
+            this.lblOwnerFName.Name = "lblOwnerFName";
+            this.lblOwnerFName.Size = new System.Drawing.Size(372, 40);
+            this.lblOwnerFName.TabIndex = 100;
+            this.lblOwnerFName.Text = "Please select an \"Owner Number\".";
+            // 
+            // lblOwnerLName
+            // 
+            this.lblOwnerLName.AutoSize = true;
+            this.lblOwnerLName.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwnerLName.ForeColor = System.Drawing.Color.Black;
+            this.lblOwnerLName.Location = new System.Drawing.Point(361, 423);
+            this.lblOwnerLName.Name = "lblOwnerLName";
+            this.lblOwnerLName.Size = new System.Drawing.Size(372, 40);
+            this.lblOwnerLName.TabIndex = 101;
+            this.lblOwnerLName.Text = "Please select an \"Owner Number\".";
+            // 
+            // lblOwnerAddress
+            // 
+            this.lblOwnerAddress.AutoSize = true;
+            this.lblOwnerAddress.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwnerAddress.ForeColor = System.Drawing.Color.Black;
+            this.lblOwnerAddress.Location = new System.Drawing.Point(361, 490);
+            this.lblOwnerAddress.Name = "lblOwnerAddress";
+            this.lblOwnerAddress.Size = new System.Drawing.Size(372, 40);
+            this.lblOwnerAddress.TabIndex = 102;
+            this.lblOwnerAddress.Text = "Please select an \"Owner Number\".";
+            // 
+            // lblPetNumber
+            // 
+            this.lblPetNumber.AutoSize = true;
+            this.lblPetNumber.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPetNumber.ForeColor = System.Drawing.Color.Black;
+            this.lblPetNumber.Location = new System.Drawing.Point(361, 547);
+            this.lblPetNumber.Name = "lblPetNumber";
+            this.lblPetNumber.Size = new System.Drawing.Size(372, 40);
+            this.lblPetNumber.TabIndex = 103;
+            this.lblPetNumber.Text = "Please select an \"Owner Number\".";
+            // 
+            // lblPetName
+            // 
+            this.lblPetName.AutoSize = true;
+            this.lblPetName.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPetName.ForeColor = System.Drawing.Color.Black;
+            this.lblPetName.Location = new System.Drawing.Point(361, 607);
+            this.lblPetName.Name = "lblPetName";
+            this.lblPetName.Size = new System.Drawing.Size(372, 40);
+            this.lblPetName.TabIndex = 104;
+            this.lblPetName.Text = "Please select an \"Owner Number\".";
             // 
             // InvoiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1924, 922);
+            this.ClientSize = new System.Drawing.Size(1924, 946);
+            this.Controls.Add(this.lblPetName);
+            this.Controls.Add(this.lblPetNumber);
+            this.Controls.Add(this.lblOwnerAddress);
+            this.Controls.Add(this.lblOwnerLName);
+            this.Controls.Add(this.lblOwnerFName);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.calInvoiceDate);
+            this.Controls.Add(this.btnProcess);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.cmbPaymentMethod);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.txtPet_name);
-            this.Controls.Add(this.txtPet_num);
-            this.Controls.Add(this.txtOwner_address);
-            this.Controls.Add(this.txtOwnerLName);
-            this.Controls.Add(this.txtOwner_FName);
-            this.Controls.Add(this.txtOwner_num);
-            this.Controls.Add(this.txtDate);
-            this.Controls.Add(this.txtInvoice_number);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -421,7 +376,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.pictureBox4);
@@ -434,6 +388,8 @@
             this.Name = "InvoiceForm";
             this.Text = "InvoiceForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InvoiceForm_FormClosing);
+            this.Load += new System.EventHandler(this.InvoiceForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -453,7 +409,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -461,23 +416,19 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtInvoice_number;
-        private System.Windows.Forms.TextBox txtDate;
-        private System.Windows.Forms.TextBox txtOwner_num;
-        private System.Windows.Forms.TextBox txtOwner_FName;
-        private System.Windows.Forms.TextBox txtOwnerLName;
-        private System.Windows.Forms.TextBox txtOwner_address;
-        private System.Windows.Forms.TextBox txtPet_num;
-        private System.Windows.Forms.TextBox txtPet_name;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmbPaymentMethod;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button btnProcess;
+        private System.Windows.Forms.DateTimePicker calInvoiceDate;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblOwnerFName;
+        private System.Windows.Forms.Label lblOwnerLName;
+        private System.Windows.Forms.Label lblOwnerAddress;
+        private System.Windows.Forms.Label lblPetNumber;
+        private System.Windows.Forms.Label lblPetName;
     }
 }

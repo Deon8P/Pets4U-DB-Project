@@ -7,44 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace Pets4U
 {
     public partial class TreatmentReportForm : Form
     {
-        Database_Class database = new Database_Class();
-
-        public MySqlConnection connection;
-        public MySqlCommand cmd;
-        public MySqlDataAdapter adapter;
-        public DataSet ds;
-        public string query;
-        public bool loadedState = false;
-        public int petNumber, treatmentQuantity;
-        public string examinationNumber, examinationDate, petName, petType, treatmentNumber,
-                dateTreatmentBegin, dateTreatmentEnd, additionalComments, fullTreatmentDescription;
-
-        private void txtDescriptionOfTreatment_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAdditionalComments_TextChanged(object sender, EventArgs e)
-        {
-            if (txtAdditionalComments.TextLength > 0)
-            {
-                btnCreateTreatment.Enabled = true;
-                lblReqD.Text = txtAdditionalComments.TextLength.ToString();
-            }
-            else
-            {
-                btnCreateTreatment.Enabled = false;
-                lblReqD.Visible = true;
-                lblReqD.Text = "*";
-            }
-        }
-
         public TreatmentReportForm()
         {
             InitializeComponent();
@@ -57,6 +24,7 @@ namespace Pets4U
 
         private void TreatmentReportForm_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             try
             {
                 connection = database.connection;
@@ -247,10 +215,9 @@ namespace Pets4U
                                         "\nTreatment Quantity: " + treatmentQuantity +
                                         "\nBeginning Date of Treatment: " + dateTreatmentBegin +
                                         "\nEnd Date of Treatment: " + dateTreatmentEnd;
+=======
+>>>>>>> 42cc81bec247e944384bcad37b04be77303ce042
 
-            txtDescriptionOfTreatment.Text = fullTreatmentDescription;
-            txtAdditionalComments.Enabled = true;
-            btnCreateTreatment.Enabled = true;
         }
     }
 }
